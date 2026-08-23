@@ -11,9 +11,11 @@ Abra `index.html` diretamente no navegador para usar a busca.
 
 ## Estado atual
 
-9 fármacos, 26 interações mapeadas (última atualização: 23/08/2026).
+30 fármacos, 89 interações mapeadas (última atualização: 23/08/2026).
 
-Levotiroxina sódica · Varfarina sódica · Sinvastatina · Cloridrato de ciprofloxacino · Tranilcipromina · Fenitoína · Cloridrato de metformina · Alendronato de sódio · Furosemida
+Levotiroxina sódica · Varfarina sódica · Sinvastatina · Cloridrato de ciprofloxacino · Tranilcipromina · Fenitoína · Cloridrato de metformina · Alendronato de sódio · Furosemida · Carbamazepina · Ácido valproico · Digoxina · Ciclosporina · Isoniazida · Carbonato de lítio · Omeprazol · Orlistat · Levodopa + benserazida · Levodopa + carbidopa · Metotrexato · Espironolactona · Captopril · Sulfametoxazol + Trimetoprima · Colchicina · Doxiciclina · Prednisona · Rifampicina · Colestiramina · Amiodarona · Hidroclorotiazida
+
+O lote de 20 fármacos mais recente foi pesquisado em paralelo por subagentes (cada um buscando e lendo a bula profissional de um fármaco), seguindo o mesmo critério de fidelidade ao texto da bula do lote inicial.
 
 ## Fonte e metodologia
 
