@@ -11,11 +11,11 @@ Abra `index.html` diretamente no navegador para usar a busca.
 
 ## Estado atual
 
-30 fármacos, 89 interações mapeadas (última atualização: 23/08/2026).
+49 fármacos, 134 interações mapeadas (última atualização: 23/08/2026).
 
-Levotiroxina sódica · Varfarina sódica · Sinvastatina · Cloridrato de ciprofloxacino · Tranilcipromina · Fenitoína · Cloridrato de metformina · Alendronato de sódio · Furosemida · Carbamazepina · Ácido valproico · Digoxina · Ciclosporina · Isoniazida · Carbonato de lítio · Omeprazol · Orlistat · Levodopa + benserazida · Levodopa + carbidopa · Metotrexato · Espironolactona · Captopril · Sulfametoxazol + Trimetoprima · Colchicina · Doxiciclina · Prednisona · Rifampicina · Colestiramina · Amiodarona · Hidroclorotiazida
+Levotiroxina sódica · Varfarina sódica · Sinvastatina · Cloridrato de ciprofloxacino · Tranilcipromina · Fenitoína · Cloridrato de metformina · Alendronato de sódio · Furosemida · Carbamazepina · Ácido valproico · Digoxina · Ciclosporina · Isoniazida · Carbonato de lítio · Omeprazol · Orlistat · Levodopa + benserazida · Levodopa + carbidopa · Metotrexato · Espironolactona · Captopril · Sulfametoxazol + Trimetoprima · Colchicina · Doxiciclina · Prednisona · Rifampicina · Colestiramina · Amiodarona · Hidroclorotiazida · Tetraciclina · Maleato de enalapril · Losartana potássica · Nifedipina · Verapamil · Atorvastatina cálcica · Cloridrato de fluoxetina · Cloridrato de amitriptilina · Ácido acetilsalicílico · Teofilina · Sulfassalazina · Fenobarbital · Insulina NPH · Glibenclamida · Dexametasona · Nitrofurantoína · Claritromicina · Alopurinol · Quetiapina
 
-O lote de 20 fármacos mais recente foi pesquisado em paralelo por subagentes (cada um buscando e lendo a bula profissional de um fármaco), seguindo o mesmo critério de fidelidade ao texto da bula do lote inicial.
+Os lotes de 20 fármacos mais recentes foram pesquisados em paralelo por subagentes (cada um buscando e lendo a bula profissional de um fármaco), seguindo o mesmo critério de fidelidade ao texto da bula do lote inicial. Um fármaco pesquisado (diltiazem) não teve interação nutriente/alimento explícita encontrada na bula profissional consultada e por isso não entrou na base — ausência de registro não significa ausência de interação real, só que não foi documentada na fonte consultada.
 
 ## Fonte e metodologia
 

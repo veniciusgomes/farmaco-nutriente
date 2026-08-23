@@ -1204,5 +1204,599 @@
     "manejo": "atencao",
     "recomendacao": "Sem recomendação prática detalhada na bula.",
     "fonte": "Bula profissional — Clorana (Sanofi Medley)"
+  },
+  {
+    "farmaco": "Tetraciclina",
+    "comerciais": [
+      "Cloridrato de Tetraciclina (genérico)"
+    ],
+    "nutriente": "Leite e laticínios",
+    "categoria": "alimento",
+    "efeito": "Diminuição da eficácia do tratamento.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Leite e outros produtos lácteos não devem ser ingeridos durante 1 ou 2 horas antes ou depois da administração de tetraciclina.",
+    "fonte": "Bula profissional — Cloridrato de Tetraciclina (Prati-Donaduzzi)"
+  },
+  {
+    "farmaco": "Tetraciclina",
+    "comerciais": [
+      "Cloridrato de Tetraciclina (genérico)"
+    ],
+    "nutriente": "Cálcio (suplementos)",
+    "categoria": "mineral",
+    "efeito": "Formação de complexos estáveis não absorvíveis.",
+    "mecanismo": "Formação de complexos estáveis não absorvíveis entre a tetraciclina e o cálcio.",
+    "manejo": "separar",
+    "recomendacao": "Uso de suplementos de cálcio deve ser evitado de 1 a 3 horas do uso da tetraciclina.",
+    "fonte": "Bula profissional — Cloridrato de Tetraciclina (Prati-Donaduzzi)"
+  },
+  {
+    "farmaco": "Tetraciclina",
+    "comerciais": [
+      "Cloridrato de Tetraciclina (genérico)"
+    ],
+    "nutriente": "Ferro (suplementos)",
+    "categoria": "mineral",
+    "efeito": "Formação de complexos estáveis não absorvíveis.",
+    "mecanismo": "Formação de complexos estáveis não absorvíveis entre a tetraciclina e o ferro.",
+    "manejo": "separar",
+    "recomendacao": "Uso de suplementos de ferro deve ser evitado de 1 a 3 horas do uso da tetraciclina.",
+    "fonte": "Bula profissional — Cloridrato de Tetraciclina (Prati-Donaduzzi)"
+  },
+  {
+    "farmaco": "Tetraciclina",
+    "comerciais": [
+      "Cloridrato de Tetraciclina (genérico)"
+    ],
+    "nutriente": "Magnésio (salicilato de magnésio e colina; laxantes com magnésio)",
+    "categoria": "mineral",
+    "efeito": "Formação de complexos estáveis não absorvíveis.",
+    "mecanismo": "Formação de complexos estáveis não absorvíveis entre a tetraciclina e o magnésio.",
+    "manejo": "separar",
+    "recomendacao": "Uso desses produtos deve ser evitado de 1 a 3 horas do uso da tetraciclina.",
+    "fonte": "Bula profissional — Cloridrato de Tetraciclina (Prati-Donaduzzi)"
+  },
+  {
+    "farmaco": "Tetraciclina",
+    "comerciais": [
+      "Cloridrato de Tetraciclina (genérico)"
+    ],
+    "nutriente": "Antiácidos (alumínio)",
+    "categoria": "mineral",
+    "efeito": "Formação de complexos estáveis não absorvíveis.",
+    "mecanismo": "Formação de complexos estáveis não absorvíveis entre a tetraciclina e o antiácido.",
+    "manejo": "separar",
+    "recomendacao": "Uso de antiácidos deve ser evitado de 1 a 3 horas do uso da tetraciclina.",
+    "fonte": "Bula profissional — Cloridrato de Tetraciclina (Prati-Donaduzzi)"
+  },
+  {
+    "farmaco": "Tetraciclina",
+    "comerciais": [
+      "Cloridrato de Tetraciclina (genérico)"
+    ],
+    "nutriente": "Bicarbonato de sódio",
+    "categoria": "outro",
+    "efeito": "Pode diminuir a absorção das tetraciclinas.",
+    "mecanismo": "Aumento do pH gástrico.",
+    "manejo": "separar",
+    "recomendacao": "Uso de bicarbonato de sódio deve ser evitado de 1 a 3 horas do uso da tetraciclina.",
+    "fonte": "Bula profissional — Cloridrato de Tetraciclina (Prati-Donaduzzi)"
+  },
+  {
+    "farmaco": "Maleato de enalapril",
+    "comerciais": [
+      "Renitec"
+    ],
+    "nutriente": "Potássio",
+    "categoria": "mineral",
+    "efeito": "Pode resultar em aumentos significativos do potássio sérico (hipercalemia), especialmente com comprometimento renal.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Evitar suplementos de potássio, diuréticos poupadores de potássio ou substitutos de sal com potássio quando possível; se usados, monitorar potássio sérico com frequência.",
+    "fonte": "Bula profissional — Renitec (Organon)"
+  },
+  {
+    "farmaco": "Maleato de enalapril",
+    "comerciais": [
+      "Renitec"
+    ],
+    "nutriente": "Alimentos (geral)",
+    "categoria": "alimento",
+    "efeito": "Absorção não é afetada pela ingestão de alimentos.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Pode ser administrado com ou sem alimentos.",
+    "fonte": "Bula profissional — Renitec (Organon)"
+  },
+  {
+    "farmaco": "Losartana potássica",
+    "comerciais": [
+      "Cozaar"
+    ],
+    "nutriente": "Potássio (suplementos e substitutos de sal)",
+    "categoria": "mineral",
+    "efeito": "Pode resultar em aumento do potássio sérico (hipercalemia).",
+    "mecanismo": "Bloqueio dos efeitos da angiotensina II, semelhante a outros fármacos da classe.",
+    "manejo": "monitorar",
+    "recomendacao": "Bula não traz recomendação prática explícita além de descrever o risco.",
+    "fonte": "Bula profissional — Cozaar (Organon)"
+  },
+  {
+    "farmaco": "Losartana potássica",
+    "comerciais": [
+      "Cozaar"
+    ],
+    "nutriente": "Suco de toranja (grapefruit)",
+    "categoria": "alimento",
+    "efeito": "Pode diminuir a concentração do metabólito ativo, reduzindo o efeito terapêutico.",
+    "mecanismo": "Componentes do suco de toranja inibem enzimas CYP450.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar consumo de suco de toranja durante o tratamento.",
+    "fonte": "Bula profissional — Cozaar (Organon)"
+  },
+  {
+    "farmaco": "Nifedipina",
+    "comerciais": [
+      "Adalat",
+      "Adalat Retard"
+    ],
+    "nutriente": "Suco de toranja (grapefruit)",
+    "categoria": "alimento",
+    "efeito": "Concentrações plasmáticas elevadas do fármaco; efeito pode persistir até 3 dias após última ingestão de suco de toranja.",
+    "mecanismo": "Inibição do citocromo P450 3A4 pelo suco de toranja.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar toranja/suco de toranja durante o tratamento; deglutir o comprimido inteiro com água, independentemente das refeições.",
+    "fonte": "Bula profissional — Adalat Retard (Bayer)"
+  },
+  {
+    "farmaco": "Verapamil",
+    "comerciais": [
+      "Dilacoron"
+    ],
+    "nutriente": "Suco de toranja (grapefruit)",
+    "categoria": "alimento",
+    "efeito": "Aumenta a ASC do verapamil em ~49% (R) e 37% (S), e a Cmax em ~75% (R) e 51% (S).",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Suco de grapefruit não deve ser ingerido junto com verapamil.",
+    "fonte": "Bula profissional — Dilacoron (Abbott)"
+  },
+  {
+    "farmaco": "Verapamil",
+    "comerciais": [
+      "Dilacoron"
+    ],
+    "nutriente": "Álcool (etanol)",
+    "categoria": "outro",
+    "efeito": "Elevação dos níveis plasmáticos de etanol; pode aumentar o nível de álcool no sangue e retardar sua eliminação.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Bula não especifica manejo além de alertar para a elevação dos níveis de álcool no sangue.",
+    "fonte": "Bula profissional — Dilacoron (Abbott)"
+  },
+  {
+    "farmaco": "Atorvastatina cálcica",
+    "comerciais": [
+      "Lipitor"
+    ],
+    "nutriente": "Suco de toranja (grapefruit)",
+    "categoria": "alimento",
+    "efeito": "Aumento das concentrações plasmáticas, especialmente com consumo excessivo (>1,2 L/dia).",
+    "mecanismo": "Componentes do suco de toranja inibem CYP3A4.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar consumo excessivo de suco de toranja (acima de 1,2 L/dia) durante o tratamento.",
+    "fonte": "Bula profissional — Lipitor (Viatris)"
+  },
+  {
+    "farmaco": "Atorvastatina cálcica",
+    "comerciais": [
+      "Lipitor"
+    ],
+    "nutriente": "Alimentos (refeição em geral)",
+    "categoria": "alimento",
+    "efeito": "Alimento reduz taxa e extensão da absorção (Cmáx ~25%, AUC ~9%), mas a redução do LDL-C é semelhante com ou sem alimento.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Pode ser administrada com ou sem alimentos, sem prejuízo do efeito terapêutico sobre o LDL-C.",
+    "fonte": "Bula profissional — Lipitor (Viatris)"
+  },
+  {
+    "farmaco": "Cloridrato de fluoxetina",
+    "comerciais": [
+      "Prozac"
+    ],
+    "nutriente": "Erva de São João (Hypericum perforatum)",
+    "categoria": "outro",
+    "efeito": "Pode aumentar efeitos adversos, incluindo síndrome serotoninérgica.",
+    "mecanismo": "Não detalhado na bula além de citação como agente serotoninérgico.",
+    "manejo": "evitar",
+    "recomendacao": "Cuidado com a associação, como ocorre com outros ISRS, pelo risco de síndrome serotoninérgica.",
+    "fonte": "Bula profissional — Prozac (Eli Lilly)"
+  },
+  {
+    "farmaco": "Cloridrato de fluoxetina",
+    "comerciais": [
+      "Prozac"
+    ],
+    "nutriente": "Triptofano",
+    "categoria": "outro",
+    "efeito": "Uso concomitante associado ao desenvolvimento de síndrome serotoninérgica potencialmente fatal.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar associação com triptofano e outras substâncias serotoninérgicas.",
+    "fonte": "Bula profissional — Prozac (Eli Lilly)"
+  },
+  {
+    "farmaco": "Cloridrato de fluoxetina",
+    "comerciais": [
+      "Prozac"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Testes formais não mostraram aumento dos níveis de álcool no sangue nem intensificação de seus efeitos; ainda assim a combinação com ISRS não é aconselhável.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Combinação com álcool não é aconselhável, apesar de ausência de alteração farmacocinética comprovada.",
+    "fonte": "Bula profissional — Prozac (Eli Lilly)"
+  },
+  {
+    "farmaco": "Cloridrato de fluoxetina",
+    "comerciais": [
+      "Prozac"
+    ],
+    "nutriente": "Alimentos (geral)",
+    "categoria": "alimento",
+    "efeito": "Pode ser administrado com alimentos sem interações.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Não é necessário separar a administração da alimentação.",
+    "fonte": "Bula profissional — Prozac (Eli Lilly)"
+  },
+  {
+    "farmaco": "Cloridrato de amitriptilina",
+    "comerciais": [
+      "Tryptanol",
+      "Amytril"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Pode aumentar a resposta ao álcool e os efeitos de outros depressores do SNC.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar consumo de álcool durante o tratamento, pelo risco de potencialização dos efeitos depressores sobre o SNC.",
+    "fonte": "Bula profissional — Tryptanol (MSD) / Amytril (Cristália)"
+  },
+  {
+    "farmaco": "Ácido acetilsalicílico",
+    "comerciais": [
+      "AAS",
+      "Aspirina"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Aumento do dano à mucosa gastrintestinal e prolongamento do tempo de sangramento por efeitos aditivos.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Evitar uso concomitante de álcool pelo risco de dano à mucosa gastrintestinal e sangramento.",
+    "fonte": "Bula profissional — Aspirina (Bayer)"
+  },
+  {
+    "farmaco": "Teofilina",
+    "comerciais": [
+      "Teolong"
+    ],
+    "nutriente": "Alimentos (refeições) — formulação de liberação prolongada",
+    "categoria": "alimento",
+    "efeito": "Pode interferir na taxa de absorção ou causar liberação inesperada de alta quantidade do fármaco (\"dose-dumping\").",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Seguir orientação posológica quanto à relação com refeições, pelo risco de dose-dumping na forma de liberação prolongada.",
+    "fonte": "Bula profissional — Teolong (Abbott)"
+  },
+  {
+    "farmaco": "Teofilina",
+    "comerciais": [
+      "Teolong"
+    ],
+    "nutriente": "Cafeína",
+    "categoria": "amina biogênica",
+    "efeito": "Interações com xantinas, betassimpaticomiméticos, cafeína e substâncias similares relatadas.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Usar com cautela quando associado a cafeína ou outras xantinas; bula não especifica magnitude.",
+    "fonte": "Bula profissional — Teolong (Abbott)"
+  },
+  {
+    "farmaco": "Teofilina",
+    "comerciais": [
+      "Teolong"
+    ],
+    "nutriente": "Dieta (não especificada)",
+    "categoria": "outro",
+    "efeito": "Dieta é um dos fatores que influenciam o clearance da teofilina.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Monitorar níveis séricos considerando fatores individuais, incluindo dieta; bula não especifica tipo de dieta.",
+    "fonte": "Bula profissional — Teolong (Abbott)"
+  },
+  {
+    "farmaco": "Sulfassalazina",
+    "comerciais": [
+      "Azulfin"
+    ],
+    "nutriente": "Ácido fólico",
+    "categoria": "vitamina",
+    "efeito": "Diminuição da absorção de ácido fólico quando administrado concomitantemente.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Bula relata a interação sem orientação prática específica de manejo.",
+    "fonte": "Bula profissional — Azulfin (Apsen)"
+  },
+  {
+    "farmaco": "Fenobarbital",
+    "comerciais": [
+      "Gardenal"
+    ],
+    "nutriente": "Ácido fólico / Folato",
+    "categoria": "vitamina",
+    "efeito": "Fenobarbital diminui níveis de folato (interação bidirecional).",
+    "mecanismo": "Aumento do metabolismo do fenobarbital, do qual folatos são cofatores.",
+    "manejo": "monitorar",
+    "recomendacao": "Suplementação de folato recomendada antes e durante a gravidez em uso crônico.",
+    "fonte": "Bula profissional — Gardenal (Sanofi Medley)"
+  },
+  {
+    "farmaco": "Fenobarbital",
+    "comerciais": [
+      "Gardenal"
+    ],
+    "nutriente": "Vitamina K",
+    "categoria": "vitamina",
+    "efeito": "Pode causar síndrome hemorrágica em recém-nascidos de mães tratadas com fenobarbital.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Suplementação de vitamina K à gestante (10-20mg/dia no mês anterior ao parto) e ao neonato após o nascimento.",
+    "fonte": "Bula profissional — Gardenal (Sanofi Medley)"
+  },
+  {
+    "farmaco": "Fenobarbital",
+    "comerciais": [
+      "Gardenal"
+    ],
+    "nutriente": "Cálcio",
+    "categoria": "mineral",
+    "efeito": "Interferência no metabolismo do cálcio associada ao uso crônico.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Suplementação adequada de cálcio à gestante em uso crônico.",
+    "fonte": "Bula profissional — Gardenal (Sanofi Medley)"
+  },
+  {
+    "farmaco": "Fenobarbital",
+    "comerciais": [
+      "Gardenal"
+    ],
+    "nutriente": "Vitamina D",
+    "categoria": "vitamina",
+    "efeito": "Uso prolongado em crianças requer profilaxia para raquitismo.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Vitamina D2 (1200-2000 UI/dia) ou 25-OH-vitamina D3 como profilaxia em crianças em uso prolongado.",
+    "fonte": "Bula profissional — Gardenal (Sanofi Medley)"
+  },
+  {
+    "farmaco": "Fenobarbital",
+    "comerciais": [
+      "Gardenal"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Potencialização recíproca dos efeitos sobre o SNC.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Consumo de álcool fortemente desaconselhado; contraindicado com uso de álcool.",
+    "fonte": "Bula profissional — Gardenal (Sanofi Medley)"
+  },
+  {
+    "farmaco": "Insulina NPH",
+    "comerciais": [
+      "Humulin N",
+      "Novolin N"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Pode intensificar ou reduzir o efeito hipoglicemiante de forma imprevisível.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Alerta para risco de hipoglicemia associado ao consumo de álcool durante o tratamento.",
+    "fonte": "Bula profissional — Novolin N (Novo Nordisk) / Humulin N (Eli Lilly)"
+  },
+  {
+    "farmaco": "Insulina NPH",
+    "comerciais": [
+      "Humulin N",
+      "Novolin N"
+    ],
+    "nutriente": "Carboidratos / Alimentação (refeições)",
+    "categoria": "alimento",
+    "efeito": "Alterações na alimentação afetam a dose necessária; omissão de refeição pode causar hipoglicemia.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Tratar hipoglicemia leve/moderada com carboidratos; ajustar dose de insulina conforme mudanças na alimentação.",
+    "fonte": "Bula profissional — Humulin N (Eli Lilly)"
+  },
+  {
+    "farmaco": "Glibenclamida",
+    "comerciais": [
+      "Daonil"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "Pode atenuar ou aumentar a ação hipoglicemiante de forma imprevisível.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Evitar consumo de álcool; monitorar glicemia caso haja ingestão.",
+    "fonte": "Bula profissional — Daonil (Sanofi-Aventis)"
+  },
+  {
+    "farmaco": "Dexametasona",
+    "comerciais": [
+      "Decadron"
+    ],
+    "nutriente": "Sódio/Sal",
+    "categoria": "mineral",
+    "efeito": "Retenção de sódio e líquido; pode elevar pressão arterial e causar insuficiência cardíaca em suscetíveis.",
+    "mecanismo": "Efeito mineralocorticoide do corticosteroide (não detalhado na bula).",
+    "manejo": "monitorar",
+    "recomendacao": "Pode ser necessária restrição dietética de sal.",
+    "fonte": "Bula profissional — Decadron (Aché)"
+  },
+  {
+    "farmaco": "Dexametasona",
+    "comerciais": [
+      "Decadron"
+    ],
+    "nutriente": "Potássio",
+    "categoria": "mineral",
+    "efeito": "Perda de potássio, podendo causar alcalose hipocalêmica; risco maior com diuréticos espoliadores de potássio.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Pode ser necessária suplementação de potássio; observar hipocalemia quando associado a diuréticos.",
+    "fonte": "Bula profissional — Decadron (Aché)"
+  },
+  {
+    "farmaco": "Dexametasona",
+    "comerciais": [
+      "Decadron"
+    ],
+    "nutriente": "Cálcio",
+    "categoria": "mineral",
+    "efeito": "Aumento da excreção de cálcio.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Sem recomendação prática explícita além da constatação do efeito.",
+    "fonte": "Bula profissional — Decadron (Aché)"
+  },
+  {
+    "farmaco": "Nitrofurantoína",
+    "comerciais": [
+      "Macrodantina"
+    ],
+    "nutriente": "Alimentos em geral",
+    "categoria": "alimento",
+    "efeito": "Ingestão com alimentação reduz frequência de eventos adversos gastrintestinais.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Tomar junto com alimentação para reduzir eventos gastrintestinais.",
+    "fonte": "Bula profissional — Macrodantina (Hypermarcas)"
+  },
+  {
+    "farmaco": "Nitrofurantoína",
+    "comerciais": [
+      "Macrodantina"
+    ],
+    "nutriente": "Magnésio (trissilicato de magnésio em antiácidos)",
+    "categoria": "mineral",
+    "efeito": "Antiácidos com trissilicato de magnésio reduzem a absorção.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar administração concomitante de antiácidos com trissilicato de magnésio.",
+    "fonte": "Bula profissional — Macrodantina (Hypermarcas)"
+  },
+  {
+    "farmaco": "Claritromicina",
+    "comerciais": [
+      "Klaricid",
+      "Klaricid UD"
+    ],
+    "nutriente": "Alimentos (refeição em geral)",
+    "categoria": "alimento",
+    "efeito": "Ingestão concomitante de alimentos aumenta a exposição à claritromicina (forma UD).",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Comprimidos de liberação prolongada (UD) devem ser ingeridos com alimentos.",
+    "fonte": "Bula profissional — Klaricid UD (Abbott)"
+  },
+  {
+    "farmaco": "Claritromicina",
+    "comerciais": [
+      "Klaricid",
+      "Klaricid OS"
+    ],
+    "nutriente": "Alimentos e leite",
+    "categoria": "alimento",
+    "efeito": "Alimento pode retardar levemente o início da absorção, sem prejudicar biodisponibilidade.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Suspensão pediátrica pode ser administrada em jejum ou com alimentos/leite.",
+    "fonte": "Bula profissional — Klaricid OS (Abbott)"
+  },
+  {
+    "farmaco": "Alopurinol",
+    "comerciais": [
+      "Zyloric"
+    ],
+    "nutriente": "Ferro (suplemento)",
+    "categoria": "mineral",
+    "efeito": "Pode haver aumento da captação de ferro pelo fígado.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Cautela e acompanhamento clínico ao associar suplementação de ferro.",
+    "fonte": "Bula profissional — Alopurinol (Novartis/Sandoz)"
+  },
+  {
+    "farmaco": "Alopurinol",
+    "comerciais": [
+      "Zyloric"
+    ],
+    "nutriente": "Álcool (etanol)",
+    "categoria": "outro",
+    "efeito": "Pode diminuir a efetividade do alopurinol.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar uso concomitante de álcool.",
+    "fonte": "Bula profissional — Alopurinol (Novartis/Sandoz)"
+  },
+  {
+    "farmaco": "Alopurinol",
+    "comerciais": [
+      "Zyloric"
+    ],
+    "nutriente": "Vitamina C (ácido ascórbico) em altas doses",
+    "categoria": "vitamina",
+    "efeito": "Pode acidificar a urina e aumentar risco de cálculos renais.",
+    "mecanismo": "Acidificação da urina por altas doses de ácido ascórbico.",
+    "manejo": "atencao",
+    "recomendacao": "Cautela e monitoramento com suplementação de vitamina C em altas doses.",
+    "fonte": "Bula profissional — Alopurinol (Novartis/Sandoz)"
+  },
+  {
+    "farmaco": "Quetiapina",
+    "comerciais": [
+      "Seroquel",
+      "Seroquel XRO"
+    ],
+    "nutriente": "Dieta rica em gorduras",
+    "categoria": "alimento",
+    "efeito": "Aumento significativo de Cmáx (44-52%) e AUC (20-22%) com dieta rica em gordura (forma XRO); dieta leve sem efeito significativo.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Aumento não é clinicamente significativo; pode ser tomado com ou sem alimentos.",
+    "fonte": "Bula profissional — Seroquel XRO (AstraZeneca)"
+  },
+  {
+    "farmaco": "Quetiapina",
+    "comerciais": [
+      "Seroquel",
+      "Seroquel XRO"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Efeitos sobre o SNC podem ser potencializados.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Usar com cuidado quando associado a álcool.",
+    "fonte": "Bula profissional — Seroquel/Seroquel XRO (AstraZeneca)"
   }
 ]
