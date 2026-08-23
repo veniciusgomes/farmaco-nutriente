@@ -1,0 +1,708 @@
+<title>Farmaco-Nutriente</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root{
+    --bg: #f3f4f0;
+    --surface: #ffffff;
+    --surface-alt: #eaeee9;
+    --text: #1b231f;
+    --text-muted: #5b6660;
+    --border: #d8ded7;
+    --accent: #2b6e68;
+    --accent-strong: #1d4e49;
+    --accent-soft: #dceae7;
+    --gold: #8f6428;
+    --gold-soft: #f1e5d2;
+    --warn: #97501f;
+    --warn-soft: #f4e3d3;
+    --risk: #942f1d;
+    --risk-soft: #f5ded8;
+    --low: #386249;
+    --low-soft: #e1ede3;
+    --focus: #2b6e68;
+    --shadow: 0 1px 2px rgba(20,30,26,0.06), 0 4px 14px rgba(20,30,26,0.05);
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #10201d;
+      --surface: #16261f;
+      --surface-alt: #1c2f27;
+      --text: #eaf1ec;
+      --text-muted: #97a89f;
+      --border: #2b4038;
+      --accent: #74c2b6;
+      --accent-strong: #a4dcd1;
+      --accent-soft: #1e3d38;
+      --gold: #d9b374;
+      --gold-soft: #3a2f1c;
+      --warn: #e0995f;
+      --warn-soft: #3d2a1a;
+      --risk: #e08874;
+      --risk-soft: #3f231c;
+      --low: #8fc0a2;
+      --low-soft: #1f3327;
+      --focus: #9adbcf;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #10201d;
+    --surface: #16261f;
+    --surface-alt: #1c2f27;
+    --text: #eaf1ec;
+    --text-muted: #97a89f;
+    --border: #2b4038;
+    --accent: #74c2b6;
+    --accent-strong: #a4dcd1;
+    --accent-soft: #1e3d38;
+    --gold: #d9b374;
+    --gold-soft: #3a2f1c;
+    --warn: #e0995f;
+    --warn-soft: #3d2a1a;
+    --risk: #e08874;
+    --risk-soft: #3f231c;
+    --low: #8fc0a2;
+    --low-soft: #1f3327;
+    --focus: #9adbcf;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+
+  *{ box-sizing: border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection{ background: var(--accent-soft); }
+
+  .page{
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+
+  header.masthead{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .eyebrow{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  h1{
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 38px);
+    margin: 0;
+    text-wrap: balance;
+    color: var(--text);
+  }
+  .lede{
+    font-size: 15.5px;
+    color: var(--text-muted);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  .stats{
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+  .stat{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .stat b{
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .search-panel{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .search-panel label{
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .search-panel .hint{
+    font-size: 12.5px;
+    color: var(--text-muted);
+    margin: 6px 0 0;
+  }
+  textarea#drugInput{
+    width: 100%;
+    min-height: 64px;
+    resize: vertical;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    padding: 12px 14px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+  }
+  textarea#drugInput:focus{
+    outline: 2px solid var(--focus);
+    outline-offset: 1px;
+  }
+  .search-row{
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  button{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    padding: 10px 16px;
+  }
+  button:focus-visible{ outline: 2px solid var(--focus); outline-offset: 2px; }
+  .btn-primary{
+    background: var(--accent);
+    color: var(--surface);
+  }
+  .btn-primary:hover{ background: var(--accent-strong); }
+  .btn-ghost{
+    background: transparent;
+    border-color: var(--border);
+    color: var(--text);
+  }
+  .btn-ghost:hover{ background: var(--surface-alt); }
+  .chips{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .chip{
+    font-size: 12.5px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface-alt);
+    color: var(--text-muted);
+    cursor: pointer;
+  }
+  .chip:hover{ border-color: var(--accent); color: var(--text); }
+
+  #exportRow{
+    display: none;
+    justify-content: flex-end;
+    margin: 14px 0 4px;
+  }
+  #exportStatus{
+    font-size: 12.5px;
+    color: var(--text-muted);
+    align-self: center;
+    margin-right: 4px;
+  }
+
+  .results{ margin-top: 28px; }
+
+  .drug-group{ margin-bottom: 34px; }
+  .drug-group-head{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+  .drug-group-head h2{
+    font-family: "Source Serif 4", serif;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .drug-group-head .also{
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .drug-count{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+    background: var(--surface-alt);
+    border-radius: 999px;
+    padding: 2px 9px;
+  }
+
+  .not-found{
+    border: 1px dashed var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    color: var(--text-muted);
+    font-size: 14px;
+    background: var(--surface);
+  }
+  .not-found b{ color: var(--text); }
+
+  .card{
+    display: flex;
+    gap: 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--manage-color, var(--accent));
+    border-radius: 9px;
+    padding: 15px 16px;
+    margin-top: 10px;
+    box-shadow: var(--shadow);
+  }
+  .card-main{ flex: 1; min-width: 0; }
+  .card-top{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .nutrient-name{
+    font-weight: 600;
+    font-size: 15.5px;
+  }
+  .tag{
+    font-size: 11px;
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+  .tag-manage{ background: var(--manage-soft, var(--accent-soft)); color: var(--manage-color, var(--accent-strong)); }
+  .tag-cat{ background: var(--surface-alt); color: var(--text-muted); }
+
+  .card-field{ margin-top: 7px; font-size: 14px; }
+  .card-field .k{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .card-field .v{ color: var(--text); }
+
+  .card-source{
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dotted var(--border);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11.5px;
+    color: var(--text-muted);
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .card-source .review-flag{ color: var(--warn); }
+
+  details.about{
+    margin-top: 44px;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+  details.about summary{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    list-style: none;
+  }
+  details.about summary::-webkit-details-marker{ display:none; }
+  details.about summary::before{
+    content: "▸ ";
+    color: var(--accent);
+  }
+  details.about[open] summary::before{ content: "▾ "; }
+  .about-body{
+    font-size: 13.5px;
+    color: var(--text-muted);
+    margin-top: 12px;
+    max-width: 68ch;
+  }
+  .about-body p{ margin: 0 0 10px; }
+  .about-body ul{ margin: 0 0 10px; padding-left: 20px; }
+  .about-body li{ margin-bottom: 4px; }
+
+  footer.pagefoot{
+    margin-top: 40px;
+    font-size: 12px;
+    color: var(--text-muted);
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  @media (max-width: 520px){
+    .page{ padding: 32px 16px 72px; }
+    .card{ flex-direction: column; }
+  }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <span class="eyebrow">Base de referência · uso profissional</span>
+    <h1>Interações fármaco&#8211;nutriente</h1>
+    <p class="lede">Consulta de interações droga&#8211;nutriente extraídas de bulas profissionais registradas na ANVISA. Digite um ou mais fármacos para ver o que a bula diz sobre alimentos, minerais, vitaminas e fibras.</p>
+    <div class="stats" id="statsBar"></div>
+  </header>
+
+  <div class="search-panel">
+    <label for="drugInput">Fármaco(s)</label>
+    <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 9 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <div class="search-row">
+      <button class="btn-primary" id="searchBtn">Buscar interações</button>
+      <button class="btn-ghost" id="clearBtn">Limpar</button>
+      <div class="chips" id="exampleChips"></div>
+    </div>
+  </div>
+
+  <div id="exportRow">
+    <span id="exportStatus"></span>
+    <button class="btn-ghost" id="exportBtn">Baixar resultados (.csv)</button>
+  </div>
+
+  <div class="results" id="results"></div>
+
+  <details class="about">
+    <summary>Sobre esta base</summary>
+    <div class="about-body">
+      <p><b>Fonte:</b> texto de bulas profissionais registradas na ANVISA (seção "Interações medicamentosas" / "Interação medicamento-alimento"), obtidas via os PDFs publicados pelos próprios fabricantes — o mesmo conteúdo aprovado e exigido pela RDC 47/2009. Não há, até o momento, uma fonte adicional (como a base DDID) integrada — os registros abaixo são 100% ANVISA.</p>
+      <p><b>Como foi montada:</b> cada bula foi lida e as menções a alimentos, minerais, vitaminas e fibras foram extraídas manualmente para esta base. Nenhum dado foi inferido ou complementado com informação fora da bula.</p>
+      <p><b>Limitação importante:</b> esta é uma base de teste/protótipo, ainda sem revisão por farmacêutico ou nutricionista. Trate cada registro como ponto de partida para checagem na bula original, não como recomendação clínica pronta.</p>
+      <p><b>Fármacos mapeados atualmente:</b></p>
+      <ul id="drugList"></ul>
+      <p><b>Fármaco não encontrado?</b> Peça para eu pesquisar a bula na ANVISA e adicionar esse fármaco à base — é o mesmo processo usado para montar os registros atuais.</p>
+    </div>
+  </details>
+
+  <footer class="pagefoot" id="pagefoot"></footer>
+</div>
+
+<script>
+(function(){
+
+  var DATA = [
+    // Levotiroxina sódica
+    {farmaco:"Levotiroxina sódica", comerciais:["Synthroid","Puran T4","Euthyrox"], nutriente:"Cálcio", categoria:"mineral",
+     efeito:"Redução da absorção da levotiroxina.", mecanismo:"Formação de complexo insolúvel entre a levotiroxina e o cálcio, reduzindo sua disponibilidade para absorção intestinal.",
+     manejo:"separar", recomendacao:"Administrar a levotiroxina com pelo menos 4 horas de intervalo de carbonato de cálcio ou suco fortificado com cálcio.",
+     fonte:"Bula profissional — Synthroid (Abbott)"},
+    {farmaco:"Levotiroxina sódica", comerciais:["Synthroid","Puran T4","Euthyrox"], nutriente:"Ferro", categoria:"mineral",
+     efeito:"Redução da absorção da levotiroxina.", mecanismo:"O sulfato ferroso reduz a absorção da levotiroxina, provavelmente por formação de complexo férrico-tiroxina.",
+     manejo:"separar", recomendacao:"Administrar a levotiroxina com pelo menos 4 horas de intervalo de sulfato ferroso.",
+     fonte:"Bula profissional — Synthroid (Abbott) / Levotiroxina Sódica (Merck)"},
+    {farmaco:"Levotiroxina sódica", comerciais:["Synthroid","Puran T4","Euthyrox"], nutriente:"Fibras dietéticas", categoria:"fibra",
+     efeito:"Redução da absorção da levotiroxina.", mecanismo:"Não detalhado na bula além da redução de absorção.",
+     manejo:"separar", recomendacao:"Administrar a levotiroxina com pelo menos 4 horas de intervalo de refeições ricas em fibra.",
+     fonte:"Bula profissional — Synthroid (Abbott)"},
+    {farmaco:"Levotiroxina sódica", comerciais:["Synthroid","Puran T4","Euthyrox"], nutriente:"Soja (farinha de soja / fórmula infantil)", categoria:"alimento",
+     efeito:"Redução da absorção; em recém-nascidos sob dieta com soja foi relatado aumento do TSH.", mecanismo:"Não detalhado na bula além da redução de absorção.",
+     manejo:"atencao", recomendacao:"Atenção especial em lactentes em fórmula à base de soja — monitorar função tireoidiana.",
+     fonte:"Bula profissional — Levotiroxina Sódica (Merck)"},
+    {farmaco:"Levotiroxina sódica", comerciais:["Synthroid","Puran T4","Euthyrox"], nutriente:"Farinha de caroço de algodão, nozes", categoria:"alimento",
+     efeito:"Redução da absorção da levotiroxina.", mecanismo:"Não detalhado na bula além da redução de absorção.",
+     manejo:"separar", recomendacao:"Administrar a levotiroxina com pelo menos 4 horas de intervalo desses alimentos.",
+     fonte:"Bula profissional — Synthroid (Abbott)"},
+    {farmaco:"Levotiroxina sódica", comerciais:["Synthroid","Puran T4","Euthyrox"], nutriente:"Alimentos em geral (refeições)", categoria:"alimento",
+     efeito:"Interferência na absorção quando administrado junto às refeições.", mecanismo:"Não detalhado além da redução de absorção associada à presença de alimento no trato digestivo.",
+     manejo:"separar", recomendacao:"Tomar em jejum, de preferência 30 minutos a 1 hora antes do café da manhã (ou 1h antes / 2h depois de refeições).",
+     fonte:"Bula profissional — Synthroid (Abbott) / Levotiroxina Sódica (Merck)"},
+
+    // Varfarina sódica
+    {farmaco:"Varfarina sódica", comerciais:["Marevan"], nutriente:"Vitamina K (alimentos ricos em vit. K, ex.: vegetais verde-escuros)", categoria:"vitamina",
+     efeito:"Redução do efeito anticoagulante.", mecanismo:"A vitamina K antagoniza o mecanismo de ação da varfarina, que depende da inibição da regeneração da vitamina K para reduzir a síntese de fatores de coagulação.",
+     manejo:"monitorar", recomendacao:"Manter consumo constante de alimentos ricos em vitamina K e monitorar INR — não é necessário eliminar, mas evitar variações bruscas.",
+     fonte:"Bula profissional — Varfarina Sódica (União Química)"},
+
+    // Sinvastatina
+    {farmaco:"Sinvastatina", comerciais:["Vaslip","Sinvascor"], nutriente:"Suco de toranja (grapefruit)", categoria:"alimento",
+     efeito:"Interferência no metabolismo da sinvastatina, aumentando o risco de eventos adversos (ex.: miopatia).", mecanismo:"Componentes do suco de toranja inibem enzimas envolvidas no metabolismo do fármaco, elevando sua concentração plasmática.",
+     manejo:"evitar", recomendacao:"Evitar o consumo de suco de toranja durante o tratamento.",
+     fonte:"Bula (paciente) — Sinvastatina (Merck)"},
+    {farmaco:"Sinvastatina", comerciais:["Vaslip","Sinvascor"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Mencionado nas precauções, sem mecanismo de interação detalhado na bula.", mecanismo:"Não especificado.",
+     manejo:"atencao", recomendacao:"Informar ao médico o consumo de quantidades consideráveis de bebida alcoólica.",
+     fonte:"Bula (paciente) — Sinvastatina (Merck)"},
+
+    // Ciprofloxacino
+    {farmaco:"Cloridrato de ciprofloxacino", comerciais:["Cipro"], nutriente:"Cátions polivalentes / suplementos minerais (cálcio, magnésio, alumínio, ferro)", categoria:"mineral",
+     efeito:"Redução da absorção do ciprofloxacino.", mecanismo:"Formação de quelatos entre o ciprofloxacino e cátions polivalentes, reduzindo a absorção do antibiótico.",
+     manejo:"separar", recomendacao:"Administrar o ciprofloxacino 1–2 horas antes ou pelo menos 4 horas depois desses suplementos.",
+     fonte:"Bula profissional — Cloridrato de Ciprofloxacino (Geolab)"},
+    {farmaco:"Cloridrato de ciprofloxacino", comerciais:["Cipro"], nutriente:"Laticínios e bebidas enriquecidas com minerais (leite, iogurte, suco enriquecido com cálcio)", categoria:"alimento",
+     efeito:"Redução da absorção do ciprofloxacino pelo mesmo mecanismo de quelação.", mecanismo:"Formação de quelatos com o cálcio presente em laticínios ou produtos enriquecidos.",
+     manejo:"separar", recomendacao:"Mesmo intervalo de 1–2h antes / 4h depois. Cálcio de alimentos comuns em quantidade normal da dieta não afeta significativamente — a ressalva é para laticínios e produtos enriquecidos.",
+     fonte:"Bula profissional — Cloridrato de Ciprofloxacino (Geolab)"},
+
+    // Tranilcipromina (IMAO)
+    {farmaco:"Tranilcipromina", comerciais:["Parnate"], nutriente:"Tiramina (queijos maturados, carnes/peixes/aves curados ou fermentados, soja fermentada, chucrute, extrato de levedura concentrado, chope)", categoria:"amina biogênica",
+     efeito:"Risco de reação hipertensiva grave, por vezes fatal (crise hipertensiva).", mecanismo:"Inibição irreversível da monoaminoxidase (MAO), impedindo a degradação da tiramina e causando elevação perigosa da pressão arterial.",
+     manejo:"evitar", recomendacao:"Evitar completamente alimentos ricos em tiramina durante o tratamento e por até 2 semanas após a interrupção. Preferir alimentos frescos ou adequadamente congelados.",
+     fonte:"Bula profissional — Parnate (GSK)"},
+    {farmaco:"Tranilcipromina", comerciais:["Parnate"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Contribui para o risco de reação hipertensiva associada ao IMAO.", mecanismo:"Não detalhado na bula além da recomendação de evitar.",
+     manejo:"evitar", recomendacao:"Reduzir ou evitar todos os tipos de bebida alcoólica durante o tratamento.",
+     fonte:"Bula profissional — Parnate (GSK)"},
+
+    // Fenitoína
+    {farmaco:"Fenitoína", comerciais:["Fenital","Hidantal","Epelin"], nutriente:"Ácido fólico / folato", categoria:"vitamina",
+     efeito:"Redução da eficácia da fenitoína — uso concomitante de ácido fólico associado a aumento da frequência de crises convulsivas e redução dos níveis de fenitoína; a fenitoína também pode reduzir os níveis plasmáticos de folato.",
+     mecanismo:"Interação bidirecional entre folato e o metabolismo da fenitoína, não detalhada em profundidade na bula.",
+     manejo:"monitorar", recomendacao:"Uso concomitante requer monitorização cuidadosa; atenção redobrada durante a gravidez.",
+     fonte:"Bula profissional — Fenital (Cristália)"},
+    {farmaco:"Fenitoína", comerciais:["Fenital","Hidantal","Epelin"], nutriente:"Vitamina D", categoria:"vitamina",
+     efeito:"Associação com osteomalácia por interferência no metabolismo da vitamina D.", mecanismo:"Não detalhado na bula além da interferência no metabolismo.",
+     manejo:"monitorar", recomendacao:"Considerar monitorização do status de vitamina D em uso prolongado.",
+     fonte:"Bula profissional — Fenital (Cristália)"},
+    {farmaco:"Fenitoína", comerciais:["Fenital","Hidantal","Epelin"], nutriente:"Vitamina K", categoria:"vitamina",
+     efeito:"Risco de distúrbio hemorrágico grave em neonatos expostos à fenitoína intraútero.", mecanismo:"Não detalhado além do risco hemorrágico neonatal.",
+     manejo:"atencao", recomendacao:"Administração materna de vitamina K antes do parto e suplementação neonatal, conforme orientação médica.",
+     fonte:"Bula profissional — Fenital (Cristália)"},
+    {farmaco:"Fenitoína", comerciais:["Fenital","Hidantal","Epelin"], nutriente:"Nutrição enteral / suplementos nutricionais", categoria:"alimento",
+     efeito:"Níveis plasmáticos de fenitoína menores que o esperado quando administrada junto com nutrição enteral.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Evitar administração concomitante com nutrição enteral; monitorar níveis séricos com mais frequência.",
+     fonte:"Bula profissional — Fenital (Cristália)"},
+
+    // Metformina
+    {farmaco:"Cloridrato de metformina", comerciais:["Glifage","Glucoformin"], nutriente:"Vitamina B12", categoria:"vitamina",
+     efeito:"Deficiência de vitamina B12 listada como reação adversa comum.", mecanismo:"Não detalhado na bula.",
+     manejo:"monitorar", recomendacao:"Monitorar níveis séricos de vitamina B12 anualmente, especialmente em doses altas e uso prolongado.",
+     fonte:"Bula profissional — Cloridrato de Metformina (Vitamedic)"},
+    {farmaco:"Cloridrato de metformina", comerciais:["Glifage","Glucoformin"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Aumento do risco de acidose láctica em intoxicação alcoólica aguda, especialmente em jejum ou desnutrição.", mecanismo:"Não detalhado além do risco de acidose láctica.",
+     manejo:"atencao", recomendacao:"Evitar consumo excessivo de álcool, principalmente em jejum ou insuficiência hepática.",
+     fonte:"Bula profissional — Cloridrato de Metformina (Vitamedic)"},
+    {farmaco:"Cloridrato de metformina", comerciais:["Glifage","Glucoformin"], nutriente:"Alimentos em geral", categoria:"alimento",
+     efeito:"Alimentos reduzem a quantidade absorvida de metformina e retardam ligeiramente a absorção.", mecanismo:"Efeito farmacocinético não detalhado além da redução/atraso da absorção.",
+     manejo:"atencao", recomendacao:"Horário em relação às refeições deve seguir orientação médica — geralmente administrada junto às refeições para reduzir efeitos gastrointestinais, apesar da leve redução de absorção.",
+     fonte:"Bula profissional — Cloridrato de Metformina (Vitamedic)"},
+
+    // Alendronato de sódio
+    {farmaco:"Alendronato de sódio", comerciais:["Fosamax"], nutriente:"Café ou suco de laranja", categoria:"alimento",
+     efeito:"Redução da biodisponibilidade do alendronato em aproximadamente 60%.", mecanismo:"Não detalhado além da redução de biodisponibilidade.",
+     manejo:"separar", recomendacao:"Tomar o alendronato somente com água, ao acordar, pelo menos 30 minutos antes do primeiro alimento, bebida ou medicamento do dia.",
+     fonte:"Bula profissional — Alendronato de Sódio (Novartis)"},
+    {farmaco:"Alendronato de sódio", comerciais:["Fosamax"], nutriente:"Cálcio, ferro, magnésio (suplementos minerais) e antiácidos", categoria:"mineral",
+     efeito:"Interferência na absorção do alendronato.", mecanismo:"Não detalhado além da interferência na absorção.",
+     manejo:"separar", recomendacao:"Aguardar pelo menos meia hora após o alendronato antes de tomar qualquer outro medicamento oral, incluindo suplementos.",
+     fonte:"Bula profissional — Alendronato de Sódio (Novartis)"},
+    {farmaco:"Alendronato de sódio", comerciais:["Fosamax"], nutriente:"Alimentos em geral (desjejum)", categoria:"alimento",
+     efeito:"Biodisponibilidade insignificante quando administrado até 2 horas após um desjejum padrão.", mecanismo:"Absorção fortemente dependente do jejum.",
+     manejo:"separar", recomendacao:"Administrar em jejum, com água, aguardando ao menos 30 minutos antes de comer.",
+     fonte:"Bula profissional — Alendronato de Sódio (Novartis)"},
+
+    // Furosemida
+    {farmaco:"Furosemida", comerciais:["Lasix"], nutriente:"Alcaçuz (licorice) em grandes quantidades", categoria:"alimento",
+     efeito:"Aumento do risco de hipocalemia.", mecanismo:"Não detalhado além do aumento do risco de hipocalemia.",
+     manejo:"atencao", recomendacao:"Evitar consumo de alcaçuz em grandes quantidades durante o tratamento.",
+     fonte:"Bula profissional — Furosemida (Geolab)"},
+    {farmaco:"Furosemida", comerciais:["Lasix"], nutriente:"Alimentos em geral", categoria:"alimento",
+     efeito:"Alteração da absorção da furosemida.", mecanismo:"Não detalhado.",
+     manejo:"separar", recomendacao:"Tomar os comprimidos com o estômago vazio.",
+     fonte:"Bula profissional — Furosemida (Geolab)"},
+    {farmaco:"Furosemida", comerciais:["Lasix"], nutriente:"Potássio, sódio, magnésio, cálcio (eletrólitos)", categoria:"mineral",
+     efeito:"Risco de depleção eletrolítica (hipocalemia, hiponatremia, hipomagnesemia, hipocalcemia) associado ao uso do diurético.", mecanismo:"Efeito farmacológico do próprio diurético de alça sobre a excreção renal de eletrólitos — não é propriamente uma interação de absorção com o nutriente da dieta, e sim depleção induzida pelo fármaco.",
+     manejo:"monitorar", recomendacao:"Monitorar sódio, potássio e creatinina. A bula não fornece orientação dietética específica de reposição; atenção redobrada com uso concomitante de laxantes prolongados ou corticosteroides.",
+     fonte:"Bula profissional — Furosemida (Geolab)"}
+  ];
+
+  var MANAGE_META = {
+    separar:   {label:"Separar horário",   colorVar:"--accent",  softVar:"--accent-soft"},
+    monitorar: {label:"Monitorização",     colorVar:"--risk",    softVar:"--risk-soft"},
+    evitar:    {label:"Evitar associação", colorVar:"--risk",    softVar:"--risk-soft"},
+    atencao:   {label:"Atenção especial",  colorVar:"--warn",    softVar:"--warn-soft"}
+  };
+
+  function norm(s){
+    return (s||"").toString().normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().trim();
+  }
+
+  function uniqueDrugs(){
+    var seen = {}, out = [];
+    DATA.forEach(function(d){
+      if(!seen[d.farmaco]){ seen[d.farmaco]=true; out.push(d); }
+    });
+    return out;
+  }
+
+  function renderStats(){
+    var drugs = uniqueDrugs().length;
+    var bar = document.getElementById("statsBar");
+    bar.innerHTML =
+      '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
+      '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
+      '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
+      '<span class="stat">atualizado em <b>23/08/2026</b></span>';
+  }
+
+  function renderAboutList(){
+    var ul = document.getElementById("drugList");
+    ul.innerHTML = uniqueDrugs().map(function(d){
+      return "<li>"+d.farmaco+" <span style=\"color:var(--text-muted)\">("+d.comerciais.join(", ")+")</span></li>";
+    }).join("");
+  }
+
+  function renderChips(){
+    var examples = ["levotiroxina","varfarina","fenitoína","metformina","alendronato"];
+    var wrap = document.getElementById("exampleChips");
+    wrap.innerHTML = examples.map(function(e){ return '<button type="button" class="chip" data-ex="'+e+'">'+e+'</button>'; }).join("");
+    wrap.querySelectorAll(".chip").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        document.getElementById("drugInput").value = btn.getAttribute("data-ex");
+        runSearch();
+      });
+    });
+  }
+
+  function matchDrug(query){
+    var q = norm(query);
+    if(!q) return [];
+    return DATA.filter(function(d){
+      if(norm(d.farmaco).indexOf(q) !== -1 || q.indexOf(norm(d.farmaco).split(" ")[0]) !== -1) return true;
+      return d.comerciais.some(function(c){ return norm(c).indexOf(q) !== -1 || q.indexOf(norm(c)) !== -1; });
+    });
+  }
+
+  var lastResultRows = []; // for CSV export
+
+  function cardHTML(item){
+    var meta = MANAGE_META[item.manejo] || MANAGE_META.atencao;
+    return (
+      '<div class="card" style="--manage-color:var('+meta.colorVar+');--manage-soft:var('+meta.softVar+')">' +
+        '<div class="card-main">' +
+          '<div class="card-top">' +
+            '<span class="nutrient-name">'+item.nutriente+'</span>' +
+            '<span class="tag tag-manage">'+meta.label+'</span>' +
+            '<span class="tag tag-cat">'+item.categoria+'</span>' +
+          '</div>' +
+          '<div class="card-field"><span class="k">Efeito descrito</span><span class="v">'+item.efeito+'</span></div>' +
+          '<div class="card-field"><span class="k">Mecanismo</span><span class="v">'+item.mecanismo+'</span></div>' +
+          '<div class="card-field"><span class="k">Recomendação da bula</span><span class="v">'+item.recomendacao+'</span></div>' +
+          '<div class="card-source">' +
+            '<span>'+item.fonte+'</span>' +
+            '<span class="review-flag">não revisado por profissional</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function runSearch(){
+    var raw = document.getElementById("drugInput").value;
+    var terms = raw.split(/[,;\n]/).map(function(t){ return t.trim(); }).filter(Boolean);
+    var results = document.getElementById("results");
+    lastResultRows = [];
+
+    if(terms.length === 0){
+      results.innerHTML = '';
+      document.getElementById("exportRow").style.display = "none";
+      return;
+    }
+
+    var html = "";
+    terms.forEach(function(term){
+      var matches = matchDrug(term);
+      if(matches.length === 0){
+        html +=
+          '<div class="drug-group">' +
+            '<div class="drug-group-head"><h2>'+term+'</h2><span class="drug-count">0</span></div>' +
+            '<div class="not-found">Não encontrado na base atual. <b>Peça para eu pesquisar a bula na ANVISA e adicionar "'+term+'" à base</b> — o processo é o mesmo usado para os fármacos já mapeados.</div>' +
+          '</div>';
+        return;
+      }
+      var farmacoNome = matches[0].farmaco;
+      var comerciais = matches[0].comerciais.join(", ");
+      html +=
+        '<div class="drug-group">' +
+          '<div class="drug-group-head"><h2>'+farmacoNome+'</h2><span class="also">('+comerciais+')</span><span class="drug-count">'+matches.length+'</span></div>' +
+          matches.map(cardHTML).join("") +
+        '</div>';
+      matches.forEach(function(m){
+        lastResultRows.push([farmacoNome, m.nutriente, m.categoria, (MANAGE_META[m.manejo]||{}).label||m.manejo, m.efeito, m.mecanismo, m.recomendacao, m.fonte]);
+      });
+    });
+
+    results.innerHTML = html;
+    document.getElementById("exportRow").style.display = lastResultRows.length ? "flex" : "none";
+  }
+
+  function toCSV(rows){
+    var header = ["Farmaco","Nutriente","Categoria","Manejo","Efeito","Mecanismo","Recomendacao","Fonte"];
+    function esc(v){ v = (v==null?"":String(v)); if(/[",\n]/.test(v)){ v = '"'+v.replace(/"/g,'""')+'"'; } return v; }
+    var lines = [header.map(esc).join(",")];
+    rows.forEach(function(r){ lines.push(r.map(esc).join(",")); });
+    return lines.join("\r\n");
+  }
+
+  async function exportCSV(){
+    var statusEl = document.getElementById("exportStatus");
+    if(!lastResultRows.length) return;
+    var downloads = null;
+    try{ downloads = window.claude ? await window.claude.use("downloads") : null; }catch(e){ downloads = null; }
+    if(!downloads){
+      statusEl.textContent = "Download indisponível nesta visualização.";
+      return;
+    }
+    var csv = toCSV(lastResultRows);
+    try{
+      await downloads.save({filename: "interacoes-farmaco-nutriente.csv", data: csv});
+      statusEl.textContent = "Arquivo salvo.";
+    }catch(err){
+      if(err && err.code === "extension_not_enabled"){
+        try{
+          await downloads.save({filename: "interacoes-farmaco-nutriente.txt", data: csv});
+          statusEl.textContent = "CSV indisponível — salvo como .txt.";
+        }catch(e2){
+          statusEl.textContent = "Não foi possível salvar o arquivo.";
+        }
+      } else if(err && err.code === "declined"){
+        statusEl.textContent = "Download cancelado.";
+      } else {
+        statusEl.textContent = "Não foi possível salvar o arquivo.";
+      }
+    }
+    setTimeout(function(){ statusEl.textContent = ""; }, 4000);
+  }
+
+  document.getElementById("searchBtn").addEventListener("click", runSearch);
+  document.getElementById("drugInput").addEventListener("keydown", function(e){
+    if(e.key === "Enter" && (e.metaKey || e.ctrlKey)){ runSearch(); }
+  });
+  document.getElementById("clearBtn").addEventListener("click", function(){
+    document.getElementById("drugInput").value = "";
+    document.getElementById("results").innerHTML = "";
+    document.getElementById("exportRow").style.display = "none";
+  });
+  document.getElementById("exportBtn").addEventListener("click", exportCSV);
+
+  document.getElementById("pagefoot").textContent = "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 23/08/2026, sem revisão farmacêutica/nutricional formal.";
+
+  renderStats();
+  renderAboutList();
+  renderChips();
+})();
+</script>
