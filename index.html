@@ -372,7 +372,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 49 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 71 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1187,7 +1187,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>23/08/2026</b></span>';
+      '<span class="stat">atualizado em <b>24/08/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1330,7 +1330,7 @@
   });
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
-  document.getElementById("pagefoot").textContent = "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 23/08/2026, sem revisão farmacêutica/nutricional formal.";
+  document.getElementById("pagefoot").textContent = "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 24/08/2026, sem revisão farmacêutica/nutricional formal.";
 
   renderStats();
   renderAboutList();
