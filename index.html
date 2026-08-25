@@ -352,7 +352,11 @@
     font-size: 12px;
     color: var(--text-muted);
     font-family: "IBM Plex Mono", monospace;
+    line-height: 1.6;
   }
+  footer.pagefoot a{ color: var(--accent); text-decoration: none; }
+  footer.pagefoot a:hover{ text-decoration: underline; }
+  footer.pagefoot .credit{ margin-top: 4px; }
 
   @media (max-width: 520px){
     .page{ padding: 32px 16px 72px; }
@@ -372,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 71 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 75 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1159,6 +1163,39 @@
      efeito:"Potencialização dos efeitos do diazepam, incluindo sedação grave, depressão cardiorrespiratória, podendo resultar em coma ou morte.", mecanismo:"Efeito aditivo depressor sobre o sistema nervoso central entre diazepam e álcool.",
      manejo:"evitar", recomendacao:"Evitar o consumo de bebidas alcoólicas durante o tratamento com Valium.",
      fonte:"Bula profissional — Valium (Produtos Roche Químicos e Farmacêuticos S.A.)"},
+
+    // Clonazepam
+    {farmaco:"Clonazepam", comerciais:["Rivotril"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Aumento dos efeitos sobre sedação, respiração e hemodinâmica, podendo produzir efeitos indesejáveis imprevisíveis e reduzir a eficácia do tratamento.", mecanismo:"Efeito aditivo com outros agentes depressores de ação central, incluindo o álcool.",
+     manejo:"evitar", recomendacao:"Pacientes em tratamento com Rivotril não devem em hipótese alguma consumir álcool.",
+     fonte:"Bula profissional — Rivotril (Roche)"},
+    {farmaco:"Clonazepam", comerciais:["Rivotril"], nutriente:"Suco de toranja (grapefruit)", categoria:"alimento",
+     efeito:"Pode contribuir para o aumento das concentrações plasmáticas de clonazepam.", mecanismo:"O suco de toranja diminui a atividade do citocromo P-450 3A4, enzima envolvida no metabolismo do clonazepam.",
+     manejo:"atencao", recomendacao:"Ter cautela com o consumo de suco de toranja durante o tratamento, pois pode aumentar as concentrações plasmáticas do fármaco.",
+     fonte:"Bula profissional — Rivotril (Roche)"},
+    {farmaco:"Clonazepam", comerciais:["Rivotril"], nutriente:"Cafeína", categoria:"alimento",
+     efeito:"Sob condições de sono laboratorial, cafeína e clonazepam apresentaram efeitos mutuamente antagônicos, porém sem alterações observadas nos parâmetros relacionados ao sono (estágio de adormecimento e tempo total do sono) quando administrados simultaneamente.", mecanismo:"Não detalhado na bula.",
+     manejo:"monitorar", recomendacao:"A bula não estabelece necessidade de restrição; efeito antagônico descrito não alterou parâmetros de sono em estudo laboratorial.",
+     fonte:"Bula profissional — Rivotril (Roche)"},
+    // Cloridrato de sertralina
+    {farmaco:"Cloridrato de sertralina", comerciais:["Zoloft"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Uso concomitante não é recomendado, ainda que estudos não tenham demonstrado potencialização dos efeitos do álcool sobre atividades psicomotoras e cognitivas.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"O uso concomitante de cloridrato de sertralina e álcool não é recomendado.",
+     fonte:"Bula profissional — Zoloft (Viatris/Pfizer)"},
+    // Bromazepam
+    {farmaco:"Bromazepam", comerciais:["Lexotan"], nutriente:"Álcool", categoria:"outro",
+     efeito:"O álcool intensifica o efeito do bromazepam, o que pode ser prejudicial, podendo levar a sedação excessiva.", mecanismo:"Efeito aditivo entre substâncias psicoativas depressoras do sistema nervoso central.",
+     manejo:"evitar", recomendacao:"Não fazer uso de bebidas alcoólicas enquanto estiver em tratamento com bromazepam.",
+     fonte:"Bula profissional — Bromazepam (EMS, genérico de Lexotan)"},
+    // Risperidona
+    {farmaco:"Risperidona", comerciais:["Risperdal"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Risperdal pode intensificar o efeito do álcool e de outras drogas que reduzem a habilidade para reagir.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Não ingerir bebidas alcoólicas durante o tratamento com Risperdal, exceto se prescrito pelo médico.",
+     fonte:"Bula (paciente) — Risperdal (Janssen-Cilag)"},
+    {farmaco:"Risperidona", comerciais:["Risperdal"], nutriente:"Chá", categoria:"alimento",
+     efeito:"A bula não detalha o efeito farmacológico, apenas restringe expressamente a mistura da solução oral com chá.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"A solução oral de Risperdal não deve ser misturada com chá; pode ser adicionada a água, café, suco de laranja ou leite semidesnatado.",
+     fonte:"Bula (paciente) — Risperdal (Janssen-Cilag)"},
   ];
 
   var MANAGE_META = {
@@ -1187,7 +1224,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>24/08/2026</b></span>';
+      '<span class="stat">atualizado em <b>25/08/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1330,7 +1367,7 @@
   });
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
-  document.getElementById("pagefoot").textContent = "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 24/08/2026, sem revisão farmacêutica/nutricional formal.";
+  document.getElementById("pagefoot").textContent = "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 25/08/2026, sem revisão farmacêutica/nutricional formal.";
 
   renderStats();
   renderAboutList();
