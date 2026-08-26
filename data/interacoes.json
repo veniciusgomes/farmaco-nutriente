@@ -2324,5 +2324,58 @@
     "manejo": "evitar",
     "recomendacao": "A solução oral de Risperdal não deve ser misturada com chá; pode ser adicionada a água, café, suco de laranja ou leite semidesnatado.",
     "fonte": "Bula (paciente) — Risperdal (Janssen-Cilag)"
+  },
+  {
+    "farmaco": "Semaglutida",
+    "comerciais": [
+      "Rybelsus"
+    ],
+    "nutriente": "Alimentos (qualquer refeição)",
+    "categoria": "alimento",
+    "efeito": "A absorção da semaglutida é diminuída se o comprimido for ingerido junto com alimentos; um período de jejum mais longo após a administração resulta em maior absorção.",
+    "mecanismo": "A absorção da semaglutida ocorre predominantemente no estômago e é facilitada pelo excipiente salcaprozato de sódio; a presença de alimento no estômago reduz essa absorção.",
+    "manejo": "separar",
+    "recomendacao": "Administrar Rybelsus em jejum, preferencialmente na primeira ingestão pela manhã (antes do café da manhã), e aguardar pelo menos 30 minutos antes de comer, beber ou tomar outros medicamentos orais.",
+    "fonte": "Bula profissional — Rybelsus (Novo Nordisk)"
+  },
+  {
+    "farmaco": "Semaglutida",
+    "comerciais": [
+      "Rybelsus"
+    ],
+    "nutriente": "Água (grande volume)",
+    "categoria": "outro",
+    "efeito": "A absorção da semaglutida é diminuída se o comprimido for ingerido com grandes volumes de água.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Engolir o comprimido inteiro com apenas um pouco de água (até meio copo, equivalente a 120 mL).",
+    "fonte": "Bula profissional — Rybelsus (Novo Nordisk)"
+  },
+  {
+    "farmaco": "Cloridrato de ciclobenzaprina",
+    "comerciais": [
+      "Miosan"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "A ciclobenzaprina pode potencializar os efeitos do álcool.",
+    "mecanismo": "Não detalhado na bula (a ciclobenzaprina é descrita como depressora do SNC, cujo efeito se soma ao de outros depressores do SNC, incluindo o álcool).",
+    "manejo": "evitar",
+    "recomendacao": "Evitar o consumo de álcool durante o tratamento com Miosan, pois seus efeitos sobre o sistema nervoso central podem ser potencializados.",
+    "fonte": "Bula profissional — Miosan (Apsen Farmacêutica)"
+  },
+  {
+    "farmaco": "Cloridrato de tramadol",
+    "comerciais": [
+      "Tramal",
+      "Tramal Retard"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "A administração concomitante de tramadol com álcool pode potencializar os efeitos depressores no sistema nervoso central (SNC).",
+    "mecanismo": "O álcool é um depressor do SNC e seu efeito se soma ao efeito depressor central do tramadol.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar o consumo de álcool durante o tratamento com Tramal/Tramal Retard, especialmente ao dirigir veículos ou operar máquinas.",
+    "fonte": "Bula profissional — Tramal e Tramal Retard (Grünenthal do Brasil)"
   }
 ]
