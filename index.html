@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 78 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 83 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1216,6 +1216,36 @@
      efeito:"A administração concomitante de tramadol com álcool pode potencializar os efeitos depressores no sistema nervoso central (SNC).", mecanismo:"O álcool é um depressor do SNC e seu efeito se soma ao efeito depressor central do tramadol.",
      manejo:"evitar", recomendacao:"Evitar o consumo de álcool durante o tratamento com Tramal/Tramal Retard, especialmente ao dirigir veículos ou operar máquinas.",
      fonte:"Bula profissional — Tramal e Tramal Retard (Grünenthal do Brasil)"},
+
+    // Cloridrato de duloxetina
+    {farmaco:"Cloridrato de duloxetina", comerciais:["Cymbalta"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Quando administrados em horários diferentes, a bula não observou aumento do prejuízo das habilidades mental e motora causado pelo álcool. Porém, no banco de dados de estudos clínicos, três pacientes tratados com o fármaco apresentaram lesões no fígado, todos com uso concomitante significativo de álcool, o que pode ter contribuído para as anormalidades hepáticas constatadas.", mecanismo:"Não detalhado na bula.",
+     manejo:"monitorar", recomendacao:"Usar com cautela em pacientes que fazem uso excessivo de álcool; elevações graves das enzimas hepáticas foram raramente relatadas, em alguns casos associadas ao uso excessivo de álcool ou a doença hepática preexistente.",
+     fonte:"Bula profissional — Cymbalta (Eli Lilly)"},
+    // Cloridrato de venlafaxina
+    {farmaco:"Cloridrato de venlafaxina", comerciais:["Efexor XR"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Potencial de agravamento clínico de quadros psiquiátricos e de interação adversa com a venlafaxina, incluindo efeitos depressores aditivos sobre o Sistema Nervoso Central.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Os pacientes devem ser aconselhados a não consumir álcool durante o tratamento com Efexor XR, considerando seus efeitos no SNC e o risco de interação adversa com o medicamento.",
+     fonte:"Bula profissional — Efexor XR (Viatris Farmacêutica do Brasil / Pfizer)"},
+    // Sirolimo
+    {farmaco:"Sirolimo", comerciais:["Rapamune"], nutriente:"Suco de toranja (grapefruit)", categoria:"alimento",
+     efeito:"Redução do metabolismo do sirolimo mediado pela CYP3A4 e potencial aumento do contra-fluxo do fármaco dos enterócitos do intestino delgado mediado pela glicoproteína-P (P-gp), elevando a exposição sistêmica ao sirolimo.", mecanismo:"Inibição da atividade da CYP3A4 e aumento do efluxo mediado pela P-gp na mucosa intestinal, causados por componentes do suco de toranja.",
+     manejo:"evitar", recomendacao:"O suco de pomelo (grapefruit) não deve ser tomado junto com Rapamune (drágeas).",
+     fonte:"Bula profissional — Rapamune (Pfizer)"},
+    {farmaco:"Sirolimo", comerciais:["Rapamune"], nutriente:"Refeição rica em gordura", categoria:"alimento",
+     efeito:"Alteração da taxa de absorção do sirolimo: em estudo com Rapamune drágeas administrado após café da manhã de alto teor de gorduras (860 kcal, 55% kcal de gordura), houve aumento de 65% na Cmáx, 32% no tmáx e 23% na AUC em comparação ao estado de jejum. A extensão da absorção não foi significativamente alterada, apenas a taxa.", mecanismo:"Não detalhado na bula.",
+     manejo:"monitorar", recomendacao:"Rapamune deve ser administrado de forma consistente, sempre com ou sempre sem alimentos, para minimizar a variação da absorção e dos níveis sanguíneos do medicamento.",
+     fonte:"Bula profissional — Rapamune (Pfizer)"},
+    // Budesonida
+    {farmaco:"Budesonida", comerciais:["Entocort"], nutriente:"Suco de toranja (grapefruit)", categoria:"alimento",
+     efeito:"Após ingestão extensa de suco de grapefruit, a exposição sistêmica à budesonida oral aumentou cerca de duas vezes.", mecanismo:"Inibição da atividade da CYP3A4 pelo suco de grapefruit, principalmente na mucosa intestinal, reduzindo o metabolismo de primeira passagem da budesonida.",
+     manejo:"evitar", recomendacao:"Deve-se evitar a ingestão de grapefruit ou de seu suco durante o tratamento com Entocort Cápsulas (outras frutas como laranja ou maçã não influenciam a captação da budesonida e não inibem a CYP3A4).",
+     fonte:"Bula profissional — Entocort (AstraZeneca)"},
+    // Haloperidol
+    {farmaco:"Haloperidol", comerciais:["Haldol"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Aumento da depressão do Sistema Nervoso Central causada por outros depressores do SNC, incluindo bebidas alcoólicas. Estados comatosos por depressão do SNC devido a bebidas alcoólicas constituem contraindicação ao uso do medicamento. A capacidade de atenção, já reduzida pelo Haldol (principalmente no início do tratamento e com doses maiores), pode ser potencializada pela ingestão de bebidas alcoólicas.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Evitar o consumo de álcool durante o tratamento com Haldol; o medicamento é contraindicado em pacientes com estado comatoso decorrente de depressão do SNC por álcool ou outras drogas depressoras.",
+     fonte:"Bula profissional — Haldol (Janssen-Cilag)"},
   ];
 
   var MANAGE_META = {
