@@ -2455,5 +2455,97 @@
     "manejo": "evitar",
     "recomendacao": "Evitar o consumo de álcool durante o tratamento com Haldol; o medicamento é contraindicado em pacientes com estado comatoso decorrente de depressão do SNC por álcool ou outras drogas depressoras.",
     "fonte": "Bula profissional — Haldol (Janssen-Cilag)"
+  },
+  {
+    "farmaco": "Clozapina",
+    "comerciais": [
+      "Leponex"
+    ],
+    "nutriente": "Cafeína (café, chá, bebidas energéticas)",
+    "categoria": "alimento",
+    "efeito": "Aumento da concentração plasmática de clozapina pelo consumo de cafeína, com redução de aproximadamente 50% após 5 dias consecutivos sem consumo de cafeína.",
+    "mecanismo": "Inibição da isoenzima CYP1A2, responsável pelo metabolismo da clozapina, pela cafeína.",
+    "manejo": "monitorar",
+    "recomendacao": "Monitorar os níveis séricos de clozapina e o estado clínico do paciente diante de mudanças relevantes no consumo habitual de cafeína (início, suspensão ou grandes variações na ingestão).",
+    "fonte": "Bula profissional — Leponex (Mylan/Novartis)"
+  },
+  {
+    "farmaco": "Clozapina",
+    "comerciais": [
+      "Leponex"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "A clozapina pode potencializar os efeitos centrais depressores do álcool sobre o sistema nervoso central.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar o consumo de bebidas alcoólicas durante o tratamento com clozapina, pelo risco de potencialização dos efeitos sedativos/depressores centrais.",
+    "fonte": "Bula profissional — Leponex (Mylan/Novartis)"
+  },
+  {
+    "farmaco": "Cloridrato de bupropiona",
+    "comerciais": [
+      "Wellbutrin XL"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "Raros relatos de eventos adversos neuropsiquiátricos ou redução da tolerância alcoólica em pacientes que consomem bebidas alcoólicas durante o tratamento com bupropiona; consumo excessivo de álcool é fator de risco para convulsões, e a descontinuação abrupta do álcool durante o tratamento é contraindicada.",
+    "mecanismo": "Não detalhado na bula (não há estudos clínicos identificando interação farmacocinética entre bupropiona e álcool).",
+    "manejo": "evitar",
+    "recomendacao": "O consumo de álcool durante o tratamento deve ser minimizado ou evitado. Pacientes que consomem grandes quantidades de álcool não devem interromper o consumo abruptamente ao iniciar o tratamento com bupropiona, pelo risco aumentado de convulsões.",
+    "fonte": "Bula profissional — Wellbutrin XL (GSK)"
+  },
+  {
+    "farmaco": "Mirtazapina",
+    "comerciais": [
+      "Remeron",
+      "Remeron Soltab"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "A mirtazapina pode aumentar o efeito depressor do álcool sobre o sistema nervoso central.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Os pacientes devem ser advertidos a evitar o consumo de bebidas alcoólicas enquanto estiverem em tratamento com mirtazapina.",
+    "fonte": "Bula profissional — Remeron Soltab (Organon)"
+  },
+  {
+    "farmaco": "Pregabalina",
+    "comerciais": [
+      "Lyrica"
+    ],
+    "nutriente": "Álcool (etanol)",
+    "categoria": "outro",
+    "efeito": "A pregabalina pode potencializar os efeitos do etanol. Há relatos pós-comercialização de insuficiência respiratória, coma e morte em pacientes em tratamento com pregabalina associada a outros depressores do SNC, incluindo álcool.",
+    "mecanismo": "Não detalhado na bula como interação farmacocinética — nenhuma interação farmacocinética clinicamente relevante foi observada entre pregabalina e etanol; o efeito é de natureza farmacodinâmica (aditiva sobre o SNC).",
+    "manejo": "evitar",
+    "recomendacao": "Evitar o consumo de álcool durante o tratamento com pregabalina, pelo risco de potencialização de efeitos depressores do SNC (sonolência, tontura, prejuízo cognitivo e da coordenação motora, insuficiência respiratória).",
+    "fonte": "Bula profissional — Lyrica (medicamento genérico Sanofi Medley, referência Pfizer)"
+  },
+  {
+    "farmaco": "Pregabalina",
+    "comerciais": [
+      "Lyrica"
+    ],
+    "nutriente": "Alimentos (refeições em geral)",
+    "categoria": "alimento",
+    "efeito": "A administração de pregabalina com alimentos reduz a Cmáx em aproximadamente 25-30% e retarda o Tmáx em cerca de 2,5 horas, porém sem efeito clinicamente significativo sobre o grau de absorção do medicamento.",
+    "mecanismo": "Redução na velocidade de absorção gastrointestinal na presença de alimentos, sem redução da biodisponibilidade total (extensão de absorção mantida).",
+    "manejo": "atencao",
+    "recomendacao": "A pregabalina pode ser administrada com ou sem alimentos; não é necessário ajuste especial quanto ao horário das refeições.",
+    "fonte": "Bula profissional — Lyrica (medicamento genérico Sanofi Medley, referência Pfizer)"
+  },
+  {
+    "farmaco": "Moclobemida",
+    "comerciais": [
+      "Aurorix"
+    ],
+    "nutriente": "Tiramina (queijos curados, vinho, carnes processadas e outros alimentos ricos em tiramina)",
+    "categoria": "amina biogênica",
+    "efeito": "Alguns pacientes depressivos podem apresentar hipersensibilidade à tiramina. A propensão da moclobemida de interagir com a tiramina é leve e de pouca duração, e a potencialização do efeito pressor foi até menor ou não ocorreu quando a moclobemida foi administrada após uma refeição.",
+    "mecanismo": "A moclobemida é um inibidor seletivo e reversível da monoamino oxidase A (RIMA), o que torna sua interação com a tiramina leve e de pouca duração, diferentemente da inibição irreversível e não seletiva dos IMAOs clássicos.",
+    "manejo": "atencao",
+    "recomendacao": "Geralmente, durante o tratamento com Aurorix (moclobemida) não é necessária dieta especial com restrição. Ainda assim, todos os pacientes devem ser alertados para evitar o consumo de grandes quantidades de alimentos ricos em tiramina.",
+    "fonte": "Bula profissional — Aurorix (Roche)"
   }
 ]
