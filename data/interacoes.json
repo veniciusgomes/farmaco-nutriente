@@ -2547,5 +2547,70 @@
     "manejo": "atencao",
     "recomendacao": "Geralmente, durante o tratamento com Aurorix (moclobemida) não é necessária dieta especial com restrição. Ainda assim, todos os pacientes devem ser alertados para evitar o consumo de grandes quantidades de alimentos ricos em tiramina.",
     "fonte": "Bula profissional — Aurorix (Roche)"
+  },
+  {
+    "farmaco": "Cloridrato de clonidina",
+    "comerciais": [
+      "Atensina"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "Potencialização dos efeitos de substâncias depressoras centrais e do álcool.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Deve-se ter cautela ao associar clonidina com álcool, pois seus efeitos depressores centrais podem ser potencializados.",
+    "fonte": "Bula profissional — Atensina (Boehringer Ingelheim)"
+  },
+  {
+    "farmaco": "Cloridrato de prometazina",
+    "comerciais": [
+      "Fenergan"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas e medicamentos contendo álcool)",
+    "categoria": "outro",
+    "efeito": "Aumento dos efeitos sedativos dos anti-histamínicos H1, podendo tornar perigosa a condução de veículos e a operação de máquinas.",
+    "mecanismo": "Associação com álcool aumenta os efeitos sedativos dos anti-histamínicos H1, alterando a vigilância.",
+    "manejo": "evitar",
+    "recomendacao": "FENERGAN não deve ser utilizado em associação ao álcool; recomenda-se evitar a ingestão de bebidas alcoólicas e de medicamentos contendo álcool durante o tratamento.",
+    "fonte": "Bula profissional — Fenergan (Sanofi Medley)"
+  },
+  {
+    "farmaco": "Cloridrato de donepezila",
+    "comerciais": [
+      "Eranz"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "Redução dos níveis de donepezila.",
+    "mecanismo": "Álcool, assim como rifampicina, fenitoína e carbamazepina, é um indutor enzimático que pode reduzir os níveis de donepezila.",
+    "manejo": "monitorar",
+    "recomendacao": "Como a magnitude do efeito indutor ainda é desconhecida, a associação de donepezila com álcool deve ser usada com cautela.",
+    "fonte": "Bula profissional — Eranz (Pfizer Brasil, sob licença de Eisai)"
+  },
+  {
+    "farmaco": "Cloridrato de biperideno",
+    "comerciais": [
+      "Akineton"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "Potencialização dos efeitos colaterais no sistema nervoso central e periférico; prejuízo da habilidade e atenção para dirigir veículos ou operar máquinas.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "A ingestão de bebidas alcoólicas deve ser evitada durante o tratamento com AKINETON; durante o tratamento combinado com álcool, o paciente não deve dirigir veículos ou operar máquinas.",
+    "fonte": "Bula profissional — Akineton (Abbott)"
+  },
+  {
+    "farmaco": "Cloridrato de metoclopramida",
+    "comerciais": [
+      "Plasil"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "Potencialização do efeito sedativo da metoclopramida, podendo prejudicar a habilidade de dirigir veículos ou operar máquinas.",
+    "mecanismo": "Álcool potencializa o efeito sedativo da metoclopramida.",
+    "manejo": "evitar",
+    "recomendacao": "A associação com álcool deve ser evitada durante o tratamento com PLASIL.",
+    "fonte": "Bula profissional — Plasil (Sanofi-Aventis)"
   }
 ]
