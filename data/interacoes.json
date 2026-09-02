@@ -2612,5 +2612,128 @@
     "manejo": "evitar",
     "recomendacao": "A associação com álcool deve ser evitada durante o tratamento com PLASIL.",
     "fonte": "Bula profissional — Plasil (Sanofi-Aventis)"
+  },
+  {
+    "farmaco": "Levofloxacino",
+    "comerciais": [
+      "Levaquin",
+      "Levofloxacino (genérico Geolab)"
+    ],
+    "nutriente": "Cálcio (antiácidos contendo cálcio)",
+    "categoria": "mineral",
+    "efeito": "Redução da absorção gastrintestinal do levofloxacino, resultando em níveis urinários e séricos consideravelmente inferiores ao desejável.",
+    "mecanismo": "Quelação entre o levofloxacino e cátions divalentes, embora menos marcante que a observada com outros derivados quinolônicos.",
+    "manejo": "separar",
+    "recomendacao": "Tomar o cálcio (antiácido) pelo menos duas horas antes ou duas horas depois da administração do levofloxacino.",
+    "fonte": "Bula profissional — Levofloxacino (Geolab)"
+  },
+  {
+    "farmaco": "Levofloxacino",
+    "comerciais": [
+      "Levaquin",
+      "Levofloxacino (genérico Geolab)"
+    ],
+    "nutriente": "Magnésio (antiácidos contendo magnésio)",
+    "categoria": "mineral",
+    "efeito": "Redução da absorção gastrintestinal do levofloxacino, resultando em níveis urinários e séricos consideravelmente inferiores ao desejável.",
+    "mecanismo": "Quelação entre o levofloxacino e cátions divalentes, embora menos marcante que a observada com outros derivados quinolônicos.",
+    "manejo": "separar",
+    "recomendacao": "Tomar o magnésio (antiácido) pelo menos duas horas antes ou duas horas depois da administração do levofloxacino.",
+    "fonte": "Bula profissional — Levofloxacino (Geolab)"
+  },
+  {
+    "farmaco": "Levofloxacino",
+    "comerciais": [
+      "Levaquin",
+      "Levofloxacino (genérico Geolab)"
+    ],
+    "nutriente": "Ferro (cátions metálicos/suplementos de ferro)",
+    "categoria": "mineral",
+    "efeito": "Redução da absorção gastrintestinal do levofloxacino, resultando em níveis urinários e séricos consideravelmente inferiores ao desejável.",
+    "mecanismo": "Quelação entre o levofloxacino e cátions metálicos como o ferro.",
+    "manejo": "separar",
+    "recomendacao": "Tomar suplementos ou produtos contendo ferro pelo menos duas horas antes ou duas horas depois da administração do levofloxacino.",
+    "fonte": "Bula profissional — Levofloxacino (Geolab)"
+  },
+  {
+    "farmaco": "Levofloxacino",
+    "comerciais": [
+      "Levaquin",
+      "Levofloxacino (genérico Geolab)"
+    ],
+    "nutriente": "Zinco (preparações multivitamínicas contendo zinco)",
+    "categoria": "mineral",
+    "efeito": "Redução da absorção gastrintestinal do levofloxacino, resultando em níveis urinários e séricos consideravelmente inferiores ao desejável.",
+    "mecanismo": "Quelação entre o levofloxacino e o zinco presente em preparações multivitamínicas.",
+    "manejo": "separar",
+    "recomendacao": "Tomar preparações multivitamínicas contendo zinco pelo menos duas horas antes ou duas horas depois da administração do levofloxacino.",
+    "fonte": "Bula profissional — Levofloxacino (Geolab)"
+  },
+  {
+    "farmaco": "Naproxeno sódico",
+    "comerciais": [
+      "Flanax"
+    ],
+    "nutriente": "Alimentos em geral",
+    "categoria": "alimento",
+    "efeito": "A administração com alimentos pode retardar a absorção do naproxeno.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Flanax pode ser administrado por via oral, tomado com água, em jejum ou com alimentos; a presença de alimentos pode retardar (sem impedir) a absorção do naproxeno, o que pode postergar o início do efeito analgésico.",
+    "fonte": "Bula profissional — Flanax (Bayer)"
+  },
+  {
+    "farmaco": "Cloridrato de selegilina",
+    "comerciais": [
+      "Jumexil",
+      "Jumex"
+    ],
+    "nutriente": "Tiramina (alimentos ricos em tiramina)",
+    "categoria": "amina biogênica",
+    "efeito": "Doses altas de selegilina (20 mg) interagem com a tiramina presente em alguns alimentos, podendo causar crise hipertensiva súbita e severa.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Doses maiores que 10 mg/dia não são mais eficazes e podem levar a reações hipertensivas mediadas pela tiramina; evitar doses altas de selegilina, especialmente em associação com alimentos ricos em tiramina.",
+    "fonte": "Bula profissional — Jumexil (Farmalab/Chiesi)"
+  },
+  {
+    "farmaco": "Praziquantel",
+    "comerciais": [
+      "Cisticid"
+    ],
+    "nutriente": "Suco de grapefruit (toranja)",
+    "categoria": "alimento",
+    "efeito": "Consumo simultâneo pode levar a níveis plasmáticos aumentados e maior tempo de retenção do praziquantel.",
+    "mecanismo": "Inibição do sistema microssomal hepático (citocromo P450), de forma similar à observada com cimetidina e cetoconazol.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar o consumo de suco de grapefruit (toranja) durante o tratamento com Cisticid, pois pode aumentar os níveis plasmáticos e o tempo de retenção do praziquantel.",
+    "fonte": "Bula profissional — Cisticid (Merck)"
+  },
+  {
+    "farmaco": "Praziquantel",
+    "comerciais": [
+      "Cisticid"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "Cisticid pode alterar a vigilância/consciência; essa alteração é agravada em associação com o álcool.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Não consumir bebidas alcoólicas junto com Cisticid nem no dia seguinte ao uso do medicamento.",
+    "fonte": "Bula profissional — Cisticid (Merck)"
+  },
+  {
+    "farmaco": "Mesilato de doxazosina",
+    "comerciais": [
+      "Carduran",
+      "Carduran XL"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "O paciente não deve consumir bebidas alcoólicas durante o tratamento.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "O paciente não deve tomar bebidas alcoólicas durante o tratamento com Carduran XL.",
+    "fonte": "Bula profissional — Carduran XL (Viatris/Pfizer)"
   }
 ]

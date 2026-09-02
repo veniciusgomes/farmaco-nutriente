@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 93 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 98 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1306,6 +1306,48 @@
      efeito:"Potencialização do efeito sedativo da metoclopramida, podendo prejudicar a habilidade de dirigir veículos ou operar máquinas.", mecanismo:"Álcool potencializa o efeito sedativo da metoclopramida.",
      manejo:"evitar", recomendacao:"A associação com álcool deve ser evitada durante o tratamento com PLASIL.",
      fonte:"Bula profissional — Plasil (Sanofi-Aventis)"},
+
+    // Levofloxacino
+    {farmaco:"Levofloxacino", comerciais:["Levaquin","Levofloxacino (genérico Geolab)"], nutriente:"Cálcio (antiácidos contendo cálcio)", categoria:"mineral",
+     efeito:"Redução da absorção gastrintestinal do levofloxacino, resultando em níveis urinários e séricos consideravelmente inferiores ao desejável.", mecanismo:"Quelação entre o levofloxacino e cátions divalentes, embora menos marcante que a observada com outros derivados quinolônicos.",
+     manejo:"separar", recomendacao:"Tomar o cálcio (antiácido) pelo menos duas horas antes ou duas horas depois da administração do levofloxacino.",
+     fonte:"Bula profissional — Levofloxacino (Geolab)"},
+    {farmaco:"Levofloxacino", comerciais:["Levaquin","Levofloxacino (genérico Geolab)"], nutriente:"Magnésio (antiácidos contendo magnésio)", categoria:"mineral",
+     efeito:"Redução da absorção gastrintestinal do levofloxacino, resultando em níveis urinários e séricos consideravelmente inferiores ao desejável.", mecanismo:"Quelação entre o levofloxacino e cátions divalentes, embora menos marcante que a observada com outros derivados quinolônicos.",
+     manejo:"separar", recomendacao:"Tomar o magnésio (antiácido) pelo menos duas horas antes ou duas horas depois da administração do levofloxacino.",
+     fonte:"Bula profissional — Levofloxacino (Geolab)"},
+    {farmaco:"Levofloxacino", comerciais:["Levaquin","Levofloxacino (genérico Geolab)"], nutriente:"Ferro (cátions metálicos/suplementos de ferro)", categoria:"mineral",
+     efeito:"Redução da absorção gastrintestinal do levofloxacino, resultando em níveis urinários e séricos consideravelmente inferiores ao desejável.", mecanismo:"Quelação entre o levofloxacino e cátions metálicos como o ferro.",
+     manejo:"separar", recomendacao:"Tomar suplementos ou produtos contendo ferro pelo menos duas horas antes ou duas horas depois da administração do levofloxacino.",
+     fonte:"Bula profissional — Levofloxacino (Geolab)"},
+    {farmaco:"Levofloxacino", comerciais:["Levaquin","Levofloxacino (genérico Geolab)"], nutriente:"Zinco (preparações multivitamínicas contendo zinco)", categoria:"mineral",
+     efeito:"Redução da absorção gastrintestinal do levofloxacino, resultando em níveis urinários e séricos consideravelmente inferiores ao desejável.", mecanismo:"Quelação entre o levofloxacino e o zinco presente em preparações multivitamínicas.",
+     manejo:"separar", recomendacao:"Tomar preparações multivitamínicas contendo zinco pelo menos duas horas antes ou duas horas depois da administração do levofloxacino.",
+     fonte:"Bula profissional — Levofloxacino (Geolab)"},
+    // Naproxeno sódico
+    {farmaco:"Naproxeno sódico", comerciais:["Flanax"], nutriente:"Alimentos em geral", categoria:"alimento",
+     efeito:"A administração com alimentos pode retardar a absorção do naproxeno.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Flanax pode ser administrado por via oral, tomado com água, em jejum ou com alimentos; a presença de alimentos pode retardar (sem impedir) a absorção do naproxeno, o que pode postergar o início do efeito analgésico.",
+     fonte:"Bula profissional — Flanax (Bayer)"},
+    // Cloridrato de selegilina
+    {farmaco:"Cloridrato de selegilina", comerciais:["Jumexil","Jumex"], nutriente:"Tiramina (alimentos ricos em tiramina)", categoria:"amina biogênica",
+     efeito:"Doses altas de selegilina (20 mg) interagem com a tiramina presente em alguns alimentos, podendo causar crise hipertensiva súbita e severa.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Doses maiores que 10 mg/dia não são mais eficazes e podem levar a reações hipertensivas mediadas pela tiramina; evitar doses altas de selegilina, especialmente em associação com alimentos ricos em tiramina.",
+     fonte:"Bula profissional — Jumexil (Farmalab/Chiesi)"},
+    // Praziquantel
+    {farmaco:"Praziquantel", comerciais:["Cisticid"], nutriente:"Suco de grapefruit (toranja)", categoria:"alimento",
+     efeito:"Consumo simultâneo pode levar a níveis plasmáticos aumentados e maior tempo de retenção do praziquantel.", mecanismo:"Inibição do sistema microssomal hepático (citocromo P450), de forma similar à observada com cimetidina e cetoconazol.",
+     manejo:"evitar", recomendacao:"Evitar o consumo de suco de grapefruit (toranja) durante o tratamento com Cisticid, pois pode aumentar os níveis plasmáticos e o tempo de retenção do praziquantel.",
+     fonte:"Bula profissional — Cisticid (Merck)"},
+    {farmaco:"Praziquantel", comerciais:["Cisticid"], nutriente:"Álcool (bebidas alcoólicas)", categoria:"outro",
+     efeito:"Cisticid pode alterar a vigilância/consciência; essa alteração é agravada em associação com o álcool.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Não consumir bebidas alcoólicas junto com Cisticid nem no dia seguinte ao uso do medicamento.",
+     fonte:"Bula profissional — Cisticid (Merck)"},
+    // Mesilato de doxazosina
+    {farmaco:"Mesilato de doxazosina", comerciais:["Carduran","Carduran XL"], nutriente:"Álcool (bebidas alcoólicas)", categoria:"outro",
+     efeito:"O paciente não deve consumir bebidas alcoólicas durante o tratamento.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"O paciente não deve tomar bebidas alcoólicas durante o tratamento com Carduran XL.",
+     fonte:"Bula profissional — Carduran XL (Viatris/Pfizer)"},
   ];
 
   var MANAGE_META = {
@@ -1334,7 +1376,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>01/09/2026</b></span>';
+      '<span class="stat">atualizado em <b>02/09/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1478,7 +1520,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 01/09/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 02/09/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
