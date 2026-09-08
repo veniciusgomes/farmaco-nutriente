@@ -2735,5 +2735,70 @@
     "manejo": "evitar",
     "recomendacao": "O paciente não deve tomar bebidas alcoólicas durante o tratamento com Carduran XL.",
     "fonte": "Bula profissional — Carduran XL (Viatris/Pfizer)"
+  },
+  {
+    "farmaco": "Cloridrato de hidralazina",
+    "comerciais": [
+      "Apresolina"
+    ],
+    "nutriente": "Alimentos (refeição)",
+    "categoria": "alimento",
+    "efeito": "A ingestão concomitante de alimentos diminui a biodisponibilidade da hidralazina e também reduz seu efeito vasodilatador.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Apresolina deve ser tomada por via oral, todos os dias no mesmo horário e sempre da mesma forma (com ou sem alimentos), para manter a consistência da resposta terapêutica.",
+    "fonte": "Bula profissional — Apresolina (Novartis)"
+  },
+  {
+    "farmaco": "Cloridrato de hidralazina",
+    "comerciais": [
+      "Apresolina"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "O consumo de álcool pode potencializar o efeito redutor da pressão arterial da hidralazina.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Usar com cautela, monitorando a pressão arterial, em pacientes que consomem álcool durante o tratamento.",
+    "fonte": "Bula profissional — Apresolina (Novartis)"
+  },
+  {
+    "farmaco": "Fosfato de codeína",
+    "comerciais": [
+      "Codein"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Potencialização dos efeitos depressores da codeína sobre o sistema nervoso central (sedação e depressão respiratória).",
+    "mecanismo": "Efeito depressor aditivo sobre o SNC quando o álcool (depressor do SNC) é associado à codeína.",
+    "manejo": "evitar",
+    "recomendacao": "Pacientes devem ser orientados a não ingerir bebidas alcoólicas durante o uso de fosfato de codeína.",
+    "fonte": "Bula profissional — Codein (Cristália)"
+  },
+  {
+    "farmaco": "Dinitrato de isossorbida",
+    "comerciais": [
+      "Isordil"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "O álcool pode intensificar os efeitos do dinitrato de isossorbida.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Os pacientes que estiverem recebendo Isordil não devem ingerir bebidas alcoólicas.",
+    "fonte": "Bula profissional — Isordil (EMS)"
+  },
+  {
+    "farmaco": "Carisoprodol",
+    "comerciais": [
+      "Mionevrix"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Aumento do efeito sedativo/depressor do carisoprodol quando associado a bebidas alcoólicas.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Mionevrix não deve ser ingerido com bebidas alcoólicas.",
+    "fonte": "Bula profissional — Mionevrix, associação com dipirona e vitaminas do complexo B (Aché)"
   }
 ]

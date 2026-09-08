@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 98 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 102 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1348,6 +1348,31 @@
      efeito:"O paciente não deve consumir bebidas alcoólicas durante o tratamento.", mecanismo:"Não detalhado na bula.",
      manejo:"evitar", recomendacao:"O paciente não deve tomar bebidas alcoólicas durante o tratamento com Carduran XL.",
      fonte:"Bula profissional — Carduran XL (Viatris/Pfizer)"},
+
+    // Cloridrato de hidralazina
+    {farmaco:"Cloridrato de hidralazina", comerciais:["Apresolina"], nutriente:"Alimentos (refeição)", categoria:"alimento",
+     efeito:"A ingestão concomitante de alimentos diminui a biodisponibilidade da hidralazina e também reduz seu efeito vasodilatador.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Apresolina deve ser tomada por via oral, todos os dias no mesmo horário e sempre da mesma forma (com ou sem alimentos), para manter a consistência da resposta terapêutica.",
+     fonte:"Bula profissional — Apresolina (Novartis)"},
+    {farmaco:"Cloridrato de hidralazina", comerciais:["Apresolina"], nutriente:"Álcool", categoria:"outro",
+     efeito:"O consumo de álcool pode potencializar o efeito redutor da pressão arterial da hidralazina.", mecanismo:"Não detalhado na bula.",
+     manejo:"monitorar", recomendacao:"Usar com cautela, monitorando a pressão arterial, em pacientes que consomem álcool durante o tratamento.",
+     fonte:"Bula profissional — Apresolina (Novartis)"},
+    // Fosfato de codeína
+    {farmaco:"Fosfato de codeína", comerciais:["Codein"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Potencialização dos efeitos depressores da codeína sobre o sistema nervoso central (sedação e depressão respiratória).", mecanismo:"Efeito depressor aditivo sobre o SNC quando o álcool (depressor do SNC) é associado à codeína.",
+     manejo:"evitar", recomendacao:"Pacientes devem ser orientados a não ingerir bebidas alcoólicas durante o uso de fosfato de codeína.",
+     fonte:"Bula profissional — Codein (Cristália)"},
+    // Dinitrato de isossorbida
+    {farmaco:"Dinitrato de isossorbida", comerciais:["Isordil"], nutriente:"Álcool", categoria:"outro",
+     efeito:"O álcool pode intensificar os efeitos do dinitrato de isossorbida.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Os pacientes que estiverem recebendo Isordil não devem ingerir bebidas alcoólicas.",
+     fonte:"Bula profissional — Isordil (EMS)"},
+    // Carisoprodol
+    {farmaco:"Carisoprodol", comerciais:["Mionevrix"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Aumento do efeito sedativo/depressor do carisoprodol quando associado a bebidas alcoólicas.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Mionevrix não deve ser ingerido com bebidas alcoólicas.",
+     fonte:"Bula profissional — Mionevrix, associação com dipirona e vitaminas do complexo B (Aché)"},
   ];
 
   var MANAGE_META = {
@@ -1376,7 +1401,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>02/09/2026</b></span>';
+      '<span class="stat">atualizado em <b>08/09/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1520,7 +1545,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 02/09/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 08/09/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
