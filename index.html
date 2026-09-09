@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 102 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 107 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1373,6 +1373,40 @@
      efeito:"Aumento do efeito sedativo/depressor do carisoprodol quando associado a bebidas alcoólicas.", mecanismo:"Não detalhado na bula.",
      manejo:"evitar", recomendacao:"Mionevrix não deve ser ingerido com bebidas alcoólicas.",
      fonte:"Bula profissional — Mionevrix, associação com dipirona e vitaminas do complexo B (Aché)"},
+
+    // Succinato de metoprolol
+    {farmaco:"Succinato de metoprolol", comerciais:["Selozok"], nutriente:"Álcool", categoria:"outro",
+     efeito:"A concentração plasmática de metoprolol pode ser elevada pelo álcool.", mecanismo:"Não detalhado na bula.",
+     manejo:"monitorar", recomendacao:"Monitorar o paciente quanto a efeitos aumentados do metoprolol (ex.: hipotensão, bradicardia) em uso concomitante com álcool.",
+     fonte:"Bula profissional — Selozok (AstraZeneca)"},
+    // Lovastatina
+    {farmaco:"Lovastatina", comerciais:["Lovastatina Sandoz"], nutriente:"Alimento (refeição)", categoria:"alimento",
+     efeito:"A absorção da lovastatina é reduzida em aproximadamente 30% quando administrada com o estômago vazio; a administração em dose única com a refeição da noite mostrou-se mais eficaz do que a mesma dose administrada com a refeição da manhã.", mecanismo:"Não detalhado na bula (a bula associa a maior eficácia da dose noturna ao fato de o colesterol ser sintetizado principalmente à noite).",
+     manejo:"atencao", recomendacao:"Administrar a lovastatina em dose única diária junto com a refeição, preferencialmente a da noite, para melhor absorção e eficácia.",
+     fonte:"Bula profissional — Lovastatina Sandoz (Sandoz)"},
+    {farmaco:"Lovastatina", comerciais:["Lovastatina Sandoz"], nutriente:"Suco de toranja (grapefruit)", categoria:"alimento",
+     efeito:"Aumento do nível plasmático da atividade inibitória da HMG-CoA redutase durante a terapia com lovastatina, elevando o risco de miopatia, quando consumido em grandes quantidades.", mecanismo:"Componentes do suco de grapefruit inibem a CYP3A4, reduzindo a eliminação da lovastatina. O consumo típico (250 mL/dia) tem efeito mínimo e sem relevância clínica (aumento de 34% na atividade inibitória); quantidades muito grandes (mais de 1 litro/dia) aumentam esse efeito significativamente.",
+     manejo:"evitar", recomendacao:"Evitar o consumo de quantidades muito grandes (mais de 1 litro por dia) de suco de grapefruit durante o tratamento com lovastatina; o consumo típico não exige restrição.",
+     fonte:"Bula profissional — Lovastatina Sandoz (Sandoz)"},
+    {farmaco:"Lovastatina", comerciais:["Lovastatina Sandoz"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Risco aumentado de miopatia/rabdomiólise e de alterações hepáticas (elevação de transaminases) em pacientes que consomem quantidades substanciais de álcool.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Usar a lovastatina com cuidado em pacientes que consomem quantidades substanciais de álcool; nesses casos, considera-se a medição basal de creatina quinase (CK) antes do início do tratamento.",
+     fonte:"Bula profissional — Lovastatina Sandoz (Sandoz)"},
+    // Cloridrato de amilorida
+    {farmaco:"Cloridrato de amilorida", comerciais:["Moduretic"], nutriente:"Potássio (suplementos e dieta rica em potássio)", categoria:"mineral",
+     efeito:"Risco de hipercalemia (potássio sérico acima de 5,5 mEq/L).", mecanismo:"O cloridrato de amilorida é um agente poupador de potássio que interfere no mecanismo de troca de sódio por potássio no túbulo contornado distal e no túbulo coletor do néfron, reduzindo a secreção e excreção de potássio.",
+     manejo:"evitar", recomendacao:"A suplementação de potássio, por meio de medicação ou dieta rica em potássio, não deve ser realizada durante o uso de Moduretic, exceto em casos graves e/ou refratários de hipocalemia; se realizada, recomenda-se monitorização cuidadosa dos níveis séricos de potássio.",
+     fonte:"Bula profissional — Moduretic, associação com hidroclorotiazida (Merck Sharp & Dohme)"},
+    // Olanzapina
+    {farmaco:"Olanzapina", comerciais:["Zyprexa","Zyprexa Zydis"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Potencialização de efeitos farmacológicos aditivos, como aumento da sedação, quando o etanol é ingerido junto com a olanzapina.", mecanismo:"As concentrações de equilíbrio de olanzapina não têm efeito na farmacocinética do etanol; o efeito é farmacodinâmico aditivo, pois ambas as substâncias atuam no sistema nervoso central.",
+     manejo:"atencao", recomendacao:"Tomar cuidado adicional com o consumo de álcool durante o tratamento com olanzapina, devido ao risco de aumento da sedação.",
+     fonte:"Bula profissional — Zyprexa (Eli Lilly)"},
+    // Cloridrato de paroxetina
+    {farmaco:"Cloridrato de paroxetina", comerciais:["Aropax"], nutriente:"Álcool", categoria:"outro",
+     efeito:"O uso concomitante de Aropax com álcool não é recomendado, apesar de a paroxetina não potencializar a redução da habilidade motora e mental causada pelo álcool.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Evitar o consumo de bebidas alcoólicas durante o tratamento com Aropax.",
+     fonte:"Bula profissional — Aropax (GSK)"},
   ];
 
   var MANAGE_META = {
@@ -1401,7 +1435,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>08/09/2026</b></span>';
+      '<span class="stat">atualizado em <b>09/09/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1545,7 +1579,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 08/09/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 09/09/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
