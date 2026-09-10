@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 107 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 112 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1407,6 +1407,36 @@
      efeito:"O uso concomitante de Aropax com álcool não é recomendado, apesar de a paroxetina não potencializar a redução da habilidade motora e mental causada pelo álcool.", mecanismo:"Não detalhado na bula.",
      manejo:"evitar", recomendacao:"Evitar o consumo de bebidas alcoólicas durante o tratamento com Aropax.",
      fonte:"Bula profissional — Aropax (GSK)"},
+
+    // Rivastigmina
+    {farmaco:"Rivastigmina", comerciais:["Exelon"], nutriente:"Alimentos (refeições)", categoria:"alimento",
+     efeito:"A administração das cápsulas junto com alimentos retarda a absorção (tmáx retardado em 90 min), diminui a Cmáx e aumenta a AUC em aproximadamente 30% (para a solução oral: retardo de 74 min, diminuição de 43% na Cmáx e aumento de 9% na AUC).", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"A bula orienta que EXELON deve ser administrado duas vezes ao dia, sempre junto às refeições da manhã e da noite.",
+     fonte:"Bula profissional — Exelon (Novartis)"},
+    // Memantina
+    {farmaco:"Memantina", comerciais:["Ebix"], nutriente:"Dieta alcalinizante (ex.: mudança de dieta carnívora para vegetariana) ou substâncias/tampões gástricos alcalinizantes", categoria:"alimento",
+     efeito:"Mudanças drásticas na dieta que elevem o pH da urina (por exemplo, uma mudança de dieta carnívora para vegetariana) ou a ingestão de grande quantidade de tampões gástricos alcalinizantes podem reduzir a taxa de depuração renal da memantina por um fator de 7 a 9, com risco de acúmulo do fármaco.", mecanismo:"A eliminação renal da memantina envolve reabsorção tubular mediada por proteínas de transporte de cátions; a alcalinização da urina reduz essa depuração renal.",
+     manejo:"monitorar", recomendacao:"Pacientes que apresentem fatores que possam elevar o pH da urina, incluindo mudanças drásticas na dieta (ex.: de carnívora para vegetariana) ou uso de grandes quantidades de produtos gástricos alcalinizantes, demandam monitoramento cuidadoso.",
+     fonte:"Bula profissional — Ebix (Lundbeck)"},
+    {farmaco:"Memantina", comerciais:["Ebix"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Nenhuma interação farmacodinâmica ou farmacocinética é esperada entre a memantina e o álcool; entretanto, a combinação com álcool não é recomendada, assim como ocorre com outros medicamentos que agem no Sistema Nervoso Central.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Evitar a combinação do medicamento com álcool.",
+     fonte:"Bula profissional — Ebix (Lundbeck)"},
+    // Cloridrato de tansulosina
+    {farmaco:"Cloridrato de tansulosina", comerciais:["Secotex"], nutriente:"Refeição rica em gordura", categoria:"alimento",
+     efeito:"Uma refeição rica em gordura aumenta a extensão da absorção do cloridrato de tansulosina em comparação ao jejum, elevando a AUC em 64% e a Cmáx em 149%. Já uma refeição pobre em gorduras não afeta a taxa nem a extensão da absorção.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"A bula informa que a administração do medicamento pode ser feita independentemente do horário das refeições, mas alerta que uma refeição rica em gordura aumenta significativamente a absorção do fármaco.",
+     fonte:"Bula profissional — Secotex (Boehringer Ingelheim / Astellas)"},
+    // Cloridrato de oxibutinina
+    {farmaco:"Cloridrato de oxibutinina", comerciais:["Retemic"], nutriente:"Álcool", categoria:"outro",
+     efeito:"A administração de sedativos e de bebidas alcoólicas pode aumentar a sonolência causada pelo produto.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Evitar o consumo de bebidas alcoólicas durante o tratamento, pelo risco de sonolência aumentada.",
+     fonte:"Bula profissional — Retemic (Apsen)"},
+    // Escitalopram
+    {farmaco:"Escitalopram", comerciais:["Lexapro"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Nenhuma interação farmacodinâmica ou farmacocinética é esperada entre o escitalopram e o álcool; entretanto, assim como ocorre com outros medicamentos que agem no Sistema Nervoso Central, a combinação com álcool não é recomendada.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Evitar a combinação do medicamento com álcool.",
+     fonte:"Bula profissional — Lexapro (Lundbeck)"},
   ];
 
   var MANAGE_META = {
@@ -1435,7 +1465,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>09/09/2026</b></span>';
+      '<span class="stat">atualizado em <b>10/09/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1579,7 +1609,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 09/09/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 10/09/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
