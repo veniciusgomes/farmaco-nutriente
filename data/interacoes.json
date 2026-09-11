@@ -3074,5 +3074,18 @@
     "manejo": "evitar",
     "recomendacao": "Evitar o consumo de bebidas alcoólicas durante o tratamento com ciproeptadina, devido ao risco de potencialização dos efeitos depressores do álcool.",
     "fonte": "Bula profissional — Cobavital, associação com cobamamida (Abbott)"
+  },
+  {
+    "farmaco": "Vortioxetina",
+    "comerciais": [
+      "Brintellix"
+    ],
+    "nutriente": "Triptofano",
+    "categoria": "outro",
+    "efeito": "Possibilidade de efeitos serotoninérgicos aumentados (risco de contribuir para Síndrome Serotoninérgica) quando triptofano é usado concomitantemente com a vortioxetina.",
+    "mecanismo": "Não detalhado na bula. O texto apenas relaciona o achado a relatos de efeitos serotoninérgicos aumentados quando antidepressivos com efeito serotoninérgico (classe) foram administrados em conjunto com lítio ou triptofano; nenhum mecanismo farmacocinético foi implicado (o efeito farmacocinético do lítio em estado de equilíbrio, especificamente, foi testado e não se mostrou clinicamente relevante).",
+    "manejo": "monitorar",
+    "recomendacao": "Segundo a bula, \"o uso concomitante da vortioxetina com esses produtos medicinais [lítio e triptofano] deve ser realizado com cuidado\" (bula do profissional, v.15.0) / \"com cautela\" (bula do profissional, v.18.0/2021).",
+    "fonte": "Bula profissional — Brintellix (Lundbeck Brasil Ltda)"
   }
 ]
