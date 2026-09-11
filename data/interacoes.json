@@ -2970,5 +2970,109 @@
     "manejo": "atencao",
     "recomendacao": "Evitar a combinação do medicamento com álcool.",
     "fonte": "Bula profissional — Lexapro (Lundbeck)"
+  },
+  {
+    "farmaco": "Maleato de fluvoxamina",
+    "comerciais": [
+      "Luvox"
+    ],
+    "nutriente": "Cafeína (café, chá, bebidas energéticas)",
+    "categoria": "alimento",
+    "efeito": "Os níveis plasmáticos de cafeína estão propensos a aumentar durante a coadministração com fluvoxamina, podendo causar efeitos adversos como tremor, palpitação, náusea, inquietação e insônia.",
+    "mecanismo": "Inibição da isoenzima CYP1A2 (fortemente inibida pela fluvoxamina), responsável pelo metabolismo da cafeína.",
+    "manejo": "monitorar",
+    "recomendacao": "Pacientes que consomem grandes quantidades de bebidas contendo cafeína devem diminuir a ingestão durante o tratamento com fluvoxamina e ser observados quanto a efeitos adversos como tremor, palpitação, náusea, inquietação e insônia.",
+    "fonte": "Bula profissional — Luvox (Abbott)"
+  },
+  {
+    "farmaco": "Maleato de fluvoxamina",
+    "comerciais": [
+      "Luvox"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Recomendação de evitar a ingestão de álcool durante o uso de fluvoxamina, assim como ocorre com outras substâncias psicotrópicas.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Os pacientes devem ser avisados para evitar a ingestão de álcool enquanto administram fluvoxamina.",
+    "fonte": "Bula profissional — Luvox (Abbott)"
+  },
+  {
+    "farmaco": "Maleato de fluvoxamina",
+    "comerciais": [
+      "Luvox"
+    ],
+    "nutriente": "Suco de toranja (grapefruit)",
+    "categoria": "alimento",
+    "efeito": "Relato, em estudo com voluntários sadios, de aumento da exposição sistêmica à fluvoxamina devido à administração conjunta com suco de toranja.",
+    "mecanismo": "Inibição da CYP3A4 e da glicoproteína P pelo suco de toranja.",
+    "manejo": "monitorar",
+    "recomendacao": "Considerar a possibilidade de aumento dos níveis plasmáticos de fluvoxamina em pacientes que consomem suco de toranja e monitorar quanto ao surgimento de efeitos adversos.",
+    "fonte": "Bula profissional — Luvox (Abbott)"
+  },
+  {
+    "farmaco": "Cloridrato de trazodona",
+    "comerciais": [
+      "Donaren"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "A trazodona pode intensificar o efeito do álcool e de outros depressores do sistema nervoso central, podendo causar depressão excessiva do SNC.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Os pacientes devem abster-se de bebidas alcoólicas durante o tratamento com trazodona.",
+    "fonte": "Bula profissional — Donaren (Apsen)"
+  },
+  {
+    "farmaco": "Cloridrato de trazodona",
+    "comerciais": [
+      "Donaren"
+    ],
+    "nutriente": "Alimentos (refeições)",
+    "categoria": "alimento",
+    "efeito": "A administração de trazodona junto com alimentos aumenta a quantidade absorvida do medicamento (absorção total até 20% maior que em jejum), diminui a concentração plasmática máxima (Cmax) e prolonga o tempo para atingi-la (Tmax); o risco de tontura/delírio pode aumentar em condições de jejum.",
+    "mecanismo": "Não detalhado na bula (alteração da cinética de absorção gastrintestinal pela presença de alimento).",
+    "manejo": "atencao",
+    "recomendacao": "Administrar a trazodona durante ou logo após uma refeição ou pequeno lanche, tanto para evitar irritação gástrica quanto para reduzir o risco de tontura/delírio associado à administração em jejum.",
+    "fonte": "Bula profissional — Donaren (Apsen)"
+  },
+  {
+    "farmaco": "Agomelatina",
+    "comerciais": [
+      "Valdoxan"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "A combinação de álcool e agomelatina não é recomendada.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar o consumo de álcool durante o tratamento com agomelatina; a bula destaca que desordem no uso de álcool e/ou consumo substancial de álcool são fatores de risco para lesão hepática a serem considerados antes de iniciar o tratamento, dado o risco de hepatotoxicidade do medicamento.",
+    "fonte": "Bula profissional — Valdoxan (Servier)"
+  },
+  {
+    "farmaco": "Agomelatina",
+    "comerciais": [
+      "Valdoxan"
+    ],
+    "nutriente": "Alimentos ricos em gordura",
+    "categoria": "alimento",
+    "efeito": "A alimentação (refeição normal ou rica em gorduras) não modifica a biodisponibilidade nem a taxa de absorção da agomelatina; porém a variabilidade interindividual da exposição sistêmica aumenta com a ingestão de alimentos ricos em gordura.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Não é necessário ajustar o horário de administração em função das refeições; considerar, contudo, maior variabilidade da exposição à agomelatina em pacientes com dieta rica em gordura.",
+    "fonte": "Bula profissional — Valdoxan (Servier)"
+  },
+  {
+    "farmaco": "Cloridrato de ciproeptadina",
+    "comerciais": [
+      "Cobavital"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "A ciproeptadina pode potencializar os efeitos do álcool.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar o consumo de bebidas alcoólicas durante o tratamento com ciproeptadina, devido ao risco de potencialização dos efeitos depressores do álcool.",
+    "fonte": "Bula profissional — Cobavital, associação com cobamamida (Abbott)"
   }
 ]
