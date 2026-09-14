@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 117 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 121 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1480,6 +1480,35 @@
      efeito:"Possibilidade de efeitos serotoninérgicos aumentados (risco de contribuir para Síndrome Serotoninérgica) quando triptofano é usado concomitantemente com a vortioxetina.", mecanismo:"Não detalhado na bula. O texto apenas relaciona o achado a relatos de efeitos serotoninérgicos aumentados quando antidepressivos com efeito serotoninérgico (classe) foram administrados em conjunto com lítio ou triptofano; nenhum mecanismo farmacocinético foi implicado (o efeito farmacocinético do lítio em estado de equilíbrio, especificamente, foi testado e não se mostrou clinicamente relevante).",
      manejo:"monitorar", recomendacao:"Segundo a bula, \"o uso concomitante da vortioxetina com esses produtos medicinais [lítio e triptofano] deve ser realizado com cuidado\" (bula do profissional, v.15.0) / \"com cautela\" (bula do profissional, v.18.0/2021).",
      fonte:"Bula profissional — Brintellix (Lundbeck Brasil Ltda)"},
+
+    // Hemitartarato de zolpidem
+    {farmaco:"Hemitartarato de zolpidem", comerciais:["Stilnox","Zolpidem (Eurofarma)"], nutriente:"Álcool", categoria:"outro",
+     efeito:"A ingestão do medicamento junto com bebidas alcoólicas ou medicamentos contendo álcool não é recomendada; o álcool promove uma intensificação do efeito de sedativos e hipnóticos como o zolpidem, com reflexo sobre a vigilância e aumento do risco na condução de veículos ou operação de máquinas. Em casos de superdosagem envolvendo zolpidem associado a outros depressores do SNC (incluindo álcool), foram observados sintomas que variam de perda de consciência a coma, incluindo consequências fatais.", mecanismo:"Efeito aditivo de depressão do sistema nervoso central entre o álcool e o zolpidem.",
+     manejo:"evitar", recomendacao:"Evitar a ingestão de bebidas alcoólicas ou medicamentos contendo álcool durante o tratamento com zolpidem; orientar o paciente a não dirigir veículos ou operar máquinas.",
+     fonte:"Bula profissional — Zolpidem (Eurofarma), texto equivalente ao de Stilnox (Sanofi)"},
+    // Maleato de midazolam
+    {farmaco:"Maleato de midazolam", comerciais:["Dormonid"], nutriente:"Álcool", categoria:"outro",
+     efeito:"O uso concomitante de Dormonid com álcool e/ou depressores do SNC deve ser evitado. O uso concomitante tem o potencial de aumentar os efeitos clínicos de Dormonid, podendo incluir sedação grave que pode resultar em coma ou morte, depressão respiratória e/ou cardiovascular clinicamente relevante. O álcool intensifica o efeito de Dormonid comprimidos e afeta a capacidade de dirigir veículos ou operar máquinas.", mecanismo:"Efeito farmacodinâmico aditivo de depressão do sistema nervoso central entre o álcool (etanol) e o midazolam.",
+     manejo:"evitar", recomendacao:"Evitar a administração de Dormonid com álcool ou bebidas alcoólicas.",
+     fonte:"Bula profissional — Dormonid (Produtos Roche Químicos e Farmacêuticos S.A.)"},
+    {farmaco:"Maleato de midazolam", comerciais:["Dormonid"], nutriente:"Suco de toranja (grapefruit)", categoria:"alimento",
+     efeito:"O suco de toranja é classificado como inibidor fraco do CYP3A4, podendo aumentar de 1,25 a menos de 2 vezes a área sob a curva (ASC) do midazolam administrado por via oral. Em contraste com outros inibidores baseados em mecanismo, um estudo específico com 200 mL de suco de toranja não modificou a exposição ao midazolam a um grau clinicamente significativo.", mecanismo:"Inibição fraca da enzima CYP3A4 intestinal/hepática, responsável pelo metabolismo oxidativo do midazolam.",
+     manejo:"monitorar", recomendacao:"Não é necessário ajuste de dose; a bula indica que a administração concomitante de midazolam e inibidores fracos de CYP3A, como o suco de toranja, usualmente não leva a uma mudança relevante no efeito clínico do midazolam.",
+     fonte:"Bula profissional — Dormonid (Produtos Roche Químicos e Farmacêuticos S.A.)"},
+    {farmaco:"Maleato de midazolam", comerciais:["Dormonid"], nutriente:"Cafeína", categoria:"outro",
+     efeito:"250 mg de cafeína revertem parcialmente os efeitos sedativos de midazolam.", mecanismo:"Não detalhado na bula.",
+     manejo:"monitorar", recomendacao:"Considerar que a ingestão de cafeína pode reduzir parcialmente o efeito sedativo do midazolam; monitorar a resposta clínica do paciente.",
+     fonte:"Bula profissional — Dormonid (Produtos Roche Químicos e Farmacêuticos S.A.)"},
+    // Succinato de desvenlafaxina monoidratado
+    {farmaco:"Succinato de desvenlafaxina monoidratado", comerciais:["Pristiq"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Um estudo clínico demonstrou que a desvenlafaxina não aumenta o comprometimento das habilidades mentais e motoras causadas pelo etanol. No entanto, como ocorre com todos os medicamentos ativos do SNC, os pacientes devem ser aconselhados a evitar o consumo de álcool enquanto estiverem tomando a desvenlafaxina.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Aconselhar o paciente a evitar o consumo de álcool durante o tratamento com Pristiq.",
+     fonte:"Bula profissional — Pristiq (Pfizer Brasil Ltda. / Pfizer Ireland Pharmaceuticals Unlimited Company)"},
+    // Zopiclona
+    {farmaco:"Zopiclona", comerciais:["Imovane"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Não é recomendada a ingestão concomitante de zopiclona e álcool, devido ao aumento do efeito sedativo da zopiclona. Quando o produto é usado em combinação com álcool, isto afeta a habilidade de dirigir e operar equipamentos. A superdose de zopiclona não representa ameaça à vida, a menos que associada a outros depressores do sistema nervoso central, incluindo álcool.", mecanismo:"Efeito aditivo de depressão do sistema nervoso central entre álcool e zopiclona.",
+     manejo:"evitar", recomendacao:"Evitar a ingestão concomitante de álcool durante o tratamento com Imovane.",
+     fonte:"Bula profissional — Imovane (Sanofi Medley Farmacêutica Ltda.)"},
   ];
 
   var MANAGE_META = {
@@ -1508,7 +1537,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>11/09/2026</b></span>';
+      '<span class="stat">atualizado em <b>14/09/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1652,7 +1681,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 11/09/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 14/09/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
