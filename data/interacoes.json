@@ -3166,5 +3166,111 @@
     "manejo": "evitar",
     "recomendacao": "Evitar a ingestão concomitante de álcool durante o tratamento com Imovane.",
     "fonte": "Bula profissional — Imovane (Sanofi Medley Farmacêutica Ltda.)"
+  },
+  {
+    "farmaco": "Cloridrato de lurasidona",
+    "comerciais": [
+      "Latuda",
+      "Lutab"
+    ],
+    "nutriente": "Alimento (refeição)",
+    "categoria": "alimento",
+    "efeito": "Aumento muito significativo da absorção: Cmáx e AUC aumentaram aproximadamente 3 e 2 vezes, respectivamente, quando administrada com alimentos em comparação à administração em jejum. A exposição não variou com o tamanho da refeição (350 a 1.000 calorias) nem com o teor de gordura.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Lutab deve ser administrado com alimentos (no mínimo 350 calorias); a administração em jejum reduz significativamente a absorção do fármaco.",
+    "fonte": "Bula profissional — Lutab (Aché/Daiichi Sankyo)"
+  },
+  {
+    "farmaco": "Cloridrato de lurasidona",
+    "comerciais": [
+      "Latuda",
+      "Lutab"
+    ],
+    "nutriente": "Toranja (suco e fruta)",
+    "categoria": "alimento",
+    "efeito": "Possível aumento das concentrações plasmáticas de lurasidona por inibição da CYP3A4.",
+    "mecanismo": "Inibição da CYP3A4 pela toranja, enzima responsável pelo metabolismo predominante da lurasidona.",
+    "manejo": "evitar",
+    "recomendacao": "Toranja (suco e fruta) deve ser evitada nos pacientes em tratamento com lurasidona.",
+    "fonte": "Bula profissional — Lutab (Aché/Daiichi Sankyo)"
+  },
+  {
+    "farmaco": "Paliperidona",
+    "comerciais": [
+      "Invega"
+    ],
+    "nutriente": "Dieta rica em gordura/calorias",
+    "categoria": "alimento",
+    "efeito": "Aumento de Cmáx (42% a 60%) e AUC (46% a 54%) da paliperidona quando administrada junto com refeição padronizada de alto teor calórico/de gordura, em comparação à administração em jejum.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Embora a presença ou ausência de alimentos possa aumentar ou diminuir a exposição à paliperidona, essas alterações não são consideradas clinicamente relevantes; deve ser tomado pela manhã, com ou sem café da manhã, mas da mesma forma todos os dias.",
+    "fonte": "Bula profissional — Invega (Janssen-Cilag)"
+  },
+  {
+    "farmaco": "Paliperidona",
+    "comerciais": [
+      "Invega"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Potencialização dos efeitos depressores sobre o sistema nervoso central.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Devido aos efeitos primários da paliperidona sobre o SNC, Invega deve ser usado com cautela em combinação com álcool.",
+    "fonte": "Bula profissional — Invega (Janssen-Cilag)"
+  },
+  {
+    "farmaco": "Aripiprazol",
+    "comerciais": [
+      "Abilify"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Potencialização dos efeitos sobre o sistema nervoso central quando administrado em combinação com álcool.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Como ocorre com a maior parte dos medicamentos psicoativos, os pacientes devem ser alertados para evitar ingerir álcool durante o tratamento com ABILIFY.",
+    "fonte": "Bula (paciente) — Abilify (Bristol-Myers Squibb)"
+  },
+  {
+    "farmaco": "Fluconazol",
+    "comerciais": [
+      "Zoltec"
+    ],
+    "nutriente": "Vitamina A (ácido retinoico)",
+    "categoria": "vitamina",
+    "efeito": "Relato de caso de efeito adverso no sistema nervoso central (pseudotumor cerebral) em paciente recebendo tratamento combinado de ácido retinoico todo-trans (forma ácida da vitamina A) e fluconazol; o quadro desapareceu após a descontinuação do fluconazol.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Esta combinação pode ser usada, mas a incidência de efeitos indesejados relacionados ao SNC deve ser mantida em mente.",
+    "fonte": "Bula profissional — Zoltec (Pfizer)"
+  },
+  {
+    "farmaco": "Cloridrato de terbinafina",
+    "comerciais": [
+      "Lamisil"
+    ],
+    "nutriente": "Alimento",
+    "categoria": "alimento",
+    "efeito": "Biodisponibilidade da terbinafina é moderadamente modificada por alimentos (aumento na AUC menor que 20%).",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "O aumento não é suficiente para necessitar ajuste de doses; Lamisil comprimidos pode ser tomado com o estômago vazio ou após uma refeição.",
+    "fonte": "Bula profissional — Lamisil (Novartis)"
+  },
+  {
+    "farmaco": "Cloridrato de terbinafina",
+    "comerciais": [
+      "Lamisil"
+    ],
+    "nutriente": "Cafeína",
+    "categoria": "outro",
+    "efeito": "Diminuição do clearance (depuração) da cafeína administrada por via intravenosa em 19%, podendo prolongar/intensificar seus efeitos.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Monitorar sinais de excesso de cafeína em pacientes com consumo elevado durante o tratamento com terbinafina.",
+    "fonte": "Bula profissional — Lamisil (Novartis)"
   }
 ]
