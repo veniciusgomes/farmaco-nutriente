@@ -3272,5 +3272,70 @@
     "manejo": "monitorar",
     "recomendacao": "Monitorar sinais de excesso de cafeína em pacientes com consumo elevado durante o tratamento com terbinafina.",
     "fonte": "Bula profissional — Lamisil (Novartis)"
+  },
+  {
+    "farmaco": "Felodipino",
+    "comerciais": [
+      "Splendil"
+    ],
+    "nutriente": "Suco de grapefruit (toranja/pomelo)",
+    "categoria": "alimento",
+    "efeito": "Aumento nos níveis plasmáticos e na biodisponibilidade do felodipino, potencializando seus efeitos (hipotensão, taquicardia, rubor).",
+    "mecanismo": "Certos flavonoides presentes no suco de grapefruit inibem o citocromo P450 3A4 (CYP3A4), enzima que metaboliza o felodipino, elevando sua concentração plasmática. A bula indica que esta interação foi observada com outros antagonistas do cálcio diidropiridínicos e representa um efeito de classe.",
+    "manejo": "evitar",
+    "recomendacao": "Não se deve tomar suco de grapefruit concomitantemente com Splendil.",
+    "fonte": "Bula profissional — Splendil (AstraZeneca)"
+  },
+  {
+    "farmaco": "Eplerenona",
+    "comerciais": [
+      "Inspra"
+    ],
+    "nutriente": "Potássio (suplementos ou substitutos de sal contendo potássio)",
+    "categoria": "mineral",
+    "efeito": "Aumento do risco de hipercalemia.",
+    "mecanismo": "A eplerenona é um antagonista do receptor mineralocorticoide que retém potássio; a associação com fontes adicionais de potássio soma-se a esse efeito, elevando o potássio sérico.",
+    "manejo": "evitar",
+    "recomendacao": "Em geral, não se deve administrar eplerenona em pacientes que recebem suplementos de potássio. Os pacientes devem ser informados para não usar suplementos de potássio ou substitutos de sal contendo potássio sem antes consultar um profissional de saúde. Para pacientes tratados para hipertensão, o uso concomitante com suplementos de potássio é contraindicado.",
+    "fonte": "Bula profissional — Inspra (Viatris, antiga Pfizer)"
+  },
+  {
+    "farmaco": "Ácido nicotínico (niacina)",
+    "comerciais": [
+      "Metri"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "Aumento do risco de problemas no fígado e nos músculos.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Não tomar bebidas alcoólicas durante o tratamento com o ácido nicotínico.",
+    "fonte": "Bula (paciente) — Metri (Libbs)"
+  },
+  {
+    "farmaco": "Ácido nicotínico (niacina)",
+    "comerciais": [
+      "Metri"
+    ],
+    "nutriente": "Suplementos vitamínicos ou nutricionais contendo ácido nicotínico (niacina) ou nicotinamida",
+    "categoria": "vitamina",
+    "efeito": "Potencialização dos efeitos e do risco de toxicidade do ácido nicotínico.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "monitorar",
+    "recomendacao": "Informar ao médico caso esteja utilizando suplemento vitamínico ou nutricional que contenha ácido nicotínico (niacina) ou nicotinamida, antes e durante o tratamento.",
+    "fonte": "Bula (paciente) — Metri (Libbs)"
+  },
+  {
+    "farmaco": "Nimodipino",
+    "comerciais": [
+      "Vasodipina"
+    ],
+    "nutriente": "Suco de toranja (grapefruit)",
+    "categoria": "alimento",
+    "efeito": "Aumento das concentrações plasmáticas de nimodipino.",
+    "mecanismo": "O suco de toranja inibe o metabolismo oxidativo das diidropiridinas.",
+    "manejo": "evitar",
+    "recomendacao": "A ingestão concomitante de suco de toranja e nimodipino comprimido revestido não é recomendada.",
+    "fonte": "Bula profissional — Vasodipina (Brainfarma/Neo Química)"
   }
 ]
