@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 130 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 133 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1572,6 +1572,22 @@
      efeito:"Aumento das concentrações plasmáticas de nimodipino.", mecanismo:"O suco de toranja inibe o metabolismo oxidativo das diidropiridinas.",
      manejo:"evitar", recomendacao:"A ingestão concomitante de suco de toranja e nimodipino comprimido revestido não é recomendada.",
      fonte:"Bula profissional — Vasodipina (Brainfarma/Neo Química)"},
+
+    // Cloridrato de alfuzosina
+    {farmaco:"Cloridrato de alfuzosina", comerciais:["Xatral OD"], nutriente:"Alimento (refeição)", categoria:"alimento",
+     efeito:"Estudos demonstraram que a biodisponibilidade da alfuzosina, na formulação de liberação prolongada, aumenta quando o medicamento é administrado após a alimentação, em comparação com a administração em jejum.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Administrar 1 comprimido de XATRAL OD ao dia sempre após uma refeição (e, no tratamento adjuvante do cateterismo vesical, imediatamente após a refeição da noite), mantendo a consistência da administração em relação às refeições para não alterar a biodisponibilidade do medicamento.",
+     fonte:"Bula profissional — Xatral OD (Sanofi Medley Farmacêutica Ltda.)"},
+    // Cloridrato de vardenafila
+    {farmaco:"Cloridrato de vardenafila", comerciais:["Levitra"], nutriente:"Refeição rica em gordura (alimentos gordurosos)", categoria:"alimento",
+     efeito:"Quando vardenafila é ingerida com uma refeição altamente gordurosa (contendo 57% de gordura), a taxa de absorção é reduzida, com aumento do Tmáx de 60 minutos e redução média de 20% na Cmáx; a AUC não é afetada. Após uma refeição normal (contendo 30% de gordura), nenhum dos parâmetros farmacocinéticos (Cmáx, Tmáx e AUC) foi afetado.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Vardenafila pode ser ingerida com ou sem alimentos; estar ciente de que a ingestão junto com uma refeição rica em gordura pode retardar o início do efeito do medicamento.",
+     fonte:"Bula profissional — Levitra (Bayer S.A.)"},
+    // Tadalafila
+    {farmaco:"Tadalafila", comerciais:["Cialis"], nutriente:"Álcool (bebidas alcoólicas)", categoria:"outro",
+     efeito:"Tadalafila não alterou as concentrações plasmáticas de álcool, e o álcool não alterou as concentrações plasmáticas de tadalafila. Em altas doses de álcool (0,7 g/Kg), a adição de tadalafila não induziu diminuição estatisticamente significativa na pressão sanguínea, porém em alguns indivíduos foram observadas tontura postural e hipotensão ortostática. Quando tadalafila foi administrada com baixas doses de álcool (0,6 g/Kg), não foi observada hipotensão e a tontura ocorreu com frequência similar à do álcool administrado isoladamente.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Orientar o paciente quanto ao risco de tontura postural e hipotensão ortostática ao associar CIALIS ao consumo de altas doses de álcool.",
+     fonte:"Bula profissional — Cialis (Eli Lilly do Brasil Ltda.)"},
   ];
 
   var MANAGE_META = {
@@ -1600,7 +1616,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>18/09/2026</b></span>';
+      '<span class="stat">atualizado em <b>21/09/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1744,7 +1760,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 18/09/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 21/09/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';

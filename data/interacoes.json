@@ -3337,5 +3337,44 @@
     "manejo": "evitar",
     "recomendacao": "A ingestão concomitante de suco de toranja e nimodipino comprimido revestido não é recomendada.",
     "fonte": "Bula profissional — Vasodipina (Brainfarma/Neo Química)"
+  },
+  {
+    "farmaco": "Cloridrato de alfuzosina",
+    "comerciais": [
+      "Xatral OD"
+    ],
+    "nutriente": "Alimento (refeição)",
+    "categoria": "alimento",
+    "efeito": "Estudos demonstraram que a biodisponibilidade da alfuzosina, na formulação de liberação prolongada, aumenta quando o medicamento é administrado após a alimentação, em comparação com a administração em jejum.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Administrar 1 comprimido de XATRAL OD ao dia sempre após uma refeição (e, no tratamento adjuvante do cateterismo vesical, imediatamente após a refeição da noite), mantendo a consistência da administração em relação às refeições para não alterar a biodisponibilidade do medicamento.",
+    "fonte": "Bula profissional — Xatral OD (Sanofi Medley Farmacêutica Ltda.)"
+  },
+  {
+    "farmaco": "Cloridrato de vardenafila",
+    "comerciais": [
+      "Levitra"
+    ],
+    "nutriente": "Refeição rica em gordura (alimentos gordurosos)",
+    "categoria": "alimento",
+    "efeito": "Quando vardenafila é ingerida com uma refeição altamente gordurosa (contendo 57% de gordura), a taxa de absorção é reduzida, com aumento do Tmáx de 60 minutos e redução média de 20% na Cmáx; a AUC não é afetada. Após uma refeição normal (contendo 30% de gordura), nenhum dos parâmetros farmacocinéticos (Cmáx, Tmáx e AUC) foi afetado.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Vardenafila pode ser ingerida com ou sem alimentos; estar ciente de que a ingestão junto com uma refeição rica em gordura pode retardar o início do efeito do medicamento.",
+    "fonte": "Bula profissional — Levitra (Bayer S.A.)"
+  },
+  {
+    "farmaco": "Tadalafila",
+    "comerciais": [
+      "Cialis"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "Tadalafila não alterou as concentrações plasmáticas de álcool, e o álcool não alterou as concentrações plasmáticas de tadalafila. Em altas doses de álcool (0,7 g/Kg), a adição de tadalafila não induziu diminuição estatisticamente significativa na pressão sanguínea, porém em alguns indivíduos foram observadas tontura postural e hipotensão ortostática. Quando tadalafila foi administrada com baixas doses de álcool (0,6 g/Kg), não foi observada hipotensão e a tontura ocorreu com frequência similar à do álcool administrado isoladamente.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Orientar o paciente quanto ao risco de tontura postural e hipotensão ortostática ao associar CIALIS ao consumo de altas doses de álcool.",
+    "fonte": "Bula profissional — Cialis (Eli Lilly do Brasil Ltda.)"
   }
 ]
