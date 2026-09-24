@@ -3376,5 +3376,44 @@
     "manejo": "atencao",
     "recomendacao": "Orientar o paciente quanto ao risco de tontura postural e hipotensão ortostática ao associar CIALIS ao consumo de altas doses de álcool.",
     "fonte": "Bula profissional — Cialis (Eli Lilly do Brasil Ltda.)"
+  },
+  {
+    "farmaco": "Lansoprazol",
+    "comerciais": [
+      "Prazol"
+    ],
+    "nutriente": "Alimentos (refeição)",
+    "categoria": "alimento",
+    "efeito": "Redução significativa da absorção do lansoprazol (Cmáx e AUC reduzidas em aproximadamente 50% a 70%) quando administrado 30 minutos após a refeição, em comparação com a condição de jejum.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Administrar as cápsulas pela manhã, em jejum, antes das refeições. A bula indica que a refeição não exerce efeito significativo caso o lansoprazol seja administrado antes das refeições.",
+    "fonte": "Bula profissional — Prazol (Sanofi Medley)"
+  },
+  {
+    "farmaco": "Esomeprazol",
+    "comerciais": [
+      "Nexium"
+    ],
+    "nutriente": "Alimentos (refeição)",
+    "categoria": "alimento",
+    "efeito": "A ingestão de alimentos retarda e diminui a absorção de esomeprazol, porém não influencia significativamente o efeito do fármaco sobre a acidez intragástrica.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "A bula orienta que NEXIUM pode ser administrado com ou sem alimentos, pois a redução na velocidade/extensão da absorção causada pela ingestão concomitante de alimentos não compromete a eficácia terapêutica.",
+    "fonte": "Bula profissional — Nexium (AstraZeneca)"
+  },
+  {
+    "farmaco": "Rosuvastatina cálcica",
+    "comerciais": [
+      "Crestor"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Recomendação de cautela em pacientes que consomem quantidades excessivas de álcool, pelo risco hepático associado ao fármaco.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Usar com cautela a rosuvastatina em pacientes que consomem quantidades excessivas de álcool.",
+    "fonte": "Bula profissional — Crestor (AstraZeneca)"
   }
 ]
