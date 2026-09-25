@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 136 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 140 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1604,6 +1604,39 @@
      efeito:"Recomendação de cautela em pacientes que consomem quantidades excessivas de álcool, pelo risco hepático associado ao fármaco.", mecanismo:"Não detalhado na bula.",
      manejo:"atencao", recomendacao:"Usar com cautela a rosuvastatina em pacientes que consomem quantidades excessivas de álcool.",
      fonte:"Bula profissional — Crestor (AstraZeneca)"},
+
+    // Cloridrato de oxicodona
+    {farmaco:"Cloridrato de oxicodona", comerciais:["OxyContin"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Potencialização da sedação e da depressão respiratória por efeito aditivo de depressão do sistema nervoso central.", mecanismo:"O álcool é um depressor do SNC cujo efeito se soma ao efeito depressor central da oxicodona; o uso concomitante de opioides com depressores do SNC pode resultar em sedação, depressão respiratória, coma e morte.",
+     manejo:"evitar", recomendacao:"A prescrição concomitante com álcool deve ser restrita a pacientes para os quais um tratamento alternativo não é possível; quando concomitante, usar a menor dose eficaz e pelo menor tempo possível, com acompanhamento de sinais de depressão respiratória e sedação.",
+     fonte:"Bula profissional — OxyContin (Mundipharma Brasil)"},
+    {farmaco:"Cloridrato de oxicodona", comerciais:["OxyContin"], nutriente:"Alimentos gordurosos", categoria:"alimento",
+     efeito:"Aumento das concentrações plasmáticas de pico de oxicodona após ingestão de refeição muito gordurosa, comparado à administração em jejum.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"É recomendado que o medicamento seja administrado de maneira consistente em relação ao horário das refeições.",
+     fonte:"Bula profissional — OxyContin (Mundipharma Brasil)"},
+    {farmaco:"Cloridrato de oxicodona", comerciais:["OxyContin"], nutriente:"Suco de toranja (grapefruit)", categoria:"alimento",
+     efeito:"Redução da depuração da oxicodona, podendo levar a um aumento das concentrações plasmáticas de oxicodona.", mecanismo:"O suco de toranja é um inibidor da CYP3A4, enzima que participa do metabolismo principal da oxicodona; sua inibição reduz a depuração do fármaco.",
+     manejo:"evitar", recomendacao:"Pode ser necessário ajuste da dose de oxicodona; a bula alerta que o suco de toranja pode apresentar efeitos no metabolismo da oxicodona.",
+     fonte:"Bula profissional — OxyContin (Mundipharma Brasil)"},
+    // Cloridrato de metadona
+    {farmaco:"Cloridrato de metadona", comerciais:["Mytedom"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Aumento do risco de depressão respiratória, sedação profunda, coma e óbito.", mecanismo:"O álcool é um depressor do sistema nervoso central e seu efeito se soma ao efeito depressor central da metadona.",
+     manejo:"evitar", recomendacao:"Deve ser evitada a ingestão de bebidas alcoólicas ou medicamentos que contenham álcool durante o tratamento com metadona.",
+     fonte:"Bula profissional — Mytedom (Cristália)"},
+    {farmaco:"Cloridrato de metadona", comerciais:["Mytedom"], nutriente:"Toranja (grapefruit)", categoria:"alimento",
+     efeito:"Possível aumento da biodisponibilidade da metadona.", mecanismo:"O grapefruit (toranja) contém um inibidor da isoenzima CYP3A4 do citocromo P450, enzima envolvida no metabolismo (N-desmetilação) da metadona.",
+     manejo:"atencao", recomendacao:"Considerar ajustes de dose ao associar metadona a alimentos ou substâncias que interferem com a isoenzima CYP3A4, monitorando sinais e sintomas de depressão respiratória e sedação.",
+     fonte:"Bula profissional — Mytedom (Cristália)"},
+    // Sulfato de morfina
+    {farmaco:"Sulfato de morfina", comerciais:["Dimorf","Dimorf LC"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Aumento dos níveis plasmáticos de morfina, podendo provocar superdose fatal; risco de depressão respiratória, hipotensão e sedação profunda, coma e morte.", mecanismo:"O álcool é um depressor do SNC com efeito aditivo à ação depressora central da morfina, podendo também aumentar a absorção/liberação do fármaco (efeito descrito para a formulação de liberação prolongada).",
+     manejo:"evitar", recomendacao:"Os pacientes não devem consumir bebidas alcoólicas ou produtos que contenham álcool durante o tratamento com sulfato de morfina.",
+     fonte:"Bula profissional — Dimorf (Cristália)"},
+    // Irbesartana
+    {farmaco:"Irbesartana", comerciais:["Aprovel"], nutriente:"Potássio", categoria:"mineral",
+     efeito:"Aumento do potássio sérico (hipercalemia), por vezes de forma grave.", mecanismo:"Com base na experiência com outros fármacos que afetam o sistema renina-angiotensina, o uso concomitante de suplementos de potássio ou substitutos do sal contendo potássio com irbesartana pode elevar o potássio sérico.",
+     manejo:"monitorar", recomendacao:"O uso concomitante de suplementos de potássio, substitutos do sal contendo potássio ou outros medicamentos que podem aumentar o potássio sérico com irbesartana requer acompanhamento atento do nível de potássio.",
+     fonte:"Bula profissional — Aprovel (Sanofi Medley Farmacêutica)"},
   ];
 
   var MANAGE_META = {
@@ -1632,7 +1665,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>24/09/2026</b></span>';
+      '<span class="stat">atualizado em <b>25/09/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1776,7 +1809,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 24/09/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 25/09/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
