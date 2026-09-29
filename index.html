@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 140 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 144 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1637,6 +1637,35 @@
      efeito:"Aumento do potássio sérico (hipercalemia), por vezes de forma grave.", mecanismo:"Com base na experiência com outros fármacos que afetam o sistema renina-angiotensina, o uso concomitante de suplementos de potássio ou substitutos do sal contendo potássio com irbesartana pode elevar o potássio sérico.",
      manejo:"monitorar", recomendacao:"O uso concomitante de suplementos de potássio, substitutos do sal contendo potássio ou outros medicamentos que podem aumentar o potássio sérico com irbesartana requer acompanhamento atento do nível de potássio.",
      fonte:"Bula profissional — Aprovel (Sanofi Medley Farmacêutica)"},
+
+    // Buprenorfina
+    {farmaco:"Buprenorfina", comerciais:["Restiva"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Risco aumentado de depressão respiratória, hipotensão, sedação profunda ou coma quando associado a outros depressores do SNC, incluindo álcool.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Restiva deve ser administrado com precaução em pacientes que estejam tomando outros depressores do SNC, incluindo álcool; recomenda-se evitar o uso concomitante de álcool durante o tratamento, dado o risco de depressão respiratória grave e óbito relatado em superdoses envolvendo etanol e benzodiazepínicos com buprenorfina.",
+     fonte:"Bula profissional — Restiva (Mundipharma Brasil Produtos Médicos e Farmacêuticos Ltda.)"},
+    // Valsartana
+    {farmaco:"Valsartana", comerciais:["Diovan"], nutriente:"Potássio", categoria:"mineral",
+     efeito:"Aumento do potássio sérico (hipercalemia) e, em pacientes com insuficiência cardíaca, aumento da creatinina sérica.", mecanismo:"Não detalhado na bula.",
+     manejo:"monitorar", recomendacao:"Se o uso simultâneo de diuréticos poupadores de potássio (por exemplo, espironolactona, triantereno, amilorida), suplementos à base de potássio, substitutos do sal que contenham potássio ou outros medicamentos que podem aumentar os níveis de potássio (heparina, etc.) for considerado necessário, recomenda-se monitoramento do potássio sérico.",
+     fonte:"Bula profissional — Diovan (Novartis Biociências S.A.)"},
+    {farmaco:"Valsartana", comerciais:["Diovan"], nutriente:"Alimentos (refeição)", categoria:"alimento",
+     efeito:"Redução de 48% na área sob a curva (AUC) da concentração plasmática de valsartana quando administrada com alimentos, sem redução clinicamente significativa dos efeitos terapêuticos.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Diovan pode ser administrado com ou sem alimentos: apesar da redução da AUC observada com a ingestão concomitante de alimentos, não há repercussão clínica significativa no efeito terapêutico.",
+     fonte:"Bula profissional — Diovan (Novartis Biociências S.A.)"},
+    // Triantereno
+    {farmaco:"Triantereno", comerciais:["Iguassina"], nutriente:"Vitamina D", categoria:"vitamina",
+     efeito:"Os diuréticos tiazídicos (associados ao triantereno) podem aumentar o efeito da vitamina D.", mecanismo:"Não detalhado na bula.",
+     manejo:"monitorar", recomendacao:"Monitorar o paciente quanto a sinais de potencialização do efeito da vitamina D durante o uso concomitante com Iguassina.",
+     fonte:"Bula profissional — Iguassina (Zambon Laboratórios Farmacêuticos Ltda.)"},
+    {farmaco:"Triantereno", comerciais:["Iguassina"], nutriente:"Ácido fólico", categoria:"vitamina",
+     efeito:"O triantereno é antagonista do ácido fólico.", mecanismo:"O triantereno atua como antagonista do ácido fólico.",
+     manejo:"monitorar", recomendacao:"Considerar monitoramento de ácido fólico/hemograma em uso prolongado de triantereno, dado seu antagonismo com o ácido fólico.",
+     fonte:"Bula profissional — Iguassina (Zambon Laboratórios Farmacêuticos Ltda.)"},
+    // Candesartana cilexetila
+    {farmaco:"Candesartana cilexetila", comerciais:["Blopress"], nutriente:"Potássio", categoria:"mineral",
+     efeito:"Aumento dos níveis séricos de potássio (hipercalemia).", mecanismo:"Com base na experiência com o uso de outros fármacos que afetam o sistema renina-angiotensina-aldosterona, o uso concomitante de diuréticos poupadores de potássio, suplementos de potássio, substitutos de sal contendo potássio ou outros produtos medicinais que podem aumentar os níveis de potássio (por exemplo, heparina sódica) poderá causar aumentos dos níveis séricos de potássio.",
+     manejo:"monitorar", recomendacao:"Recomenda-se monitoramento periódico dos níveis séricos de potássio, especialmente quando o medicamento for administrado concomitantemente com inibidores da ECA e diuréticos poupadores de potássio, como a espironolactona.",
+     fonte:"Bula profissional — Blopress (Abbott Laboratórios do Brasil Ltda., sob licença de Takeda Pharmaceutical Company Limited)"},
   ];
 
   var MANAGE_META = {
@@ -1665,7 +1694,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>25/09/2026</b></span>';
+      '<span class="stat">atualizado em <b>29/09/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1809,7 +1838,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 25/09/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 29/09/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
