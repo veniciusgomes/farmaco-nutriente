@@ -3585,5 +3585,70 @@
     "manejo": "monitorar",
     "recomendacao": "Recomenda-se monitoramento periódico dos níveis séricos de potássio, especialmente quando o medicamento for administrado concomitantemente com inibidores da ECA e diuréticos poupadores de potássio, como a espironolactona.",
     "fonte": "Bula profissional — Blopress (Abbott Laboratórios do Brasil Ltda., sob licença de Takeda Pharmaceutical Company Limited)"
+  },
+  {
+    "farmaco": "Ibuprofeno",
+    "comerciais": [
+      "Alivium"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Contraindicação de uso concomitante com bebidas alcoólicas.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Não utilizar ALIVIUM concomitantemente com bebidas alcoólicas.",
+    "fonte": "Bula profissional — Alivium (Mantecorp)"
+  },
+  {
+    "farmaco": "Nimesulida",
+    "comerciais": [
+      "Scaflam"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Risco aumentado de reações hepáticas em pacientes com abuso de álcool durante o tratamento com nimesulida.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Administração concomitante com drogas hepatotóxicas e abuso de álcool devem ser evitados durante o tratamento com nimesulida, pois podem aumentar o risco de reações hepáticas.",
+    "fonte": "Bula profissional — Scaflam (Mantecorp)"
+  },
+  {
+    "farmaco": "Telmisartana",
+    "comerciais": [
+      "Micardis"
+    ],
+    "nutriente": "Potássio",
+    "categoria": "mineral",
+    "efeito": "Aumento dos níveis séricos de potássio (hipercalemia).",
+    "mecanismo": "Diuréticos poupadores de potássio, suplementos de potássio, sais de potássio ou outros medicamentos que podem aumentar os níveis de potássio (como a heparina) podem levar a um aumento da potassemia quando usados com telmisartana.",
+    "manejo": "monitorar",
+    "recomendacao": "Recomenda-se monitoração adequada dos níveis séricos de potássio em pacientes de risco; MICARDIS deve ser administrado com cautela nessas situações.",
+    "fonte": "Bula profissional — Micardis (Boehringer Ingelheim)"
+  },
+  {
+    "farmaco": "Acarbose",
+    "comerciais": [
+      "Glucobay"
+    ],
+    "nutriente": "Sacarose (açúcar de cana)",
+    "categoria": "alimento",
+    "efeito": "Desconforto abdominal ou diarreia, decorrentes do aumento da fermentação de carboidratos no cólon, quando há ingestão de sacarose ou alimentos contendo sacarose durante o tratamento.",
+    "mecanismo": "A acarbose retarda a digestão de carboidratos no intestino; a sacarose não digerida sofre fermentação aumentada por bactérias no cólon.",
+    "manejo": "atencao",
+    "recomendacao": "Orientar o paciente de que a ingestão de sacarose e alimentos ricos em sacarose durante o tratamento com Glucobay pode causar desconforto abdominal ou diarreia.",
+    "fonte": "Bula profissional — Glucobay (Bayer)"
+  },
+  {
+    "farmaco": "Acarbose",
+    "comerciais": [
+      "Glucobay"
+    ],
+    "nutriente": "Sacarose (açúcar de cana)",
+    "categoria": "alimento",
+    "efeito": "A sacarose não é adequada para o alívio rápido de episódios de hipoglicemia durante o tratamento, pois é metabolizada mais lentamente em frutose e glicose.",
+    "mecanismo": "Durante o tratamento com Glucobay, a transformação de sacarose em frutose e glicose é mais lenta.",
+    "manejo": "atencao",
+    "recomendacao": "Em caso de hipoglicemia durante o tratamento com Glucobay, usar glicose (dextrose) em vez de sacarose para alívio rápido dos sintomas.",
+    "fonte": "Bula profissional — Glucobay (Bayer)"
   }
 ]

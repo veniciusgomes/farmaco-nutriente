@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 144 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 148 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1666,6 +1666,31 @@
      efeito:"Aumento dos níveis séricos de potássio (hipercalemia).", mecanismo:"Com base na experiência com o uso de outros fármacos que afetam o sistema renina-angiotensina-aldosterona, o uso concomitante de diuréticos poupadores de potássio, suplementos de potássio, substitutos de sal contendo potássio ou outros produtos medicinais que podem aumentar os níveis de potássio (por exemplo, heparina sódica) poderá causar aumentos dos níveis séricos de potássio.",
      manejo:"monitorar", recomendacao:"Recomenda-se monitoramento periódico dos níveis séricos de potássio, especialmente quando o medicamento for administrado concomitantemente com inibidores da ECA e diuréticos poupadores de potássio, como a espironolactona.",
      fonte:"Bula profissional — Blopress (Abbott Laboratórios do Brasil Ltda., sob licença de Takeda Pharmaceutical Company Limited)"},
+
+    // Ibuprofeno
+    {farmaco:"Ibuprofeno", comerciais:["Alivium"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Contraindicação de uso concomitante com bebidas alcoólicas.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Não utilizar ALIVIUM concomitantemente com bebidas alcoólicas.",
+     fonte:"Bula profissional — Alivium (Mantecorp)"},
+    // Nimesulida
+    {farmaco:"Nimesulida", comerciais:["Scaflam"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Risco aumentado de reações hepáticas em pacientes com abuso de álcool durante o tratamento com nimesulida.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Administração concomitante com drogas hepatotóxicas e abuso de álcool devem ser evitados durante o tratamento com nimesulida, pois podem aumentar o risco de reações hepáticas.",
+     fonte:"Bula profissional — Scaflam (Mantecorp)"},
+    // Telmisartana
+    {farmaco:"Telmisartana", comerciais:["Micardis"], nutriente:"Potássio", categoria:"mineral",
+     efeito:"Aumento dos níveis séricos de potássio (hipercalemia).", mecanismo:"Diuréticos poupadores de potássio, suplementos de potássio, sais de potássio ou outros medicamentos que podem aumentar os níveis de potássio (como a heparina) podem levar a um aumento da potassemia quando usados com telmisartana.",
+     manejo:"monitorar", recomendacao:"Recomenda-se monitoração adequada dos níveis séricos de potássio em pacientes de risco; MICARDIS deve ser administrado com cautela nessas situações.",
+     fonte:"Bula profissional — Micardis (Boehringer Ingelheim)"},
+    // Acarbose
+    {farmaco:"Acarbose", comerciais:["Glucobay"], nutriente:"Sacarose (açúcar de cana)", categoria:"alimento",
+     efeito:"Desconforto abdominal ou diarreia, decorrentes do aumento da fermentação de carboidratos no cólon, quando há ingestão de sacarose ou alimentos contendo sacarose durante o tratamento.", mecanismo:"A acarbose retarda a digestão de carboidratos no intestino; a sacarose não digerida sofre fermentação aumentada por bactérias no cólon.",
+     manejo:"atencao", recomendacao:"Orientar o paciente de que a ingestão de sacarose e alimentos ricos em sacarose durante o tratamento com Glucobay pode causar desconforto abdominal ou diarreia.",
+     fonte:"Bula profissional — Glucobay (Bayer)"},
+    {farmaco:"Acarbose", comerciais:["Glucobay"], nutriente:"Sacarose (açúcar de cana)", categoria:"alimento",
+     efeito:"A sacarose não é adequada para o alívio rápido de episódios de hipoglicemia durante o tratamento, pois é metabolizada mais lentamente em frutose e glicose.", mecanismo:"Durante o tratamento com Glucobay, a transformação de sacarose em frutose e glicose é mais lenta.",
+     manejo:"atencao", recomendacao:"Em caso de hipoglicemia durante o tratamento com Glucobay, usar glicose (dextrose) em vez de sacarose para alívio rápido dos sintomas.",
+     fonte:"Bula profissional — Glucobay (Bayer)"},
   ];
 
   var MANAGE_META = {
@@ -1694,7 +1719,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>29/09/2026</b></span>';
+      '<span class="stat">atualizado em <b>30/09/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1838,7 +1863,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 29/09/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 30/09/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
