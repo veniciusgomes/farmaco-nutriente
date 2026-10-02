@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 148 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 153 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1691,6 +1691,40 @@
      efeito:"A sacarose não é adequada para o alívio rápido de episódios de hipoglicemia durante o tratamento, pois é metabolizada mais lentamente em frutose e glicose.", mecanismo:"Durante o tratamento com Glucobay, a transformação de sacarose em frutose e glicose é mais lenta.",
      manejo:"atencao", recomendacao:"Em caso de hipoglicemia durante o tratamento com Glucobay, usar glicose (dextrose) em vez de sacarose para alívio rápido dos sintomas.",
      fonte:"Bula profissional — Glucobay (Bayer)"},
+
+    // Lorazepam
+    {farmaco:"Lorazepam", comerciais:["Lorax"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Lorax aumenta o efeito de sedação (sonolência) de bebidas alcoólicas; na experiência pós-comercialização, ocorreu superdosagem predominantemente em administração concomitante a álcool e/ou outros medicamentos.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Os pacientes em tratamento com Lorax devem evitar ingestão alcoólica.",
+     fonte:"Bula profissional — Lorax (Wyeth Indústria Farmacêutica Ltda. / Pfizer)"},
+    // Gliclazida
+    {farmaco:"Gliclazida", comerciais:["Diamicron MR"], nutriente:"Álcool", categoria:"outro",
+     efeito:"A ingestão conjunta com álcool pode potencializar o efeito hipoglicemiante de Diamicron MR; a hipoglicemia tem mais possibilidade de ocorrer após o consumo de bebidas alcoólicas.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Associação não recomendada (fenilbutazona e álcool); evitar o consumo de bebidas alcoólicas e de medicamentos que contêm álcool.",
+     fonte:"Bula profissional — Diamicron MR (Laboratórios Servier do Brasil Ltda.)"},
+    {farmaco:"Gliclazida", comerciais:["Diamicron MR"], nutriente:"Refeições regulares e carboidratos (dieta)", categoria:"alimento",
+     efeito:"Existe maior risco de hipoglicemia se as refeições forem feitas fora dos horários, em casos de dieta inadequada, dieta hipocalórica, má nutrição, refeições omitidas ou se a dieta contém balanço inadequado de carboidratos.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Tratamento só deve ser receitado se o paciente se alimenta regularmente (incluindo café da manhã), com ingestão regular de carboidratos; recomenda-se tomar o medicamento juntamente com o café da manhã e manter a dieta hipocalórica e/ou hipoglicídica.",
+     fonte:"Bula profissional — Diamicron MR (Laboratórios Servier do Brasil Ltda.)"},
+    // Glimepirida
+    {farmaco:"Glimepirida", comerciais:["Amaryl"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Tanto a ingestão crônica como a aguda de álcool podem potencializar ou diminuir a ação hipoglicemiante de Amaryl de maneira imprevisível.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"A bula lista o consumo de álcool, principalmente combinado com supressão de refeições, como fator que favorece hipoglicemia; o efeito imprevisível do álcool sobre a glicemia deve ser considerado durante o tratamento.",
+     fonte:"Bula profissional — Amaryl (Sanofi-Aventis Farmacêutica Ltda.)"},
+    {farmaco:"Glimepirida", comerciais:["Amaryl"], nutriente:"Refeições irregulares ou suprimidas e alterações na dieta", categoria:"alimento",
+     efeito:"Desnutrição, refeições irregulares ou suprimidas, desequilíbrio entre esforço físico e ingestão de carboidratos e alterações na dieta favorecem a ocorrência de hipoglicemia.", mecanismo:"Não detalhado na bula.",
+     manejo:"monitorar", recomendacao:"Monitorar cuidadosamente o risco de hipoglicemia, especialmente nas primeiras semanas de tratamento, e manter alimentação regular após a administração.",
+     fonte:"Bula profissional — Amaryl (Sanofi-Aventis Farmacêutica Ltda.)"},
+    // Oxcarbazepina
+    {farmaco:"Oxcarbazepina", comerciais:["Trileptal"], nutriente:"Álcool", categoria:"outro",
+     efeito:"O uso de álcool em combinação ao tratamento com Trileptal pode ocasionar um efeito sedativo aditivo.", mecanismo:"Efeito sedativo aditivo do álcool somado ao da oxcarbazepina.",
+     manejo:"atencao", recomendacao:"Deve-se ter cuidado ao fazer uso de álcool em combinação ao tratamento com Trileptal.",
+     fonte:"Bula profissional — Trileptal (Novartis Biociências S.A.)"},
+    // Cloridrato de clorpromazina
+    {farmaco:"Cloridrato de clorpromazina", comerciais:["Amplictil"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Os efeitos sedativos dos neurolépticos são acentuados pelo álcool; a alteração da vigilância pode se tornar perigosa na condução de veículos e operação de máquinas.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Associação desaconselhada: evitar o uso de bebidas alcoólicas e de medicamentos contendo álcool em sua composição.",
+     fonte:"Bula profissional — Amplictil (Sanofi-Aventis Farmacêutica Ltda.)"},
   ];
 
   var MANAGE_META = {
@@ -1719,7 +1753,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>30/09/2026</b></span>';
+      '<span class="stat">atualizado em <b>02/10/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1863,7 +1897,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 30/09/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 02/10/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
