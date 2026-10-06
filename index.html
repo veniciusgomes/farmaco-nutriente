@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 153 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 158 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1725,6 +1725,52 @@
      efeito:"Os efeitos sedativos dos neurolépticos são acentuados pelo álcool; a alteração da vigilância pode se tornar perigosa na condução de veículos e operação de máquinas.", mecanismo:"Não detalhado na bula.",
      manejo:"evitar", recomendacao:"Associação desaconselhada: evitar o uso de bebidas alcoólicas e de medicamentos contendo álcool em sua composição.",
      fonte:"Bula profissional — Amplictil (Sanofi-Aventis Farmacêutica Ltda.)"},
+
+    // Cloridrato de tizanidina
+    {farmaco:"Cloridrato de tizanidina", comerciais:["Sirdalud"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Aumento do potencial de reações adversas (sedação e hipotensão); os efeitos depressores do álcool sobre o SNC podem ser potencializados pela tizanidina.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Diminuir ou evitar o consumo de álcool durante o tratamento.",
+     fonte:"Bula profissional — Sirdalud (Novartis)"},
+    // Riluzol
+    {farmaco:"Riluzol", comerciais:["Rilutek"], nutriente:"Alimentos (refeição; alimentos com alto teor de gordura)", categoria:"alimento",
+     efeito:"Redução da velocidade e da extensão da absorção com alimentos ricos em gordura (Cmáx −44%, AUC −17%), diminuindo a biodisponibilidade.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Ingerir o comprimido pelo menos 1 hora antes ou 2 horas após a refeição, de forma regular e na mesma hora do dia.",
+     fonte:"Bula profissional — Rilutek (Sanofi)"},
+    {farmaco:"Riluzol", comerciais:["Rilutek"], nutriente:"Alimentos grelhados em carvão", categoria:"alimento",
+     efeito:"Podem aumentar a taxa de eliminação do riluzol.", mecanismo:"Indução da CYP1A2, principal isoenzima do metabolismo oxidativo inicial do riluzol.",
+     manejo:"atencao", recomendacao:"Considerar a possível redução da exposição ao riluzol com consumo de alimentos grelhados em carvão.",
+     fonte:"Bula profissional — Rilutek (Sanofi)"},
+    {farmaco:"Riluzol", comerciais:["Rilutek"], nutriente:"Cafeína", categoria:"outro",
+     efeito:"Pode diminuir potencialmente a taxa de eliminação do riluzol.", mecanismo:"Inibição da CYP1A2, principal isoenzima do metabolismo oxidativo inicial do riluzol.",
+     manejo:"atencao", recomendacao:"Considerar a possível redução da eliminação do riluzol com ingestão concomitante de cafeína.",
+     fonte:"Bula profissional — Rilutek (Sanofi)"},
+    // Entacapona
+    {farmaco:"Entacapona", comerciais:["Comtan"], nutriente:"Ferro (preparações de ferro)", categoria:"mineral",
+     efeito:"Formação de quelatos com ferro no trato gastrintestinal.", mecanismo:"Quelação do ferro pela entacapona no trato gastrintestinal.",
+     manejo:"separar", recomendacao:"Administrar entacapona e preparações de ferro separadamente, com intervalo mínimo de 2 a 3 horas.",
+     fonte:"Bula profissional — Comtan (Novartis)"},
+    // Cefuroxima axetila
+    {farmaco:"Cefuroxima axetila", comerciais:["Zinnat"], nutriente:"Alimentos (refeição)", categoria:"alimento",
+     efeito:"Aumento da absorção da cefuroxima (biodisponibilidade de 40-50% após refeição vs. 30% em jejum; Cmáx cerca de 43% maior).", mecanismo:"Não totalmente compreendido; propõe-se atraso no esvaziamento gástrico e maior tempo de trânsito gastrointestinal, permitindo melhor dissolução e permanência no local de absorção.",
+     manejo:"atencao", recomendacao:"Administrar os comprimidos logo após uma refeição para garantir absorção ótima.",
+     fonte:"Bula profissional — Zinnat (GSK)"},
+    // Penicilamina
+    {farmaco:"Penicilamina", comerciais:["Cuprimine"], nutriente:"Alimentos e leite", categoria:"alimento",
+     efeito:"Redução da absorção da penicilamina.", mecanismo:"Inativação por ligação metálica, segundo a bula.",
+     manejo:"separar", recomendacao:"Administrar com o estômago vazio, pelo menos 1 hora antes das refeições ou 2 horas após, e pelo menos 1 hora antes de qualquer alimento, medicamento ou leite.",
+     fonte:"Bula profissional — Cuprimine (Meizler UCB Biopharma)"},
+    {farmaco:"Penicilamina", comerciais:["Cuprimine"], nutriente:"Ferro (oral)", categoria:"mineral",
+     efeito:"Redução da absorção e dos efeitos da penicilamina.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Se necessário, administrar ferro por curtos períodos, com intervalo de 2 horas entre penicilamina e ferro.",
+     fonte:"Bula profissional — Cuprimine (Meizler UCB Biopharma)"},
+    {farmaco:"Penicilamina", comerciais:["Cuprimine"], nutriente:"Suplementos minerais", categoria:"mineral",
+     efeito:"Podem bloquear a resposta à penicilamina.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Não administrar suplementos minerais durante o tratamento (exceto ferro por curtos períodos, com intervalo de 2 horas).",
+     fonte:"Bula profissional — Cuprimine (Meizler UCB Biopharma)"},
+    {farmaco:"Penicilamina", comerciais:["Cuprimine"], nutriente:"Vitamina B6 (Piridoxina)", categoria:"vitamina",
+     efeito:"A penicilamina aumenta a necessidade de piridoxina.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Pacientes com doença de Wilson e cistinúria (e com artrite reumatoide com dieta restritiva) devem receber suplemento de piridoxina (25 mg/dia na doença de Wilson e cistinúria).",
+     fonte:"Bula profissional — Cuprimine (Meizler UCB Biopharma)"},
   ];
 
   var MANAGE_META = {
@@ -1753,7 +1799,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>02/10/2026</b></span>';
+      '<span class="stat">atualizado em <b>06/10/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -1897,7 +1943,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 02/10/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 06/10/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
