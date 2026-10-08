@@ -3871,5 +3871,135 @@
     "manejo": "atencao",
     "recomendacao": "Pacientes com doença de Wilson e cistinúria (e com artrite reumatoide com dieta restritiva) devem receber suplemento de piridoxina (25 mg/dia na doença de Wilson e cistinúria).",
     "fonte": "Bula profissional — Cuprimine (Meizler UCB Biopharma)"
+  },
+  {
+    "farmaco": "Carvedilol",
+    "comerciais": [
+      "Coreg"
+    ],
+    "nutriente": "Alimentos (refeições)",
+    "categoria": "alimento",
+    "efeito": "Alimentos não alteram a extensão da biodisponibilidade, mas aumentam o tempo para atingir a concentração plasmática máxima (absorção mais lenta).",
+    "mecanismo": "Alimentos reduzem a velocidade de absorção do carvedilol.",
+    "manejo": "atencao",
+    "recomendacao": "A ingestão com alimentos não é obrigatória; em pacientes com insuficiência cardíaca, administrar com alimentos para reduzir a velocidade de absorção e diminuir a incidência de efeitos ortostáticos.",
+    "fonte": "Bula profissional — Coreg (Roche)"
+  },
+  {
+    "farmaco": "Carvedilol",
+    "comerciais": [
+      "Coreg"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "A capacidade de dirigir ou operar máquinas pode ficar comprometida (tonturas, cansaço), principalmente no início do tratamento, após aumentos de dose ou em combinação com álcool.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Ter cautela ao dirigir ou operar máquinas quando o carvedilol for usado em combinação com álcool.",
+    "fonte": "Bula profissional — Coreg (Roche)"
+  },
+  {
+    "farmaco": "Cloridrato de cinacalcete",
+    "comerciais": [
+      "Mimpara"
+    ],
+    "nutriente": "Alimentos (refeições)",
+    "categoria": "alimento",
+    "efeito": "Aumento aproximado de 50% a 80% na biodisponibilidade do cinacalcete, semelhante independentemente do teor de gordura da refeição.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Tomar com alimento ou logo após as refeições.",
+    "fonte": "Bula profissional — Mimpara (Amgen)"
+  },
+  {
+    "farmaco": "Cloridrato de ivabradina",
+    "comerciais": [
+      "Procoralan"
+    ],
+    "nutriente": "Suco de toranja (grapefruit/pomelo)",
+    "categoria": "alimento",
+    "efeito": "Aumento de 2 vezes na exposição à ivabradina.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar a ingestão de suco de toranja/pomelo durante o tratamento (associação não recomendada).",
+    "fonte": "Bula profissional — Procoralan (Servier)"
+  },
+  {
+    "farmaco": "Cloridrato de ivabradina",
+    "comerciais": [
+      "Procoralan"
+    ],
+    "nutriente": "Alimentos (refeições)",
+    "categoria": "alimento",
+    "efeito": "Alimentos retardam a absorção em cerca de 1 hora e aumentam a exposição plasmática de 20 a 30%.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Administrar os comprimidos durante as refeições (manhã e noite), a fim de diminuir a variabilidade intraindividual da exposição plasmática.",
+    "fonte": "Bula profissional — Procoralan (Servier)"
+  },
+  {
+    "farmaco": "Sulfato ferroso",
+    "comerciais": [
+      "Sulfato ferroso Farmanguinhos"
+    ],
+    "nutriente": "Cafeína",
+    "categoria": "outro",
+    "efeito": "Diminuição da absorção de ferro.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Bula informa a redução da absorção, sem especificar intervalo ou conduta.",
+    "fonte": "Bula profissional — Sulfato ferroso (Farmanguinhos/Fiocruz)"
+  },
+  {
+    "farmaco": "Sulfato ferroso",
+    "comerciais": [
+      "Sulfato ferroso Farmanguinhos"
+    ],
+    "nutriente": "Chá-mate",
+    "categoria": "alimento",
+    "efeito": "Diminuição da absorção de ferro.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Bula informa a redução da absorção, sem especificar intervalo ou conduta.",
+    "fonte": "Bula profissional — Sulfato ferroso (Farmanguinhos/Fiocruz)"
+  },
+  {
+    "farmaco": "Sulfato ferroso",
+    "comerciais": [
+      "Sulfato ferroso Farmanguinhos"
+    ],
+    "nutriente": "Fitatos e oxalatos (presentes na alimentação)",
+    "categoria": "alimento",
+    "efeito": "Redução da absorção intestinal de ferro.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Bula informa a redução da absorção, sem especificar intervalo ou conduta.",
+    "fonte": "Bula profissional — Sulfato ferroso (Farmanguinhos/Fiocruz)"
+  },
+  {
+    "farmaco": "Sulfato ferroso",
+    "comerciais": [
+      "Sulfato ferroso Farmanguinhos"
+    ],
+    "nutriente": "Alimentos (refeições)",
+    "categoria": "alimento",
+    "efeito": "A absorção é maior em jejum (entre as refeições); a administração junto às refeições diminui a frequência de efeitos indesejáveis gastrintestinais.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Preferencialmente entre as refeições; pode ser acompanhado de alimentos para amenizar efeitos adversos gastrintestinais.",
+    "fonte": "Bula profissional — Sulfato ferroso (Farmanguinhos/Fiocruz)"
+  },
+  {
+    "farmaco": "Sulfato ferroso",
+    "comerciais": [
+      "Sulfato ferroso Farmanguinhos"
+    ],
+    "nutriente": "Álcool (etanol)",
+    "categoria": "outro",
+    "efeito": "O etanol favorece a absorção do ferro.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Bula informa o aumento da absorção, sem especificar conduta.",
+    "fonte": "Bula profissional — Sulfato ferroso (Farmanguinhos/Fiocruz)"
   }
 ]
