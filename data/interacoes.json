@@ -4001,5 +4001,109 @@
     "manejo": "atencao",
     "recomendacao": "Bula informa o aumento da absorção, sem especificar conduta.",
     "fonte": "Bula profissional — Sulfato ferroso (Farmanguinhos/Fiocruz)"
+  },
+  {
+    "farmaco": "Ranolazina",
+    "comerciais": [
+      "Riscard"
+    ],
+    "nutriente": "Suco de toranja (grapefruit)",
+    "categoria": "alimento",
+    "efeito": "Produtos contendo toranja ou suco de toranja atuam como inibidores moderados do CYP3A, exigindo limitação da dose de ranolazina.",
+    "mecanismo": "A ranolazina é substrato do CYP3A; a toranja/suco de toranja é listada entre os inibidores moderados do CYP3A.",
+    "manejo": "atencao",
+    "recomendacao": "Limitar a dose a 500 mg duas vezes ao dia em pacientes que consomem produtos contendo toranja ou suco de toranja.",
+    "fonte": "Bula profissional — Riscard (Biolab Sanus)"
+  },
+  {
+    "farmaco": "Cloridrato de lercanidipino",
+    "comerciais": [
+      "Zanidip"
+    ],
+    "nutriente": "Suco de toranja (grapefruit)",
+    "categoria": "alimento",
+    "efeito": "Aumento da disponibilidade sistêmica do lercanidipino e do efeito hipotensivo.",
+    "mecanismo": "Como ocorre com outras diidropiridinas, o metabolismo do lercanidipino é sensível à toranja ou ao suco.",
+    "manejo": "evitar",
+    "recomendacao": "Não ingerir com toranja ou suco de toranja; a coadministração é contraindicada.",
+    "fonte": "Bula profissional — Zanidip (Apsen)"
+  },
+  {
+    "farmaco": "Cloridrato de lercanidipino",
+    "comerciais": [
+      "Zanidip"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "O álcool pode potencializar os efeitos dos anti-hipertensivos vasodilatadores.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar o consumo de álcool durante o tratamento.",
+    "fonte": "Bula profissional — Zanidip (Apsen)"
+  },
+  {
+    "farmaco": "Cloridrato de lercanidipino",
+    "comerciais": [
+      "Zanidip"
+    ],
+    "nutriente": "Alimentos ricos em gordura",
+    "categoria": "alimento",
+    "efeito": "A disponibilidade oral do lercanidipino aumenta 4 vezes quando ingerido até 2 horas após refeição com alto teor de gordura; refeições muito gordurosas aumentam significativamente o nível sanguíneo.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Tomar uma vez ao dia, sempre no mesmo horário, preferencialmente pela manhã, pelo menos 15 minutos antes do café da manhã/refeições.",
+    "fonte": "Bula profissional — Zanidip (Apsen)"
+  },
+  {
+    "farmaco": "Cloridrato de nortriptilina",
+    "comerciais": [
+      "Pamelor"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "Potencialização do efeito de bebidas alcoólicas; o consumo excessivo pode aumentar o risco de tentativas de suicídio ou de superdose.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Informar o paciente de que o efeito de bebidas alcoólicas pode ser potencializado; atenção especial ao consumo excessivo em pacientes com história de distúrbios emocionais ou ideação suicida.",
+    "fonte": "Bula profissional — Pamelor (Cellera Farmacêutica)"
+  },
+  {
+    "farmaco": "Topiramato",
+    "comerciais": [
+      "Topamax"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas)",
+    "categoria": "outro",
+    "efeito": "A administração concomitante com álcool ou outros depressores do SNC não foi avaliada em estudos clínicos; o uso conjunto não é recomendado.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Não utilizar Topamax concomitantemente com bebidas alcoólicas.",
+    "fonte": "Bula profissional — Topamax (Janssen-Cilag)"
+  },
+  {
+    "farmaco": "Topiramato",
+    "comerciais": [
+      "Topamax"
+    ],
+    "nutriente": "Dieta cetogênica",
+    "categoria": "alimento",
+    "efeito": "A dieta cetogênica predispõe à acidose e pode ter efeito aditivo ao topiramato na redução do bicarbonato sérico (acidose metabólica).",
+    "mecanismo": "O topiramato reduz o bicarbonato sérico por inibição da anidrase carbônica renal; condições que predispõem à acidose, como a dieta cetogênica, somam-se a esse efeito.",
+    "manejo": "monitorar",
+    "recomendacao": "Avaliar adequadamente, incluindo níveis de bicarbonato sérico; se a acidose ocorrer e persistir, considerar redução gradual da dose ou interrupção.",
+    "fonte": "Bula profissional — Topamax (Janssen-Cilag)"
+  },
+  {
+    "farmaco": "Cloridrato de sotalol",
+    "comerciais": [
+      "Sotacor"
+    ],
+    "nutriente": "Alimentos (refeição)",
+    "categoria": "alimento",
+    "efeito": "Absorção reduzida em aproximadamente 20% quando administrado com refeição padrão, em comparação ao jejum.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Administrar preferencialmente 1 a 2 horas antes das refeições.",
+    "fonte": "Bula profissional — Sotacor (Bristol-Myers Squibb)"
   }
 ]
