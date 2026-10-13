@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 172 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 177 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1896,6 +1896,68 @@
      efeito:"Redução da absorção: atraso na absorção (1-1,5 h alimentado vs. 0,75 h em jejum), diminuição de 44-46% na Cmáx e de 18-20% na AUC.", mecanismo:"Não detalhado na bula.",
      manejo:"separar", recomendacao:"Administrar com estômago vazio: pelo menos 2 horas após as refeições e 2 horas antes da próxima refeição.",
      fonte:"Bula profissional — Baraclude (Bristol-Myers Squibb)"},
+
+    // Ibandronato de sódio
+    {farmaco:"Ibandronato de sódio", comerciais:["Bonviva"], nutriente:"Alimentos e bebidas (exceto água filtrada), incluindo leite, café, chá e sucos", categoria:"alimento",
+     efeito:"A presença de alimentos, incluindo leite e outros alimentos, interfere na absorção do ibandronato.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Tomar em jejum, com um copo cheio (180 a 240 mL) de água filtrada, 60 minutos antes do primeiro alimento ou bebida do dia; não tomar com água mineral, água com gás, café, chá, bebidas lácteas (como leite) ou suco.",
+     fonte:"Bula profissional — Bonviva (Laboratórios Bagó)"},
+    {farmaco:"Ibandronato de sódio", comerciais:["Bonviva"], nutriente:"Cálcio, magnésio, ferro e alumínio (alimentos, suplementos de cálcio, complexos vitamínicos e antiácidos)", categoria:"mineral",
+     efeito:"Alimentos ou produtos que contenham cálcio, alumínio, magnésio e ferro, incluindo suplementos de cálcio e complexos vitamínicos, interferem na absorção do ibandronato.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Aguardar 60 minutos após tomar o ibandronato antes de ingerir alimentos ou outros medicamentos orais, inclusive suplementos de cálcio e outros minerais.",
+     fonte:"Bula profissional — Bonviva (Laboratórios Bagó)"},
+    {farmaco:"Ibandronato de sódio", comerciais:["Bonviva"], nutriente:"Águas minerais com alta concentração de cálcio", categoria:"mineral",
+     efeito:"Alguns tipos de água mineral podem conter altas concentrações de cálcio e, por isso, não devem ser usados para tomar o ibandronato.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Tomar o comprimido somente com água filtrada; não utilizar água mineral nem água com gás.",
+     fonte:"Bula profissional — Bonviva (Laboratórios Bagó)"},
+    // Norfloxacino
+    {farmaco:"Norfloxacino", comerciais:["Norfloxacino (genérico Brainfarma)"], nutriente:"Alimentos (refeições)", categoria:"alimento",
+     efeito:"A bula determina que o norfloxacino seja tomado afastado das refeições; o efeito específico do alimento não é descrito.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Ingerir com um copo de água, no mínimo uma hora antes ou duas horas depois das refeições.",
+     fonte:"Bula profissional — Norfloxacino (Brainfarma)"},
+    {farmaco:"Norfloxacino", comerciais:["Norfloxacino (genérico Brainfarma)"], nutriente:"Leite", categoria:"alimento",
+     efeito:"A bula determina que o norfloxacino seja tomado afastado da ingestão de leite; o efeito específico não é descrito.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Ingerir com um copo de água, no mínimo uma hora antes ou duas horas depois da ingestão de leite.",
+     fonte:"Bula profissional — Norfloxacino (Brainfarma)"},
+    {farmaco:"Norfloxacino", comerciais:["Norfloxacino (genérico Brainfarma)"], nutriente:"Ferro (produtos contendo ferro e polivitamínicos)", categoria:"mineral",
+     efeito:"Interferência na absorção do norfloxacino, resultando em níveis mais baixos no plasma e na urina.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Não administrar polivitamínicos ou produtos contendo ferro ao mesmo tempo ou em intervalo inferior a duas horas da administração do norfloxacino.",
+     fonte:"Bula profissional — Norfloxacino (Brainfarma)"},
+    {farmaco:"Norfloxacino", comerciais:["Norfloxacino (genérico Brainfarma)"], nutriente:"Zinco (produtos contendo zinco e polivitamínicos)", categoria:"mineral",
+     efeito:"Interferência na absorção do norfloxacino, resultando em níveis mais baixos no plasma e na urina.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Não administrar polivitamínicos ou produtos contendo zinco ao mesmo tempo ou em intervalo inferior a duas horas da administração do norfloxacino.",
+     fonte:"Bula profissional — Norfloxacino (Brainfarma)"},
+    {farmaco:"Norfloxacino", comerciais:["Norfloxacino (genérico Brainfarma)"], nutriente:"Magnésio (antiácidos contendo magnésio e alumínio)", categoria:"mineral",
+     efeito:"Antiácidos podem interferir na absorção do norfloxacino, resultando em níveis mais baixos no plasma e na urina.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Antiácidos contendo magnésio e alumínio devem ser tomados somente duas horas depois da administração do norfloxacino.",
+     fonte:"Bula profissional — Norfloxacino (Brainfarma)"},
+    {farmaco:"Norfloxacino", comerciais:["Norfloxacino (genérico Brainfarma)"], nutriente:"Cafeína", categoria:"outro",
+     efeito:"Redução da depuração e prolongamento da meia-vida plasmática da cafeína, podendo resultar em acúmulo de cafeína no plasma.", mecanismo:"As quinolonas, incluindo o norfloxacino, inibem a CYP1A2 in vitro e interferem no metabolismo da cafeína.",
+     manejo:"monitorar", recomendacao:"Monitorar com atenção pacientes que consomem produtos contendo cafeína durante o uso do norfloxacino.",
+     fonte:"Bula profissional — Norfloxacino (Brainfarma)"},
+    // Cloridrato de hidroxizina
+    {farmaco:"Cloridrato de hidroxizina", comerciais:["Hixizine"], nutriente:"Álcool", categoria:"outro",
+     efeito:"O efeito sedativo da hidroxizina pode ser potencializado pelo álcool.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Evitar a ingestão de álcool durante o tratamento; a bula lista o uso concomitante com álcool como restrição de uso.",
+     fonte:"Bula profissional — Hixizine (Theraskin)"},
+    // Sulfato de atazanavir
+    {farmaco:"Sulfato de atazanavir", comerciais:["Reyataz"], nutriente:"Alimentos (refeição leve ou rica em gordura)", categoria:"alimento",
+     efeito:"A administração com alimentos aumenta a biodisponibilidade e reduz a variabilidade farmacocinética do atazanavir (refeição leve: aumento de 70% na AUC e 57% na Cmáx em relação ao jejum).", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Administrar sempre com alimentos (inclusive quando associado ao ritonavir).",
+     fonte:"Bula profissional — Reyataz (Bristol-Myers Squibb)"},
+    // Cloridrato de clomipramina
+    {farmaco:"Cloridrato de clomipramina", comerciais:["Anafranil","Anafranil SR"], nutriente:"Toranja e suco de toranja (grapefruit)", categoria:"alimento",
+     efeito:"Pode aumentar as concentrações plasmáticas de clomipramina.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Considerar o aumento das concentrações plasmáticas de clomipramina com o consumo concomitante de toranja ou suco de toranja.",
+     fonte:"Bula profissional — Anafranil (Novartis)"},
+    {farmaco:"Cloridrato de clomipramina", comerciais:["Anafranil","Anafranil SR"], nutriente:"Suco de cranberry", categoria:"alimento",
+     efeito:"Pode aumentar as concentrações plasmáticas de clomipramina.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Considerar o aumento das concentrações plasmáticas de clomipramina com o consumo concomitante de suco de cranberry.",
+     fonte:"Bula profissional — Anafranil (Novartis)"},
+    {farmaco:"Cloridrato de clomipramina", comerciais:["Anafranil","Anafranil SR"], nutriente:"Álcool", categoria:"outro",
+     efeito:"Os antidepressivos tricíclicos podem potencializar o efeito do álcool; o álcool pode potencializar efeitos como sonolência, visão embaçada e distúrbios da atenção.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Alertar o paciente de que o álcool pode potencializar esses efeitos; na presença deles, não dirigir nem operar máquinas.",
+     fonte:"Bula profissional — Anafranil (Novartis)"},
   ];
 
   var MANAGE_META = {
