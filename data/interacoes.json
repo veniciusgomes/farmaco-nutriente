@@ -4105,5 +4105,122 @@
     "manejo": "separar",
     "recomendacao": "Administrar preferencialmente 1 a 2 horas antes das refeições.",
     "fonte": "Bula profissional — Sotacor (Bristol-Myers Squibb)"
+  },
+  {
+    "farmaco": "Dissulfiram",
+    "comerciais": [
+      "Antietanol"
+    ],
+    "nutriente": "Álcool (bebidas alcoólicas e medicamentos contendo álcool)",
+    "categoria": "outro",
+    "efeito": "Efeito antabuse (reação dissulfiram/álcool): rubor, eritema, náusea, vômito, hipotensão, taquicardia, mal-estar e reações mais graves (depressão respiratória, colapso cardiovascular, arritmias, infarto do miocárdio, convulsão e morte). Associação contraindicada.",
+    "mecanismo": "O dissulfiram inibe a aldeído-desidrogenase, causando acúmulo de acetaldeído (metabólito do álcool etílico) quando há ingestão, mesmo de pequenas quantidades, de álcool.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar a ingestão de bebidas alcoólicas e medicamentos contendo álcool. Contraindicado se houve ingestão de álcool nas últimas 24 horas; iniciar após pelo menos 12 horas de abstenção total. A ingestão de álcool pode produzir sintomas até 1 a 2 semanas após a última dose; alertar o paciente desses efeitos mesmo após 14 dias do uso.",
+    "fonte": "Bula profissional — Antietanol (Sanofi-Aventis)"
+  },
+  {
+    "farmaco": "Dissulfiram",
+    "comerciais": [
+      "Antietanol"
+    ],
+    "nutriente": "Alimentos contendo álcool (molhos, temperos, vinagres e outros incrementos alimentícios)",
+    "categoria": "alimento",
+    "efeito": "Possibilidade de reação dissulfiram/álcool pelo álcool contido nesses preparados; reações leves podem ocorrer em indivíduos sensíveis com concentrações sanguíneas de álcool entre 5 e 10 mg/100 mL.",
+    "mecanismo": "O dissulfiram inibe a aldeído-desidrogenase, causando acúmulo de acetaldeído quando há ingestão, mesmo de pequenas quantidades, de álcool.",
+    "manejo": "evitar",
+    "recomendacao": "Alertar o paciente quanto ao uso de preparados alcoólicos, molhos e temperos, vinagres e outros incrementos alimentícios contendo álcool, inclusive após 14 dias do uso do medicamento.",
+    "fonte": "Bula profissional — Antietanol (Sanofi-Aventis)"
+  },
+  {
+    "farmaco": "Risedronato de sódio",
+    "comerciais": [
+      "Actonel"
+    ],
+    "nutriente": "Alimentos e bebidas (exceto água)",
+    "categoria": "alimento",
+    "efeito": "Redução da biodisponibilidade oral (média de 0,63%) do risedronato quando administrado com alimento; alimentos e bebidas podem interferir na absorção.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Tomar com água, antes do café da manhã, no mínimo 30 minutos antes da primeira refeição, outra medicação ou bebida do dia. Se tomado em outro horário, fazê-lo no mínimo 2 horas antes ou após a ingestão de qualquer alimento ou líquido, exceto água.",
+    "fonte": "Bula profissional — Actonel 150 mg (Sanofi-Aventis)"
+  },
+  {
+    "farmaco": "Risedronato de sódio",
+    "comerciais": [
+      "Actonel"
+    ],
+    "nutriente": "Cátions polivalentes (cálcio, magnésio, ferro e alumínio)",
+    "categoria": "mineral",
+    "efeito": "Interferência na absorção do risedronato quando administrado junto com alimentos, bebidas ou medicamentos contendo cátions polivalentes.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Não administrar alimentos, bebidas ou produtos contendo cálcio, magnésio, ferro ou alumínio concomitantemente ao risedronato; antiácidos devem ser administrados em períodos diferentes.",
+    "fonte": "Bula profissional — Actonel 150 mg (Sanofi-Aventis)"
+  },
+  {
+    "farmaco": "Risedronato de sódio",
+    "comerciais": [
+      "Actonel"
+    ],
+    "nutriente": "Águas minerais com alta concentração de cálcio",
+    "categoria": "mineral",
+    "efeito": "Comprometimento da absorção adequada do risedronato; a água é a única bebida que deve ser tomada com o medicamento.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Não utilizar águas minerais com alta concentração de cálcio para tomar o comprimido; usar água (pelo menos 120 mL).",
+    "fonte": "Bula profissional — Actonel 150 mg (Sanofi-Aventis)"
+  },
+  {
+    "farmaco": "Voriconazol",
+    "comerciais": [
+      "Vfend"
+    ],
+    "nutriente": "Refeições com alto teor de gordura",
+    "categoria": "alimento",
+    "efeito": "Com doses múltiplas administradas com refeições ricas em gordura, a Cmáx e a AUC do voriconazol (comprimidos) são reduzidas em 34% e 24%, respectivamente.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Administrar os comprimidos pelo menos uma hora antes ou uma hora após a refeição.",
+    "fonte": "Bula profissional — Vfend (Pfizer)"
+  },
+  {
+    "farmaco": "Voriconazol",
+    "comerciais": [
+      "Vfend"
+    ],
+    "nutriente": "Erva de São João (Hypericum perforatum)",
+    "categoria": "outro",
+    "efeito": "Redução da exposição ao voriconazol (em estudo independente publicado, redução de 59% na AUC do voriconazol). Coadministração contraindicada.",
+    "mecanismo": "A erva de São João é indutora do CYP450 e da P-gp, reduzindo significativamente as concentrações plasmáticas de voriconazol.",
+    "manejo": "evitar",
+    "recomendacao": "Não utilizar erva de São João durante o tratamento com voriconazol (associação contraindicada).",
+    "fonte": "Bula profissional — Vfend (Pfizer)"
+  },
+  {
+    "farmaco": "Griseofulvina",
+    "comerciais": [
+      "Sporostatin"
+    ],
+    "nutriente": "Álcool",
+    "categoria": "outro",
+    "efeito": "Potencialização dos efeitos do álcool, produzindo taquicardia e rubor.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Orientar o paciente de que os efeitos do álcool podem ser potencializados durante o tratamento com griseofulvina.",
+    "fonte": "Bula profissional — Sporostatin (Mantecorp)"
+  },
+  {
+    "farmaco": "Entecavir",
+    "comerciais": [
+      "Baraclude"
+    ],
+    "nutriente": "Alimentos (refeição gordurosa ou leve)",
+    "categoria": "alimento",
+    "efeito": "Redução da absorção: atraso na absorção (1-1,5 h alimentado vs. 0,75 h em jejum), diminuição de 44-46% na Cmáx e de 18-20% na AUC.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Administrar com estômago vazio: pelo menos 2 horas após as refeições e 2 horas antes da próxima refeição.",
+    "fonte": "Bula profissional — Baraclude (Bristol-Myers Squibb)"
   }
 ]
