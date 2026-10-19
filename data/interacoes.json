@@ -4407,5 +4407,70 @@
     "manejo": "atencao",
     "recomendacao": "Alertar o paciente de que o álcool pode potencializar esses efeitos; na presença deles, não dirigir nem operar máquinas.",
     "fonte": "Bula profissional — Anafranil (Novartis)"
+  },
+  {
+    "farmaco": "Nilotinibe",
+    "comerciais": [
+      "Tasigna"
+    ],
+    "nutriente": "Alimentos (refeições)",
+    "categoria": "alimento",
+    "efeito": "A absorção e a biodisponibilidade do nilotinibe aumentam com alimentos (Cmáx +112% e AUC +82% versus jejum); o prolongamento clinicamente significativo do intervalo QT pode ocorrer se tomado inapropriadamente com alimento.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Não tomar junto com alimentos: ingerir duas horas após a refeição e não consumir nenhum alimento por pelo menos uma hora após a dose.",
+    "fonte": "Bula profissional — Tasigna (Novartis)"
+  },
+  {
+    "farmaco": "Nilotinibe",
+    "comerciais": [
+      "Tasigna"
+    ],
+    "nutriente": "Suco de grapefruit e outros alimentos inibidores da CYP3A4",
+    "categoria": "alimento",
+    "efeito": "Suco de grapefruit e outros alimentos conhecidos por inibir a CYP3A4 devem ser evitados a qualquer momento.",
+    "mecanismo": "Alimentos conhecidos por inibir a CYP3A4.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar suco de grapefruit e outros alimentos conhecidos por inibir a CYP3A4 em qualquer momento durante o tratamento.",
+    "fonte": "Bula profissional — Tasigna (Novartis)"
+  },
+  {
+    "farmaco": "Acetato de abiraterona",
+    "comerciais": [
+      "Zytiga"
+    ],
+    "nutriente": "Alimentos (refeições)",
+    "categoria": "alimento",
+    "efeito": "A administração com alimento aumenta significantemente a absorção da abiraterona (aumento de até 17 vezes na exposição sistêmica média, conforme o teor de gordura da refeição), com exposições altamente variáveis.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Não tomar com alimentos: dose única com o estômago vazio, pelo menos duas horas depois da refeição e sem ingerir alimentos por pelo menos uma hora após a dose; comprimidos inteiros com água.",
+    "fonte": "Bula profissional — Zytiga (Janssen-Cilag)"
+  },
+  {
+    "farmaco": "Ditosilato de lapatinibe",
+    "comerciais": [
+      "Tykerb"
+    ],
+    "nutriente": "Alimentos (refeições)",
+    "categoria": "alimento",
+    "efeito": "A exposição sistêmica ao lapatinibe aumenta com refeições: AUC cerca de 3 a 4 vezes maior (Cmáx cerca de 2,5 a 3 vezes) com refeição de baixo ou de alto teor de gordura, respectivamente.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Tomar com o estômago vazio, pelo menos 1 hora antes ou 1 hora após uma refeição; a dose diária não deve ser dividida.",
+    "fonte": "Bula profissional — Tykerb (Novartis)"
+  },
+  {
+    "farmaco": "Ditosilato de lapatinibe",
+    "comerciais": [
+      "Tykerb"
+    ],
+    "nutriente": "Suco de toranja (grapefruit)",
+    "categoria": "alimento",
+    "efeito": "O suco de toranja pode aumentar a biodisponibilidade do lapatinibe.",
+    "mecanismo": "O suco pode inibir a CYP3A4 e a Pgp na parede intestinal.",
+    "manejo": "evitar",
+    "recomendacao": "Evitar suco de toranja (grapefruit) durante o tratamento com Tykerb.",
+    "fonte": "Bula profissional — Tykerb (Novartis)"
   }
 ]
