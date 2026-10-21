@@ -4472,5 +4472,44 @@
     "manejo": "evitar",
     "recomendacao": "Evitar suco de toranja (grapefruit) durante o tratamento com Tykerb.",
     "fonte": "Bula profissional — Tykerb (Novartis)"
+  },
+  {
+    "farmaco": "Pazopanibe",
+    "comerciais": [
+      "Votrient"
+    ],
+    "nutriente": "Alimentos (refeição rica ou pobre em gordura)",
+    "categoria": "alimento",
+    "efeito": "A exposição sistêmica ao pazopanibe aumenta com alimentos: refeição rica ou pobre em gordura resulta em aumento praticamente duplicado de AUC e Cmáx.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Administrar sem alimentos: no mínimo uma hora antes ou duas horas depois de uma refeição.",
+    "fonte": "Bula profissional — Votrient (Novartis)"
+  },
+  {
+    "farmaco": "Pazopanibe",
+    "comerciais": [
+      "Votrient"
+    ],
+    "nutriente": "Suco de toranja (grapefruit)",
+    "categoria": "alimento",
+    "efeito": "O suco de toranja também pode aumentar as concentrações plasmáticas do pazopanibe.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "A bula apenas registra que o suco de toranja pode aumentar as concentrações de pazopanibe, citado junto aos inibidores fortes de CYP3A4; não traz conduta específica para o suco.",
+    "fonte": "Bula profissional — Votrient (Novartis)"
+  },
+  {
+    "farmaco": "Tosilato de sorafenibe",
+    "comerciais": [
+      "Nexavar"
+    ],
+    "nutriente": "Refeição rica em gordura",
+    "categoria": "alimento",
+    "efeito": "Com refeição rica em gordura, a biodisponibilidade do sorafenibe é reduzida em 29% em comparação com o jejum; com refeição de gordura moderada, é similar à do jejum.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Tomar entre as refeições ou com refeições de pouca ou moderada gordura; não tomar com refeições ricas em gordura. Se for fazer refeição rica em gordura, tomar pelo menos 1 hora antes ou 2 horas depois.",
+    "fonte": "Bula (paciente) — Nexavar (Bayer)"
   }
 ]
