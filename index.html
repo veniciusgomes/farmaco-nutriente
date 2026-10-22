@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 182 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 187 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -1997,6 +1997,52 @@
      efeito:"Com refeição rica em gordura, a biodisponibilidade do sorafenibe é reduzida em 29% em comparação com o jejum; com refeição de gordura moderada, é similar à do jejum.", mecanismo:"Não detalhado na bula.",
      manejo:"separar", recomendacao:"Tomar entre as refeições ou com refeições de pouca ou moderada gordura; não tomar com refeições ricas em gordura. Se for fazer refeição rica em gordura, tomar pelo menos 1 hora antes ou 2 horas depois.",
      fonte:"Bula (paciente) — Nexavar (Bayer)"},
+
+    // Dolutegravir
+    {farmaco:"Dolutegravir", comerciais:["Tivicay PD"], nutriente:"Suplementos de cálcio", categoria:"mineral",
+     efeito:"Redução da exposição ao dolutegravir (AUC 39%, Cmáx 37%, C24 39%) com suplementos que contêm cálcio.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Administrar o dolutegravir 2 horas antes ou 6 horas depois de suplementos de cálcio; se tomado junto com alimentos, pode ser administrado ao mesmo tempo que o suplemento.",
+     fonte:"Bula profissional — Tivicay PD (GlaxoSmithKline Brasil / ViiV)"},
+    {farmaco:"Dolutegravir", comerciais:["Tivicay PD"], nutriente:"Suplementos de ferro", categoria:"mineral",
+     efeito:"Redução da exposição ao dolutegravir (AUC 54%, Cmáx 57%, C24 56%) com suplementos que contêm ferro.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Administrar o dolutegravir 2 horas antes ou 6 horas depois de suplementos de ferro; se tomado junto com alimentos, pode ser administrado ao mesmo tempo que o suplemento.",
+     fonte:"Bula profissional — Tivicay PD (GlaxoSmithKline Brasil / ViiV)"},
+    // Everolimo
+    {farmaco:"Everolimo", comerciais:["Afinitor"], nutriente:"Toranja (grapefruit) e suco de toranja, carambola, laranja de Sevilha", categoria:"alimento",
+     efeito:"Alimentos conhecidos por afetar a atividade do citocromo P450 e da PgP devem ser evitados durante o tratamento.", mecanismo:"A bula cita alimentos conhecidos por afetar a atividade do citocromo P450 e da PgP.",
+     manejo:"evitar", recomendacao:"Evitar toranja, suco de toranja, carambola, laranjas de Sevilha e outros alimentos conhecidos por afetar CYP450 e PgP durante o tratamento.",
+     fonte:"Bula profissional — Afinitor (Novartis)"},
+    {farmaco:"Everolimo", comerciais:["Afinitor"], nutriente:"Alimentos (refeição com alto ou baixo teor de gordura)", categoria:"alimento",
+     efeito:"Refeição de alto teor de gordura reduziu a AUC em 22% e a Cmáx em 54%; refeições de baixo teor de gordura reduziram AUC em 32% e Cmáx em 42% (sem efeito aparente no perfil concentração-tempo após a absorção).", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Administrar uma vez ao dia, no mesmo horário todos os dias, com ou sem alimento.",
+     fonte:"Bula profissional — Afinitor (Novartis)"},
+    // Ibrutinibe
+    {farmaco:"Ibrutinibe", comerciais:["Imbruvica"], nutriente:"Toranja (grapefruit) e suco de toranja, laranja de Sevilha", categoria:"alimento",
+     efeito:"Toranja e laranja de Sevilha contêm inibidores moderados da CYP3A e devem ser evitadas durante o tratamento.", mecanismo:"Contêm inibidores moderados da CYP3A.",
+     manejo:"evitar", recomendacao:"Não administrar com suco de toranja ou laranjas de Sevilha; evitar toranja e laranjas de Sevilha durante o tratamento.",
+     fonte:"Bula profissional — Imbruvica comprimidos revestidos (Janssen-Cilag)"},
+    {farmaco:"Ibrutinibe", comerciais:["Imbruvica"], nutriente:"Óleo de peixe", categoria:"outro",
+     efeito:"Suplementos como óleo de peixe devem ser evitados (citado no contexto do risco de hemorragia grave com anticoagulantes/antiagregantes).", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Evitar suplementos de óleo de peixe durante o tratamento.",
+     fonte:"Bula profissional — Imbruvica comprimidos revestidos (Janssen-Cilag)"},
+    {farmaco:"Ibrutinibe", comerciais:["Imbruvica"], nutriente:"Vitamina E (preparações)", categoria:"vitamina",
+     efeito:"Preparações com vitamina E devem ser evitadas (citado no contexto do risco de hemorragia grave com anticoagulantes/antiagregantes).", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Evitar preparações com vitamina E durante o tratamento.",
+     fonte:"Bula profissional — Imbruvica comprimidos revestidos (Janssen-Cilag)"},
+    {farmaco:"Ibrutinibe", comerciais:["Imbruvica"], nutriente:"Alimentos (refeição)", categoria:"alimento",
+     efeito:"A biodisponibilidade absoluta em jejum foi 2,9% e duplicou quando combinado com uma refeição.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Pode ser tomado antes ou após uma refeição.",
+     fonte:"Bula profissional — Imbruvica comprimidos revestidos (Janssen-Cilag)"},
+    // Deferasirox
+    {farmaco:"Deferasirox", comerciais:["Exjade"], nutriente:"Alimentos (refeição)", categoria:"alimento",
+     efeito:"A biodisponibilidade do deferasirox (comprimidos para suspensão) aumenta de forma variável com a refeição; quase dobrou com refeição de alto teor de gordura, com variação conforme o teor de gordura e o horário.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Tomar com o estômago vazio, pelo menos 30 minutos antes da refeição, de preferência no mesmo horário todos os dias.",
+     fonte:"Bula profissional — Exjade (Novartis), espelho bulas.med.br, versão 25/03/2024"},
+    // Posaconazol
+    {farmaco:"Posaconazol", comerciais:["Noxafil"], nutriente:"Alimentos ou suplemento nutricional", categoria:"alimento",
+     efeito:"A AUC do posaconazol é cerca de 2,6 vezes maior com refeição sem gordura ou suplemento nutricional (14 g de gordura) e 4 vezes maior com refeição rica em gordura (cerca de 50 g) em relação ao jejum.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Administrar o posaconazol com alimento ou com um suplemento nutricional.",
+     fonte:"Bula profissional (texto espelhado em bula.com.br) — Noxafil suspensão oral (Schering-Plough/MSD)"},
   ];
 
   var MANAGE_META = {
@@ -2025,7 +2071,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>21/10/2026</b></span>';
+      '<span class="stat">atualizado em <b>22/10/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -2169,7 +2215,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 21/10/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 22/10/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
