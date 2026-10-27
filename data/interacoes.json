@@ -4641,5 +4641,174 @@
     "manejo": "atencao",
     "recomendacao": "Administrar o posaconazol com alimento ou com um suplemento nutricional.",
     "fonte": "Bula profissional (texto espelhado em bula.com.br) — Noxafil suspensão oral (Schering-Plough/MSD)"
+  },
+  {
+    "farmaco": "Cloridrato de moxifloxacino",
+    "comerciais": [
+      "Cloridrato de Moxifloxacino Geolab"
+    ],
+    "nutriente": "Antiácidos e produtos contendo magnésio ou alumínio",
+    "categoria": "mineral",
+    "efeito": "Diminuição da absorção oral do moxifloxacino, podendo levar a concentrações plasmáticas consideravelmente mais baixas do que o desejado.",
+    "mecanismo": "Formação de complexos quelados com os cátions multivalentes contidos nestas preparações.",
+    "manejo": "separar",
+    "recomendacao": "Administrar antiácidos e outros produtos contendo magnésio ou alumínio pelo menos 4 horas antes ou 2 horas após uma dose oral de moxifloxacino.",
+    "fonte": "Bula profissional — Cloridrato de Moxifloxacino (Geolab)"
+  },
+  {
+    "farmaco": "Cloridrato de moxifloxacino",
+    "comerciais": [
+      "Cloridrato de Moxifloxacino Geolab"
+    ],
+    "nutriente": "Ferro e zinco (agentes contendo ferro ou zinco)",
+    "categoria": "mineral",
+    "efeito": "Diminuição da absorção oral do moxifloxacino, podendo levar a concentrações plasmáticas consideravelmente mais baixas do que o desejado.",
+    "mecanismo": "Formação de complexos quelados com os cátions multivalentes contidos nestas preparações.",
+    "manejo": "separar",
+    "recomendacao": "Administrar agentes contendo ferro ou zinco pelo menos 4 horas antes ou 2 horas após uma dose oral de moxifloxacino.",
+    "fonte": "Bula profissional — Cloridrato de Moxifloxacino (Geolab)"
+  },
+  {
+    "farmaco": "Cloridrato de moxifloxacino",
+    "comerciais": [
+      "Cloridrato de Moxifloxacino Geolab"
+    ],
+    "nutriente": "Multivitaminas",
+    "categoria": "vitamina",
+    "efeito": "A ingestão concomitante com multivitaminas pode diminuir a absorção do moxifloxacino após administração oral.",
+    "mecanismo": "Formação de complexos quelados com os cátions multivalentes contidos nestas preparações.",
+    "manejo": "separar",
+    "recomendacao": "Bula não traz intervalo específico para multivitaminas; o intervalo de 4 horas antes ou 2 horas após a dose oral é descrito para antiácidos e produtos com magnésio, alumínio, ferro ou zinco.",
+    "fonte": "Bula profissional — Cloridrato de Moxifloxacino (Geolab)"
+  },
+  {
+    "farmaco": "Cloridrato de moxifloxacino",
+    "comerciais": [
+      "Cloridrato de Moxifloxacino Geolab"
+    ],
+    "nutriente": "Alimentos (refeições)",
+    "categoria": "alimento",
+    "efeito": "A administração com alimentos prolonga em cerca de 2 horas o tempo para as concentrações máximas e reduz a concentração máxima em cerca de 16%; a extensão da absorção permanece inalterada.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Efeito considerado não clinicamente relevante pela bula; pode ser administrado independentemente das refeições.",
+    "fonte": "Bula profissional — Cloridrato de Moxifloxacino (Geolab)"
+  },
+  {
+    "farmaco": "Cloridrato de minociclina",
+    "comerciais": [
+      "Cloridrato de Minociclina Ranbaxy"
+    ],
+    "nutriente": "Antiácidos contendo alumínio, cálcio ou magnésio",
+    "categoria": "mineral",
+    "efeito": "Prejudicam a absorção da minociclina.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Não devem ser dados a pacientes em uso oral de tetraciclinas.",
+    "fonte": "Bula profissional — Cloridrato de Minociclina (Ranbaxy/Sun Pharma)"
+  },
+  {
+    "farmaco": "Cloridrato de minociclina",
+    "comerciais": [
+      "Cloridrato de Minociclina Ranbaxy"
+    ],
+    "nutriente": "Ferro (preparações contendo ferro)",
+    "categoria": "mineral",
+    "efeito": "Prejudicam a absorção da minociclina.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Preparações contendo ferro não devem ser dadas a pacientes em uso oral de tetraciclinas.",
+    "fonte": "Bula profissional — Cloridrato de Minociclina (Ranbaxy/Sun Pharma)"
+  },
+  {
+    "farmaco": "Cloridrato de minociclina",
+    "comerciais": [
+      "Cloridrato de Minociclina Ranbaxy"
+    ],
+    "nutriente": "Leite / refeição contendo leite",
+    "categoria": "alimento",
+    "efeito": "Com uma refeição contendo leite, a extensão da absorção (ASC) é reduzida em cerca de 33% e a concentração sérica máxima em cerca de 32%, com atraso de uma hora.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Evitar tomar com leite ou durante a alimentação; ingerir os comprimidos pelo menos 1 hora antes ou 2 horas depois das refeições. A mesma bula também afirma que a absorção não é significativamente afetada por alimentos e quantidades moderadas de leite.",
+    "fonte": "Bula profissional — Cloridrato de Minociclina (Ranbaxy/Sun Pharma)"
+  },
+  {
+    "farmaco": "Raltegravir potássico",
+    "comerciais": [
+      "Isentress"
+    ],
+    "nutriente": "Antiácidos contendo alumínio e/ou magnésio",
+    "categoria": "mineral",
+    "efeito": "Reduzem significativamente os níveis plasmáticos de raltegravir (antiácido com hidróxido de alumínio e magnésio: Cmáx 0,56 e ASC 0,51 em relação ao raltegravir isolado).",
+    "mecanismo": "Antiácidos contendo cátions metálicos bivalentes podem reduzir a absorção de raltegravir por quelação.",
+    "manejo": "evitar",
+    "recomendacao": "Não é recomendada a coadministração de Isentress com antiácidos contendo alumínio e/ou magnésio.",
+    "fonte": "Bula profissional — Isentress (Merck Sharp & Dohme)"
+  },
+  {
+    "farmaco": "Raltegravir potássico",
+    "comerciais": [
+      "Isentress"
+    ],
+    "nutriente": "Refeição com alto teor de gorduras",
+    "categoria": "alimento",
+    "efeito": "Aumenta a ASC e a Cmáx do raltegravir em aproximadamente 2 vezes e a C12h em 4,1 vezes (estado de equilíbrio, voluntários saudáveis).",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Bula informa que Isentress pode ser administrado com ou sem alimentos; a presença de alimentos parece aumentar a variabilidade farmacocinética em relação ao jejum.",
+    "fonte": "Bula profissional — Isentress (Merck Sharp & Dohme)"
+  },
+  {
+    "farmaco": "Raltegravir potássico",
+    "comerciais": [
+      "Isentress"
+    ],
+    "nutriente": "Refeição com baixo teor de gorduras",
+    "categoria": "alimento",
+    "efeito": "Diminui a ASC e a Cmáx do raltegravir em 46% e 52%, respectivamente; a C12h permaneceu basicamente inalterada.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Bula informa que Isentress pode ser administrado com ou sem alimentos; a presença de alimentos parece aumentar a variabilidade farmacocinética em relação ao jejum.",
+    "fonte": "Bula profissional — Isentress (Merck Sharp & Dohme)"
+  },
+  {
+    "farmaco": "Ofloxacino",
+    "comerciais": [
+      "LFM-Ofloxacino"
+    ],
+    "nutriente": "Antiácidos contendo hidróxidos de alumínio (incluindo sucralfato) e de magnésio, fosfato de alumínio",
+    "categoria": "mineral",
+    "efeito": "Podem reduzir a absorção dos comprimidos e, assim, a eficácia terapêutica.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Administrar o ofloxacino aproximadamente 2 horas distante da administração de antiácidos.",
+    "fonte": "Bula profissional — LFM-Ofloxacino (Laboratório Farmacêutico da Marinha)"
+  },
+  {
+    "farmaco": "Ofloxacino",
+    "comerciais": [
+      "LFM-Ofloxacino"
+    ],
+    "nutriente": "Zinco e ferro",
+    "categoria": "mineral",
+    "efeito": "Podem reduzir a absorção dos comprimidos e, assim, a eficácia terapêutica.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "separar",
+    "recomendacao": "Bula lista zinco e ferro junto aos antiácidos e recomenda administrar o ofloxacino aproximadamente 2 horas distante dos antiácidos.",
+    "fonte": "Bula profissional — LFM-Ofloxacino (Laboratório Farmacêutico da Marinha)"
+  },
+  {
+    "farmaco": "Ofloxacino",
+    "comerciais": [
+      "LFM-Ofloxacino"
+    ],
+    "nutriente": "Alimentos",
+    "categoria": "alimento",
+    "efeito": "O alimento não compromete a absorção oral, mas pode retardar o momento da concentração sanguínea máxima.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Os comprimidos podem ser ingeridos em jejum ou durante as refeições.",
+    "fonte": "Bula profissional — LFM-Ofloxacino (Laboratório Farmacêutico da Marinha)"
   }
 ]
