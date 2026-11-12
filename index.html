@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 191 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 196 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -2100,6 +2100,36 @@
      efeito:"O alimento não compromete a absorção oral, mas pode retardar o momento da concentração sanguínea máxima.", mecanismo:"Não detalhado na bula.",
      manejo:"atencao", recomendacao:"Os comprimidos podem ser ingeridos em jejum ou durante as refeições.",
      fonte:"Bula profissional — LFM-Ofloxacino (Laboratório Farmacêutico da Marinha)"},
+
+    // Cilostazol
+    {farmaco:"Cilostazol", comerciais:["Cilostazol Eurofarma","Vasogard"], nutriente:"Alimentos gordurosos", categoria:"alimento",
+     efeito:"A presença de alimentos gordurosos aumenta a absorção do cilostazol, com aumento aproximado de 90% na Cmáx e 25% na ASC.", mecanismo:"Não detalhado na bula.",
+     manejo:"separar", recomendacao:"Tomar com um copo de água em jejum ou respeitando o intervalo de meia hora antes ou duas horas após o café da manhã ou jantar.",
+     fonte:"Bula profissional — Cilostazol (Eurofarma)"},
+    // Valganciclovir
+    {farmaco:"Valganciclovir", comerciais:["Cloridrato de valganciclovir Dr. Reddy's"], nutriente:"Alimentos (administração com alimentos)", categoria:"alimento",
+     efeito:"Com a dose de 900 mg, a administração com alimentos aumentou a ASC24 do ganciclovir em cerca de 30% e a Cmáx em cerca de 14%.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Administrar o valganciclovir por via oral e junto com alimentos.",
+     fonte:"Bula profissional — Cloridrato de valganciclovir (Dr. Reddy's Farmacêutica do Brasil)"},
+    // Mercaptopurina
+    {farmaco:"Mercaptopurina", comerciais:["Purinethol"], nutriente:"Leite e produtos lácteos", categoria:"alimento",
+     efeito:"Pode levar a concentrações plasmáticas reduzidas de mercaptopurina.", mecanismo:"O leite e os produtos lácteos contêm xantina oxidase, enzima que metaboliza a mercaptopurina.",
+     manejo:"separar", recomendacao:"Não administrar a dose com leite ou produtos lácteos; administrar pelo menos 1 hora antes ou 2 horas depois da ingestão de leite ou produtos lácteos.",
+     fonte:"Bula profissional — Purinethol (Aspen Pharma)"},
+    {farmaco:"Mercaptopurina", comerciais:["Purinethol"], nutriente:"Alimentos (em geral)", categoria:"alimento",
+     efeito:"A administração com alimentos pode diminuir ligeiramente a exposição sistêmica; a biodisponibilidade relativa média foi cerca de 26% menor após alimentos e leite do que em jejum de uma noite.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Pode ser administrada com alimentos ou com o estômago vazio, mas o paciente deve padronizar o método de administração para evitar grande variabilidade na exposição.",
+     fonte:"Bula profissional — Purinethol (Aspen Pharma)"},
+    // Nitazoxanida
+    {farmaco:"Nitazoxanida", comerciais:["Nitazoxanida Eurofarma"], nutriente:"Alimentos (administração com alimentos)", categoria:"alimento",
+     efeito:"A ingestão com alimento aumenta a ASC e a Cmáx; com os comprimidos, a ASC da tizoxanida e da tizoxanida glicuronídeo aumenta quase duas vezes e a Cmáx quase 50%.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Administrar a nitazoxanida com alimentos, o que garante elevada absorção do medicamento.",
+     fonte:"Bula profissional — Nitazoxanida (Eurofarma)"},
+    // Darunavir
+    {farmaco:"Darunavir", comerciais:["Prezista"], nutriente:"Alimentos (administração com refeição)", categoria:"alimento",
+     efeito:"Na ausência de alimentos, a biodisponibilidade relativa do darunavir com dose baixa de ritonavir é 30% menor em comparação à tomada com alimentos.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Tomar os comprimidos com ritonavir e com alimentos (junto com uma refeição); o tipo de alimento não afeta a exposição ao darunavir.",
+     fonte:"Bula profissional — Prezista (Janssen-Cilag)"},
   ];
 
   var MANAGE_META = {
@@ -2128,7 +2158,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>27/10/2026</b></span>';
+      '<span class="stat">atualizado em <b>12/11/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -2272,7 +2302,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 27/10/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 12/11/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
