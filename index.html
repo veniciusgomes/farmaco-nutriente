@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 196 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 200 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -2130,6 +2130,27 @@
      efeito:"Na ausência de alimentos, a biodisponibilidade relativa do darunavir com dose baixa de ritonavir é 30% menor em comparação à tomada com alimentos.", mecanismo:"Não detalhado na bula.",
      manejo:"atencao", recomendacao:"Tomar os comprimidos com ritonavir e com alimentos (junto com uma refeição); o tipo de alimento não afeta a exposição ao darunavir.",
      fonte:"Bula profissional — Prezista (Janssen-Cilag)"},
+
+    // Dasatinibe
+    {farmaco:"Dasatinibe", comerciais:["Sprycel"], nutriente:"Suco de toranja (grapefruit)", categoria:"alimento",
+     efeito:"Pode aumentar a concentração plasmática de dasatinibe.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Evitar suco de toranja (grapefruit) durante o tratamento com Sprycel.",
+     fonte:"Bula profissional — Sprycel (Bristol-Myers Squibb)"},
+    // Etravirina
+    {farmaco:"Etravirina", comerciais:["Intelence"], nutriente:"Alimentos (refeição)", categoria:"alimento",
+     efeito:"Exposição à etravirina diminui quando tomada em jejum (51%), antes de refeição calórica padrão (17%) ou após um croissant (20%), em comparação à administração após refeição calórica normal padrão; é semelhante após refeição normal ou de alto teor de gordura.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Tomar etravirina após uma refeição para atingir a exposição ideal.",
+     fonte:"Bula profissional — Intelence (Janssen-Cilag), texto reproduzido em bula.com.br"},
+    // Sulfato de hidroxicloroquina
+    {farmaco:"Sulfato de hidroxicloroquina", comerciais:["Sulfato de hidroxicloroquina Brainfarma"], nutriente:"Suco de toranja", categoria:"alimento",
+     efeito:"Citado como inibidor forte de CYP2C8/CYP3A4 que pode aumentar a exposição à hidroxicloroquina (inibidores fortes aumentariam a exposição em menos de 1,5 vez, segundo modelos farmacocinéticos).", mecanismo:"Inibição de CYP2C8 e/ou CYP3A4, segundo modelos farmacocinéticos de base fisiológica.",
+     manejo:"monitorar", recomendacao:"Recomenda-se cautela, por exemplo monitoramento de reações adversas, quando o suco de toranja é administrado concomitantemente.",
+     fonte:"Bula profissional — Sulfato de hidroxicloroquina Brainfarma (Brainfarma)"},
+    // Malato de sunitinibe
+    {farmaco:"Malato de sunitinibe", comerciais:["Sutent"], nutriente:"Suco de toranja (grapefruit)", categoria:"alimento",
+     efeito:"Citado entre os potentes inibidores da família CYP3A4 cuja administração pode aumentar as concentrações de sunitinibe.", mecanismo:"Inibição da CYP3A4.",
+     manejo:"evitar", recomendacao:"Evitar a administração concomitante com inibidores da CYP3A4 (incluindo suco de toranja) ou considerar alternativa sem potencial de inibição; se não for possível, a dose de sunitinibe pode ser reduzida.",
+     fonte:"Bula profissional — Sutent (Pfizer)"},
   ];
 
   var MANAGE_META = {
@@ -2158,7 +2179,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>12/11/2026</b></span>';
+      '<span class="stat">atualizado em <b>13/11/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -2302,7 +2323,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 12/11/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 13/11/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
