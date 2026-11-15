@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 200 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 204 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -2151,6 +2151,35 @@
      efeito:"Citado entre os potentes inibidores da família CYP3A4 cuja administração pode aumentar as concentrações de sunitinibe.", mecanismo:"Inibição da CYP3A4.",
      manejo:"evitar", recomendacao:"Evitar a administração concomitante com inibidores da CYP3A4 (incluindo suco de toranja) ou considerar alternativa sem potencial de inibição; se não for possível, a dose de sunitinibe pode ser reduzida.",
      fonte:"Bula profissional — Sutent (Pfizer)"},
+
+    // Venetoclax
+    {farmaco:"Venetoclax", comerciais:["Venclexta"], nutriente:"Toranja (grapefruit), laranja-azeda e carambola", categoria:"alimento",
+     efeito:"Produtos à base de toranja, laranja-azeda e carambola devem ser evitados durante o tratamento, pois contêm inibidores da CYP3A.", mecanismo:"Contêm inibidores da CYP3A.",
+     manejo:"evitar", recomendacao:"Evitar produtos à base de toranja (grapefruit), laranja-azeda (inclusive geleia) e carambola durante o tratamento com Venclexta.",
+     fonte:"Bula profissional — Venclexta (AbbVie)"},
+    {farmaco:"Venetoclax", comerciais:["Venclexta"], nutriente:"Refeição (baixo teor de gordura ou rica em gorduras)", categoria:"alimento",
+     efeito:"A refeição com baixo teor de gordura aumentou a exposição ao venetoclax em cerca de 3,4 vezes e a refeição rica em gorduras em 5,1 a 5,3 vezes, em comparação ao jejum.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Administrar Venclexta durante as refeições, com água, preferencialmente sempre no mesmo horário do dia.",
+     fonte:"Bula profissional — Venclexta (AbbVie)"},
+    // Ribociclibe
+    {farmaco:"Ribociclibe", comerciais:["Kisqali"], nutriente:"Toranja (grapefruit) e suco de toranja", categoria:"alimento",
+     efeito:"Pode aumentar a exposição ao ribociclibe.", mecanismo:"Inibição do citocromo CYP3A4.",
+     manejo:"evitar", recomendacao:"Instruir os pacientes a evitar grapefruit ou suco de grapefruit.",
+     fonte:"Bula profissional — Kisqali (Novartis)"},
+    {farmaco:"Ribociclibe", comerciais:["Kisqali"], nutriente:"Cafeína", categoria:"outro",
+     efeito:"A administração concomitante de Kisqali (400 mg, doses múltiplas) aumentou a exposição à cafeína em 20% em indivíduos saudáveis.", mecanismo:"Inibição fraca da CYP1A2 (a cafeína é substrato da CYP1A2).",
+     manejo:"monitorar", recomendacao:"Na dose de 600 mg, simulações PBPK previram apenas efeitos inibitórios fracos sobre substratos da CYP1A2 (aumento de < 2 vezes na ASC).",
+     fonte:"Bula profissional — Kisqali (Novartis)"},
+    // Axitinibe
+    {farmaco:"Axitinibe", comerciais:["Inlyta"], nutriente:"Toranja (grapefruit)", categoria:"alimento",
+     efeito:"A toranja também pode aumentar as concentrações plasmáticas de axitinibe.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"A bula cita a toranja junto aos inibidores fortes da CYP3A4/5, para os quais recomenda ajuste de dose; para a toranja não há orientação específica de ajuste.",
+     fonte:"Bula profissional — Inlyta (Pfizer)"},
+    // Ribavirina
+    {farmaco:"Ribavirina", comerciais:["Rebetol"], nutriente:"Refeição rica em gordura", categoria:"alimento",
+     efeito:"A biodisponibilidade de dose única oral aumentou com refeição rica em gordura (AUCtf e Cmax aumentadas em 70%).", mecanismo:"Possível trânsito retardado da ribavirina ou pH modificado.",
+     manejo:"atencao", recomendacao:"Relevância clínica do estudo de dose única desconhecida; no estudo clínico de eficácia os pacientes foram instruídos a tomar a ribavirina com alimento; as cápsulas devem ser administradas com alimentos.",
+     fonte:"Bula profissional — Rebetol (Schering-Plough)"},
   ];
 
   var MANAGE_META = {
@@ -2179,7 +2208,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>13/11/2026</b></span>';
+      '<span class="stat">atualizado em <b>15/11/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -2323,7 +2352,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 13/11/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 15/11/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
