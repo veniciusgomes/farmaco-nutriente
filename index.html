@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 204 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 207 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -2180,6 +2180,22 @@
      efeito:"A biodisponibilidade de dose única oral aumentou com refeição rica em gordura (AUCtf e Cmax aumentadas em 70%).", mecanismo:"Possível trânsito retardado da ribavirina ou pH modificado.",
      manejo:"atencao", recomendacao:"Relevância clínica do estudo de dose única desconhecida; no estudo clínico de eficácia os pacientes foram instruídos a tomar a ribavirina com alimento; as cápsulas devem ser administradas com alimentos.",
      fonte:"Bula profissional — Rebetol (Schering-Plough)"},
+
+    // Bedaquilina
+    {farmaco:"Bedaquilina", comerciais:["Sirturo"], nutriente:"Alimentos (administração com alimento)", categoria:"alimento",
+     efeito:"A administração com alimento aumentou a biodisponibilidade relativa em cerca de três vezes em comparação com o jejum.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"A bedaquilina deve ser tomada com alimentos para aumentar a sua biodisponibilidade; os comprimidos devem ser deglutidos inteiros, com água.",
+     fonte:"Bula profissional — Sirturo (Janssen-Cilag)"},
+    // Zidovudina
+    {farmaco:"Zidovudina", comerciais:["Zidovir"], nutriente:"Alimentos altamente gordurosos", categoria:"alimento",
+     efeito:"A administração conjunta com alimentos altamente gordurosos pode diminuir o índice e a extensão da absorção.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Considerar o efeito de refeições muito gordurosas sobre a absorção da zidovudina; a bula não traz recomendação de manejo específica.",
+     fonte:"Bula profissional — Zidovir (Cristália Produtos Químicos Farmacêuticos Ltda.)"},
+    // Cloridrato de pioglitazona
+    {farmaco:"Cloridrato de pioglitazona", comerciais:["Actos"], nutriente:"Alimentos (alimentação)", categoria:"alimento",
+     efeito:"A alimentação retarda ligeiramente o tempo do pico de concentração sérica (para 3 a 4 horas), mas não altera a extensão da absorção.", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Não há recomendação específica na bula; o alimento apenas retarda o pico sérico sem alterar a extensão da absorção.",
+     fonte:"Bula profissional — Actos (Abbott Laboratórios do Brasil Ltda.)"},
   ];
 
   var MANAGE_META = {
@@ -2208,7 +2224,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>15/11/2026</b></span>';
+      '<span class="stat">atualizado em <b>20/11/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -2352,7 +2368,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 15/11/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 20/11/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';

@@ -5019,5 +5019,44 @@
     "manejo": "atencao",
     "recomendacao": "Relevância clínica do estudo de dose única desconhecida; no estudo clínico de eficácia os pacientes foram instruídos a tomar a ribavirina com alimento; as cápsulas devem ser administradas com alimentos.",
     "fonte": "Bula profissional — Rebetol (Schering-Plough)"
+  },
+  {
+    "farmaco": "Bedaquilina",
+    "comerciais": [
+      "Sirturo"
+    ],
+    "nutriente": "Alimentos (administração com alimento)",
+    "categoria": "alimento",
+    "efeito": "A administração com alimento aumentou a biodisponibilidade relativa em cerca de três vezes em comparação com o jejum.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "A bedaquilina deve ser tomada com alimentos para aumentar a sua biodisponibilidade; os comprimidos devem ser deglutidos inteiros, com água.",
+    "fonte": "Bula profissional — Sirturo (Janssen-Cilag)"
+  },
+  {
+    "farmaco": "Zidovudina",
+    "comerciais": [
+      "Zidovir"
+    ],
+    "nutriente": "Alimentos altamente gordurosos",
+    "categoria": "alimento",
+    "efeito": "A administração conjunta com alimentos altamente gordurosos pode diminuir o índice e a extensão da absorção.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Considerar o efeito de refeições muito gordurosas sobre a absorção da zidovudina; a bula não traz recomendação de manejo específica.",
+    "fonte": "Bula profissional — Zidovir (Cristália Produtos Químicos Farmacêuticos Ltda.)"
+  },
+  {
+    "farmaco": "Cloridrato de pioglitazona",
+    "comerciais": [
+      "Actos"
+    ],
+    "nutriente": "Alimentos (alimentação)",
+    "categoria": "alimento",
+    "efeito": "A alimentação retarda ligeiramente o tempo do pico de concentração sérica (para 3 a 4 horas), mas não altera a extensão da absorção.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Não há recomendação específica na bula; o alimento apenas retarda o pico sérico sem alterar a extensão da absorção.",
+    "fonte": "Bula profissional — Actos (Abbott Laboratórios do Brasil Ltda.)"
   }
 ]
