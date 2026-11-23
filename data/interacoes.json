@@ -5058,5 +5058,18 @@
     "manejo": "atencao",
     "recomendacao": "Não há recomendação específica na bula; o alimento apenas retarda o pico sérico sem alterar a extensão da absorção.",
     "fonte": "Bula profissional — Actos (Abbott Laboratórios do Brasil Ltda.)"
+  },
+  {
+    "farmaco": "Abacavir",
+    "comerciais": [
+      "Ziagenavir"
+    ],
+    "nutriente": "Álcool (etanol)",
+    "categoria": "outro",
+    "efeito": "O uso concomitante de etanol altera o metabolismo do abacavir e aumenta sua AUC em aproximadamente 41%.",
+    "mecanismo": "O metabolismo do abacavir é alterado pelo uso concomitante de etanol; o abacavir não altera o metabolismo do etanol.",
+    "manejo": "atencao",
+    "recomendacao": "Dado o padrão de segurança do fármaco, a bula considera os achados não clinicamente significativos; nenhuma restrição é especificada.",
+    "fonte": "Bula profissional — Ziagenavir (GSK)"
   }
 ]

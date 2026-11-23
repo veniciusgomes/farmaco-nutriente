@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 207 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 208 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -2196,6 +2196,12 @@
      efeito:"A alimentação retarda ligeiramente o tempo do pico de concentração sérica (para 3 a 4 horas), mas não altera a extensão da absorção.", mecanismo:"Não detalhado na bula.",
      manejo:"atencao", recomendacao:"Não há recomendação específica na bula; o alimento apenas retarda o pico sérico sem alterar a extensão da absorção.",
      fonte:"Bula profissional — Actos (Abbott Laboratórios do Brasil Ltda.)"},
+
+    // Abacavir
+    {farmaco:"Abacavir", comerciais:["Ziagenavir"], nutriente:"Álcool (etanol)", categoria:"outro",
+     efeito:"O uso concomitante de etanol altera o metabolismo do abacavir e aumenta sua AUC em aproximadamente 41%.", mecanismo:"O metabolismo do abacavir é alterado pelo uso concomitante de etanol; o abacavir não altera o metabolismo do etanol.",
+     manejo:"atencao", recomendacao:"Dado o padrão de segurança do fármaco, a bula considera os achados não clinicamente significativos; nenhuma restrição é especificada.",
+     fonte:"Bula profissional — Ziagenavir (GSK)"},
   ];
 
   var MANAGE_META = {
@@ -2224,7 +2230,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>20/11/2026</b></span>';
+      '<span class="stat">atualizado em <b>23/11/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -2368,7 +2374,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 20/11/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 23/11/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';
