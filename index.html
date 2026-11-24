@@ -376,7 +376,7 @@
   <div class="search-panel">
     <label for="drugInput">Fármaco(s)</label>
     <textarea id="drugInput" placeholder="ex.: levotiroxina, varfarina, sinvastatina&#10;(separe vários por vírgula ou uma linha por fármaco)"></textarea>
-    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 208 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
+    <p class="hint">Aceita nome do princípio ativo ou nome comercial. Base atual cobre 211 fármacos — veja "Sobre esta base" abaixo para o escopo completo.</p>
     <div class="search-row">
       <button class="btn-primary" id="searchBtn">Buscar interações</button>
       <button class="btn-ghost" id="clearBtn">Limpar</button>
@@ -2202,6 +2202,26 @@
      efeito:"O uso concomitante de etanol altera o metabolismo do abacavir e aumenta sua AUC em aproximadamente 41%.", mecanismo:"O metabolismo do abacavir é alterado pelo uso concomitante de etanol; o abacavir não altera o metabolismo do etanol.",
      manejo:"atencao", recomendacao:"Dado o padrão de segurança do fármaco, a bula considera os achados não clinicamente significativos; nenhuma restrição é especificada.",
      fonte:"Bula profissional — Ziagenavir (GSK)"},
+
+    // Difosfato de cloroquina
+    {farmaco:"Difosfato de cloroquina", comerciais:["Farmanguinhos cloroquina"], nutriente:"Pectina", categoria:"fibra",
+     efeito:"Produtos contendo pectina diminuem a absorção da cloroquina.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Deve ser evitado o uso da cloroquina com produtos contendo caolim e pectina.",
+     fonte:"Bula profissional — Cloroquina (Farmanguinhos/Fiocruz)"},
+    {farmaco:"Difosfato de cloroquina", comerciais:["Farmanguinhos cloroquina"], nutriente:"Caolim", categoria:"outro",
+     efeito:"Produtos contendo caolim diminuem a absorção da cloroquina.", mecanismo:"Não detalhado na bula.",
+     manejo:"evitar", recomendacao:"Deve ser evitado o uso da cloroquina com produtos contendo caolim e pectina.",
+     fonte:"Bula profissional — Cloroquina (Farmanguinhos/Fiocruz)"},
+    // Lopinavir + ritonavir
+    {farmaco:"Lopinavir + ritonavir", comerciais:["Kaletra"], nutriente:"Alimentos (refeições, inclusive ricas em gordura)", categoria:"alimento",
+     efeito:"A administração com refeição aumenta a exposição ao lopinavir em relação ao jejum: com refeição de teor moderado de gordura, AUC +80% e Cmáx +54% (solução oral); com refeição rica em gorduras, AUC +130% e Cmáx +56% (solução oral).", mecanismo:"Não detalhado na bula.",
+     manejo:"atencao", recomendacao:"Para aumentar a biodisponibilidade e minimizar a variabilidade, tomar Kaletra com as refeições (a bula informa que os comprimidos revestidos podem ser tomados com ou sem alimentos).",
+     fonte:"Bula profissional — Kaletra (AbbVie)"},
+    // Cloridrato de mefloquina
+    {farmaco:"Cloridrato de mefloquina", comerciais:["LFM-Mefloquina"], nutriente:"Alimentos", categoria:"alimento",
+     efeito:"A absorção da mefloquina é favorecida pela presença de alimentos.", mecanismo:"Provavelmente, devido à ampla circulação enterogástrica e enteroepática.",
+     manejo:"atencao", recomendacao:"É recomendável que o medicamento seja administrado junto com algum alimento.",
+     fonte:"Bula profissional — LFM-Mefloquina (Laboratório Farmacêutico da Marinha)"},
   ];
 
   var MANAGE_META = {
@@ -2230,7 +2250,7 @@
       '<span class="stat"><b>'+drugs+'</b> fármacos mapeados</span>' +
       '<span class="stat"><b>'+DATA.length+'</b> interações registradas</span>' +
       '<span class="stat">fonte: <b>ANVISA</b> (bulas profissionais)</span>' +
-      '<span class="stat">atualizado em <b>23/11/2026</b></span>';
+      '<span class="stat">atualizado em <b>24/11/2026</b></span>';
   }
 
   function renderAboutList(){
@@ -2374,7 +2394,7 @@
   document.getElementById("exportBtn").addEventListener("click", exportCSV);
 
   document.getElementById("pagefoot").innerHTML =
-    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 23/11/2026, sem revisão farmacêutica/nutricional formal." +
+    "Protótipo de pesquisa — dados extraídos de bulas ANVISA em 24/11/2026, sem revisão farmacêutica/nutricional formal." +
     '<div class="credit">Feito por Venicius Gomes · ' +
     '<a href="https://www.linkedin.com/in/venicius-gomes-santiago" target="_blank" rel="noopener">LinkedIn</a> · ' +
     '<a href="https://github.com/veniciusgomes" target="_blank" rel="noopener">GitHub</a></div>';

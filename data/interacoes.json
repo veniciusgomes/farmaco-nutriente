@@ -5071,5 +5071,57 @@
     "manejo": "atencao",
     "recomendacao": "Dado o padrão de segurança do fármaco, a bula considera os achados não clinicamente significativos; nenhuma restrição é especificada.",
     "fonte": "Bula profissional — Ziagenavir (GSK)"
+  },
+  {
+    "farmaco": "Difosfato de cloroquina",
+    "comerciais": [
+      "Farmanguinhos cloroquina"
+    ],
+    "nutriente": "Pectina",
+    "categoria": "fibra",
+    "efeito": "Produtos contendo pectina diminuem a absorção da cloroquina.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Deve ser evitado o uso da cloroquina com produtos contendo caolim e pectina.",
+    "fonte": "Bula profissional — Cloroquina (Farmanguinhos/Fiocruz)"
+  },
+  {
+    "farmaco": "Difosfato de cloroquina",
+    "comerciais": [
+      "Farmanguinhos cloroquina"
+    ],
+    "nutriente": "Caolim",
+    "categoria": "outro",
+    "efeito": "Produtos contendo caolim diminuem a absorção da cloroquina.",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "evitar",
+    "recomendacao": "Deve ser evitado o uso da cloroquina com produtos contendo caolim e pectina.",
+    "fonte": "Bula profissional — Cloroquina (Farmanguinhos/Fiocruz)"
+  },
+  {
+    "farmaco": "Lopinavir + ritonavir",
+    "comerciais": [
+      "Kaletra"
+    ],
+    "nutriente": "Alimentos (refeições, inclusive ricas em gordura)",
+    "categoria": "alimento",
+    "efeito": "A administração com refeição aumenta a exposição ao lopinavir em relação ao jejum: com refeição de teor moderado de gordura, AUC +80% e Cmáx +54% (solução oral); com refeição rica em gorduras, AUC +130% e Cmáx +56% (solução oral).",
+    "mecanismo": "Não detalhado na bula.",
+    "manejo": "atencao",
+    "recomendacao": "Para aumentar a biodisponibilidade e minimizar a variabilidade, tomar Kaletra com as refeições (a bula informa que os comprimidos revestidos podem ser tomados com ou sem alimentos).",
+    "fonte": "Bula profissional — Kaletra (AbbVie)"
+  },
+  {
+    "farmaco": "Cloridrato de mefloquina",
+    "comerciais": [
+      "LFM-Mefloquina"
+    ],
+    "nutriente": "Alimentos",
+    "categoria": "alimento",
+    "efeito": "A absorção da mefloquina é favorecida pela presença de alimentos.",
+    "mecanismo": "Provavelmente, devido à ampla circulação enterogástrica e enteroepática.",
+    "manejo": "atencao",
+    "recomendacao": "É recomendável que o medicamento seja administrado junto com algum alimento.",
+    "fonte": "Bula profissional — LFM-Mefloquina (Laboratório Farmacêutico da Marinha)"
   }
 ]
